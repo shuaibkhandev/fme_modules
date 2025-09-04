@@ -1,0 +1,126 @@
+/* Image with Text section 1 */
+.theme_development .image_with_text { padding-top: 80px;}
+.theme_development .image_with_text_block { display: flex; justify-content: space-between; align-items: center; gap: 150px;}
+.theme_development .text_block, .theme_development .image_block { width: 50%; }
+.theme_development .text_block .title { padding-bottom: 20px; }
+.theme_development .text_block .text { font-size: 20px; line-height: 30px; font-weight: 500; }
+.theme_development .text_block .text:nth-child(2) { padding-bottom: 20px ; }
+
+/* Image with Text section 2 */
+.theme_development .image_with_text_help_section { background: linear-gradient(to right, #F4EBF9 0%, #FFA79C 100%); padding: 100px; border-radius: 22px; }
+
+/* Testimonial */
+.theme_development .testimonial { padding-top: 80px;}
+.theme_development .review_section .review_left_col { flex-direction: column; text-align: center; gap: 20px; }
+.theme_development .review_section .review_left_col p { max-width: 640px; }
+
+/* Advantages */
+.theme_development .choose_us { background: transparent; padding-top: 80px;}
+.theme_development .choose_us .heading { text-align: center; max-width: 625px; margin: 0 auto; }
+.theme_development .choose_us .feature_card { background: #f4f7f2; }
+.theme_development .featured_btn { padding-top: 100px; text-align: center; }
+.theme_development .featured_btn a {
+    padding: 13.5px 60px;
+}
+
+/* Important Elements */
+.theme_development .development_service .top_part { flex-direction: column; max-width: 620px; gap: 20px; text-align: center; justify-content: center; margin: 0 auto; }
+
+
+/* Theme Development Process */
+.theme_development .data_migration { background: #f1f8f0; }
+.theme_development .data_migration .section-header { flex-direction: column; gap: 20px; align-items: center; text-align: center; }
+.data_migration .section-subtitle { max-width: 920px; }
+
+/* PrestaShop 1.7 */
+.theme_development .choose_theme_section .section_header { text-align: center; padding-bottom: 60px; }
+.theme_development .choose_theme_section.choose_us .heading { max-width: 100%; padding-bottom: 20px; }
+.theme_development .choose_theme_section p { max-width: 870px; margin: 0 auto;}
+.theme_development .choose_theme_section .icon { width: 15%; }
+.theme_development .choose_theme_section .details { width: 85% }
+
+
+/* Image with Text section 4 */
+.theme_development .image_with_text_developer_section { background: linear-gradient(to right, #E2FECF 0%, #C5EED9 100%); padding: 100px; border-radius: 22px; }
+.theme_development .start_btn { color: #263238; font-size: 20px; line-height: 20px; border: 2px solid #263238; border-radius: 50px; padding: 20px 40px; margin-top: 40px; }
+.theme_development .start_btn:hover { background-color: #263238; color: #ffffff; }
+
+
+
+@media screen and (min-width: 1281px) and (max-width: 1400px) {
+    /* Image with Text section 1 */
+    .theme_development .image_with_text_block { gap: 100px; }
+    .theme_development .text_block .text { font-size: 18px; line-height: 28px; }
+
+    /* Image with Text section 2 */
+    .theme_development .image_with_text_help_section { padding: 70px; }
+
+    /* Features Section */
+    .theme_development .featured_btn { padding-top: 70px; }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    /* Image with Text section 1 */
+    .theme_development .image_with_text_block { gap: 55px; }
+    .theme_development .text_block .text { font-size: 18px; line-height: 26px; }
+
+    /* Image with Text section 2 */
+    .theme_development .image_with_text_help_section { padding: 55px; }
+
+    /* Features Section */
+    .theme_development .featured_btn { padding-top: 50px; }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Image with Text section 1 */
+    .theme_development .image_with_text { padding-top: 40px;}
+    .theme_development .image_with_text_block { gap: 40px; }
+    .theme_development .text_block .text { font-size: 16px; line-height: 22px; }
+    .theme_development .text_block .title { font-size: 24px; }
+    
+    /* Image with Text section 2 */
+    .theme_development .image_with_text_help_section { padding: 40px; }
+
+
+    /* Testimonial */
+    .theme_development .testimonial { padding-top: 40px;}
+    .theme_development .review_section .review_left_col { gap: 15px; align-items: center; }
+    .theme_development .review_section .review_left_col p { max-width: 540px; }
+
+
+    /* Advantages */
+    .theme_development .featured_btn { padding-top: 40px; }
+
+
+    /* Image with Text section 4 */
+    .theme_development .start_btn { font-size: 18px; line-height: 18px; padding: 15px 30px; margin-top: 15px; }
+    
+}
+@media screen and (max-width: 767px) {
+    /* Image with Text section 1 */
+    .theme_development .image_with_text { padding-top: 40px;}
+    .theme_development .image_with_text_block { gap: 20px; flex-direction: column; }
+    .theme_development .text_block, .theme_development .image_block { width: 100%; }
+    .theme_development .text_block .title { padding-bottom: 10px; }
+    .theme_development .text_block .text { font-size: 14px; line-height: 22px; }
+    .theme_development .text_block .text:nth-child(2) { padding-bottom: 10px; }
+
+    /* Image with Text section 2 */
+    .theme_development .image_with_text_help_section { padding: 15px; border-radius: 12px; }
+
+    /* Testimonial */
+    .theme_development .testimonial { padding-top: 40px;}
+    .theme_development .review_section .review_left_col { gap: 10px; align-items: center; }
+    .theme_development .review_section .review_left_col p { max-width: 440px; }
+
+
+    /* Advantages */
+    .theme_development .featured_btn { padding-top: 20px; }
+
+    /* Theme Development Process */
+    .theme_development .data_migration .section-header { gap: 10px; }
+    
+    /* PrestaShop 1.7 */
+    .theme_development .choose_theme_section .details, .theme_development .choose_theme_section .icon { width: 100%; }
+
+    /* Image with Text section 4 */
+    .theme_development .start_btn { font-size: 16px; line-height: q6px; padding: 10px 25px; margin-top: 10px; }
+}

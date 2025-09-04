@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../assets/style/css/pushbar.css" />
+    <link rel="stylesheet" href="../assets/style/css/global.css" />
+    <link rel="stylesheet" href="../assets/style/css/header.css" />
+    <link rel="stylesheet" href="../assets/style/css/footer.css" />
+    <link rel="stylesheet" href="../assets/style/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="../assets/style/css/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="../assets/style/css/slick-theme.css"
+    />
+    <link rel="stylesheet" href="../assets/fonts/font.css" />
+  </head>
+
+  <body>
+    <section class="page_wrapper home_page">
+      <!-- Header -->
+      <header class="header_container">
+        <ul class="header_top_list">
+            <li class="item currency_list" data-pushbar-target="curr" aria-label="Open Currency"> <img src="../assets/images/dollar.svg" alt="dollar icon"> USD
+            </li>
+            <li class="item language_list" data-pushbar-target="lang" aria-label="Open Language">
+              <img src="../assets/images/world.svg" alt="world icon">
+                English
+            </li>
+            <li class="item resp_hide"><a href="#" class="header_top_text">Hire an Expert</a></li>
+            <li class="item resp_hide"><a href="#" class="header_top_text">Get Support</a></li>
+        </ul>
+
+        <aside data-pushbar-id="lang" data-pushbar-direction="right" class="main_sidebar">
+            <div class="lang_cur_block">
+                <div class="lang_cur_inner">
+                    <div class="side_bar_top">
+                        <h3 class="title">Select a Language</h3>
+                        <div class="close_side_bar" data-pushbar-close>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
+                                </path>
+                            </svg>
+                        </div>
+                        <ul class="lang_cur_list">
+                            <li value="en" class="list_item active">English</li>
+                            <li value="ur" class="list_item">Urdu</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_block"><button class="secondary_cta">Confirm selection</button></div>
+            </div>
+        </aside>
+
+        <aside data-pushbar-id="curr" data-pushbar-direction="right" class="main_sidebar">
+            <div class="lang_cur_block">
+                <div class="lang_cur_inner">
+                    <div class="side_bar_top">
+                        <h3 class="title">Select a Currency</h3>
+                        <div class="close_side_bar" data-pushbar-close>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
+                                </path>
+                            </svg>
+                        </div>
+                        <ul class="lang_cur_list">
+                            <li class="list_item active">USD</li>
+                            <li class="list_item">EUR</li>
+                            <li class="list_item">GBP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom_block">
+                    <button class="secondary_cta">Confirm selection</button>
+                </div>
+            </div>
+        </aside>
+
+        <section class="header">
+            <div class="logo">
+                <a href="#">
+                    <picture>
+                        <source width="auto" height="auto" media="(min-width:768px)"
+                            srcset="../assets/images/main-logo.svg">
+                        <source width="auto" height="auto" media="(max-width:767px)"
+                            srcset="../assets/images/resp-logo.webp">
+                        <img width="auto" height="auto" class="loading_action" src="../assets/images/logo.webp"
+                            alt="logo">
+                    </picture>
+                </a>
+            </div>
+
+            <nav class="navigation">
+                <aside data-pushbar-id="menu" data-pushbar-direction="right">
+                    <div>
+                        <div class="side_bar_head">
+                            <div class="logo">
+                                <a href="#">
+                                    <picture>
+                                        <source width="auto" height="auto" media="(min-width:768px)"
+                                            srcset="../assets/images/logo.webp">
+                                        <source width="auto" height="auto" media="(max-width:767px)"
+                                            srcset="../assets/images/resp-logo.webp">
+                                        <img width="auto" height="auto" class="loading_action"
+                                            src="../assets/images/logo.webp" alt="logo">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="close_side_bar" data-pushbar-close>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="25" height="25"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <ul class="nav_bar">
+                            <li class="nav_list"> <a href="#!" class="nav_link active"> Prestashop Modules </a> </li>
+                            <li class="nav_list"> <a href="#!" class="nav_link"> Services </a> </li>
+                            <li class="nav_list"> <a href="#!" class="nav_link"> Portfolio </a> </li>
+                            <li class="nav_list"> <a href="#!" class="nav_link"> Free Stuff </a> </li>
+                            <li class="nav_list"> <a href="#!" class="nav_link"> Support </a> </li>
+                            <li class="nav_list"> <a href="#!" class="nav_link">Blog</a> </li>
+                        </ul>
+                    </div>
+                </aside>
+            </nav>
+
+            <ul class="header_icon">
+                <li>
+                    <div class="block search_desk">
+                      <img src="../assets/images/search.svg" alt="search icon">
+                    </div>
+                </li>
+                <li class="account">
+                    <a class="loading_action" aria-label="Login" href="#">
+                        <img src="../assets/images/user.svg" alt="user icon">
+                    </a>
+                </li>
+                <li class="cart loading_action">
+                    <a aria-label="Go To Cart" class="loading_action" href="/cart">
+                       <img src="../assets/images/cart.svg" alt="">
+
+                        <span class="cart_count">1</span>
+
+                    </a>
+                </li>
+                <li class="resp_menu">
+                    <button aria-label="Open Menu" data-pushbar-target="menu" class="openMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="search_overlay" style="background-color: rgba(54, 54, 54, 0.4);"></div>
+
+            <div class="search_field_head">
+                <div class="search_outer header_search">
+                    <div class="dialog_block search">
+                        <button class="close_search_btn">
+                            <svg class="gridicon gridicons-chevron-left" height="20" width="20"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g>
+                                    <path d="M14 20l-8-8 8-8 1.414 1.414L8.828 12l6.586 6.586z"></path>
+                                </g>
+                            </svg>
+                        </button>
+
+                        <button type="submit" class="search_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 25"
+                                fill="none">
+                                <path
+                                    d="M23 24L17.692 18.4507M17.692 18.4507C18.5999 17.5014 19.3201 16.3745 19.8115 15.1343C20.3029 13.8941 20.5558 12.5648 20.5558 11.2224C20.5558 9.87995 20.3029 8.55067 19.8115 7.31044C19.3202 6.0702 18.5999 4.9433 17.692 3.99406C16.784 3.04483 15.7061 2.29185 14.5198 1.77813C13.3335 1.26441 12.062 1 10.7779 1C9.49386 1 8.22238 1.26441 7.03607 1.77813C5.84976 2.29185 4.77185 3.04483 3.86389 3.99406C2.03017 5.91113 1 8.51123 1 11.2224C1 13.9335 2.03017 16.5336 3.86389 18.4507C5.6976 20.3677 8.18465 21.4447 10.7779 21.4447C13.3712 21.4447 15.8582 20.3677 17.692 18.4507Z"
+                                    stroke="#4E4E4E" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+
+                        <input type="search" class="srch_input" id="search" placeholder="Type a command or search"
+                            value="">
+                    </div>
+                </div>
+                <ul class="search-suggestions" id="suggestions">
+                  <span class="primary_text search-suggestion-title">Showing Results</span>
+                    <li class="search_suggest_list">
+                        <div class="search_suggest_link">
+                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                                <img src="../assets/images/srch_1.png" alt="srch_1">
+                            </a>
+                            <div class="search_cnt_col">
+                                <a class="loading_action search_pd_name" href="#">Prestashop Buy from External Link
+                                    Module</a>
+                                <p class="pd_type">(3.0.1)</p>
+                            </div>
+                            <p class="price">€47</p>
+                        </div>
+                    </li>
+                    <li class="search_suggest_list">
+                        <div class="search_suggest_link">
+                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                                <img src="../assets/images/srch_2.png" alt="srch_2">
+                            </a>
+                            <div class="search_cnt_col">
+                                <a class="loading_action search_pd_name" href="#">PrestaShop Cart Countdown Timer
+                                    Module</a>
+                                <p class="pd_type">(2.0.1)</p>
+                            </div>
+                            <p class="price">€35</p>
+                        </div>
+                    </li>
+                    <li class="search_suggest_list">
+                        <div class="search_suggest_link">
+                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                                <img src="../assets/images/srch_3.png" alt="srch_3">
+                            </a>
+                            <div class="search_cnt_col">
+                                <a class="loading_action search_pd_name" href="#">Prestashop Mobile App Builder
+                                    Native for iOS, Andriod & PrestaMobApp</a>
+                                <p class="pd_type">(2.1.1)</p>
+                            </div>
+                            <p class="price">€65</p>
+                        </div>
+                    </li>
+                    <li class="search_suggest_list">
+                        <div class="search_suggest_link">
+                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                                <img src="../assets/images/srch_1.png" alt="srch_1">
+                            </a>
+                            <div class="search_cnt_col">
+                                <a class="loading_action search_pd_name" href="#">Prestashop Buy from External Link
+                                    Module</a>
+                                <p class="pd_type">(3.0.1)</p>
+                            </div>
+                            <p class="price">€47</p>
+                        </div>
+                    </li>
+                    <li class="search_suggest_list">
+                        <div class="search_suggest_link">
+                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                                <img src="../assets/images/srch_2.png" alt="srch_2">
+                            </a>
+                            <div class="search_cnt_col">
+                                <a class="loading_action search_pd_name" href="#">PrestaShop Cart Countdown Timer
+                                    Module</a>
+                                <p class="pd_type">(2.0.1)</p>
+                            </div>
+                            <p class="price">€35</p>
+                        </div>
+                    </li>
+                    <li class="search_suggest_list">
+                        <div class="search_suggest_link">
+                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                                <img src="../assets/images/srch_3.png" alt="srch_3">
+                            </a>
+                            <div class="search_cnt_col">
+                                <a class="loading_action search_pd_name" href="#">Prestashop Mobile App Builder
+                                    Native for iOS, Andriod & PrestaMobApp</a>
+                                <p class="pd_type">(2.1.1)</p>
+                            </div>
+                            <p class="price">€65</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+ 
+
+     
+    </section>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/pushbar.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

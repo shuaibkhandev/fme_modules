@@ -1,0 +1,1001 @@
+/* Main Banner Section  */
+.detail_page .banner_caption { padding-bottom: 16px; font-size: 22px; font-weight: 400; line-height: 22px; }
+.detail_page .banner_title { padding-bottom: 24px; }
+.detail_page .banner_text { padding-bottom: 50px; font-size: 20px; line-height: 32px; color: #404040; }
+
+/* Prestashop Migration */
+.detail_page .customer_needs .steps { display: grid; grid-template-columns: repeat(6, 1fr); grid-gap: 25px; }
+.detail_page .customer_needs .step { position: relative; }
+.detail_page .customer_needs .text { border-bottom: none; color: #000; }
+.detail_page .customer_needs .numbering { position: absolute; top: 0; right: 0; color: rgba(0, 0, 0, 10%); }
+
+/* Testimonials */
+.detail_page .review_section { flex-direction: column; }
+.detail_page .review_section .review_left_col { width: 100%; display: flex; justify-content: space-between; align-items: center; }
+.detail_page .review_section .review_right_col { width: 100%; }
+.detail_page .review_section .review_left_col .section_title, .detail_page .review_section .review_left_col .primary_text { flex: 1; }
+.detail_page .review_section .review_left_col .primary_text { padding: 0; }
+.detail_page .review_card { margin-right: 10px; border-radius: 15px; }
+
+
+/* Offers */
+.detail_page .development_service { background-color: #F1F8F0; }
+.detail_page .development_service .top_part { display: flex; justify-content: space-between; align-items: center; padding-bottom: 60px; }
+.detail_page .development_service .main_heading { padding-bottom: 0; }
+.detail_page .main_description { color: #545454; max-width: 700px; }
+.detail_page .development_service .service {     padding: 40px 30px 0; background-color: #fff; border: 0.75px solid rgba(250, 249, 249, 100%); }
+.detail_page .development_service .services_block { gap: 30px; }
+.detail_page .top_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  padding-bottom: 60px;
+}
+.detail_page .heading {
+  flex: 1;
+  width: 100%;
+}
+.detail_page .heading > .section_title {
+  width: 525px;
+}
+.detail_page .sub_text {
+  flex: 1;
+  color: #555555;
+}
+
+/* Main Banner Section  */
+.detail_page .banner_caption {
+  padding-bottom: 16px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.detail_page .banner_title {
+  padding-bottom: 24px;
+}
+.detail_page .banner_text {
+  padding-bottom: 50px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #404040;
+}
+
+/* Prestashop Migration */
+.detail_page .customer_needs .steps {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 25px;
+}
+.detail_page .customer_needs .step {
+  position: relative;
+}
+.detail_page .customer_needs .text {
+  border-bottom: none;
+  color: #000;
+}
+.detail_page .customer_needs .numbering {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 10%);
+}
+
+/* Testimonials */
+.detail_page .review_section {
+  flex-direction: column;
+}
+.detail_page .review_section .review_left_col {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail_page .review_section .review_right_col {
+  width: 100%;
+}
+.detail_page .review_section .review_left_col .section_title,
+.detail_page .review_section .review_left_col .primary_text {
+  flex: 1;
+}
+.detail_page .review_section .review_left_col .primary_text {
+  padding: 0;
+}
+.detail_page .review_card {
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+/* Offers */
+.detail_page .development_service {
+  background-color: #f1f8f0;
+}
+
+.detail_page .main_description {
+  color: #545454;
+  max-width: 700px;
+}
+.detail_page .development_service .service {
+  padding: 40px 30px 0;
+  background-color: #fff;
+  border: 0.75px solid rgba(110, 178, 52, 0.34);
+}
+.detail_page .development_service .services_block {
+  gap: 30px;
+  padding-bottom: 55px;
+}
+.detail_page .development_service .request_quote {
+  text-align: center;
+}
+
+/* More Services */
+.detail_page .more_services {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.detail_page .more_services .left_side {
+  width: 520px;
+}
+.detail_page .more_services .right_side {
+  width: calc(100% - 525px);
+}
+.detail_page .more_services .section_title {
+  padding-bottom: 30px;
+}
+.detail_page .more_services .left_side .primary_text {
+  padding-bottom: 30px;
+}
+.detail_page .more_services .service_card {
+  margin: 0 15px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  border: 0.75px solid rgba(250, 249, 249, 1);
+  box-shadow: 0px 1px 3px 0.75px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.detail_page .more_services .service_title {
+  font-size: 22px;
+  line-height: 32px;
+}
+.detail_page .more_services .slick-prev,
+.detail_page .more_services .slick-next {
+  background: #6eb234;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+}
+.detail_page .more_services .slick-prev {
+  left: -25px;
+  z-index: 1;
+}
+.detail_page .more_services .slick-prev:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 25px;
+  background-image: url('data:image/svg+xml,%3Csvg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M14 2.124L11.8946 0 0 12 11.8946 24 14 21.876 4.21071 12 14 2.124Z" fill="white"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 75%;
+  background-position: center;
+}
+.detail_page .more_services .slick-next {
+  right: -25px;
+}
+.detail_page .more_services .slick-next:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 25px;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"%3E%3Cpath fill="white" d="M0 21.876L2.105 24 14 12 2.105 0 0 2.124 9.789 12 0 21.876z"%3E%3C/path%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 75%;
+  background-position: center;
+}
+
+/* Data Migration */
+.data_migration .section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.data_migration .section_title {
+  flex: 0.5;
+}
+.data_migration .section-subtitle {
+  color: #545454;
+  flex: 0.5;
+}
+.data_migration .steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 100px;
+  position: relative;
+}
+.data_migration .step {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.data_migration .step-title {
+  font-size: 22px;
+  line-height: 32px;
+}
+.data_migration .step-description {
+  color: #545454;
+}
+.data_migration .step:not(:last-child)::after {
+  content: "";
+  background-image: url("../../images/arrows.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -50px;
+  top: 110px;
+  color: #4caf50;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+}
+.data_migration .step:nth-child(3)::after,
+.data_migration .step:nth-child(6)::after,
+.data_migration .step:nth-child(9)::after,
+.step:last-child::after {
+  display: none;
+}
+
+/* Migration Service */
+
+.detail_page .migration_service .services {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.detail_page .migration_service .upgrade_Store {
+  background: #f8f8f8;
+  padding: 60px 40px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0px 17.7px 37.7px 0 rgba(0, 0, 0, 0.18);
+  border-top: 1px solid rgba(0, 0, 0, 12%);
+  border-left: 1px solid rgba(0, 0, 0, 12%);
+  border-bottom: 1px solid rgba(0, 0, 0, 12%);
+}
+.detail_page .migration_service .migration_store {
+  background: #ffffff;
+  padding: 60px 40px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 17.7px 0px 37.7px 0 rgba(0, 0, 0, 0.18);
+  border-top: 1px solid rgba(0, 0, 0, 12%);
+  border-right: 1px solid rgba(0, 0, 0, 12%);
+  border-bottom: 1px solid rgba(0, 0, 0, 12%);
+}
+.detail_page .migration_service .title {
+  font-size: 23px;
+  line-height: 23px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.detail_page .migration_service .select-container {
+  width: 440px;
+  max-width: 100%;
+  position: relative;
+}
+.detail_page .migration_service select {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 600;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+.detail_page .migration_service .select_option {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.detail_page .migration_service .select_option:before {
+  content: "";
+  position: absolute;
+  background-image: url("../../images/arrow.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  right: 20px;
+  top: 20px;
+}
+.detail_page .migration_service .upgrade_Store .select-wrapper,
+.migration_store .select-wrapper {
+  position: relative;
+  background: #fbfbfb;
+  border: 0.93px solid rgba(0, 0, 0, 24%);
+  border-radius: 10px;
+  padding: 10px 30px 10px 15px;
+  box-shadow: 0px 3.73px 7.45px 0.93px rgba(0, 0, 0, 12%);
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin-bottom: 20px;
+}
+.detail_page .migration_service .upgrade_Store .select-wrapper:nth-child(2),
+.migration_store .select-wrapper:nth-child(2) {
+  margin-bottom: 0;
+}
+.detail_page .migration_service .label {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 10%);
+}
+.detail_page .migration_service .button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  box-shadow: 0px 0.57px 1.7px 0.43px rgba(0, 0, 0, 10%);
+}
+.detail_page .migration_service .upgrade-btn {
+  background: #000000;
+}
+.detail_page .migration_service .migrate-btn {
+  background: #6eb234;
+}
+.detail_page .migration_service .migration-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 90px;
+  padding-top: 100px;
+}
+.detail_page .migration_service .migration-card {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.detail_page .migration_service .card_title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
+  .detail_page .more_services .slick-prev,
+  .detail_page .more_services .slick-next {
+    width: 25px;
+    height: 25px;
+  }
+  .detail_page .more_services .slick-prev {
+    left: -20px;
+  }
+  .detail_page .more_services .slick-next {
+    right: -20px;
+  }
+  .detail_page .more_services .slick-next:before {
+    width: 13px;
+    height: 15px;
+  }
+  .detail_page .more_services .slick-prev:before {
+    width: 13px;
+    height: 15px;
+  }
+
+  .detail_page .more_services .service_card {
+    padding: 35px;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1400px) {
+
+    .detail_page .heading > .section_title {
+        width: 100%;
+      }
+
+  /* Prestashop Migration */
+  .detail_page .customer_needs .icon,
+  .detail_page .customer_needs .text,
+  .detail_page .customer_needs .numbering {
+    padding: 20px 20px 0 20px;
+  }
+  .detail_page .customer_needs .text {
+    padding: 20px;
+  }
+
+  /* Data Migration */
+  .data_migration .section-header {
+    padding-bottom: 65px;
+  }
+  .data_migration .step-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* Migration Service */
+  .detail_page  .sub_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .detail_page .migration_service .upgrade_Store,
+  .detail_page .migration_service .migration_store {
+    padding: 50px 35px;
+  }
+  .detail_page .migration_service .title {
+    padding-bottom: 35px;
+  }
+  .detail_page .migration_service .select-container {
+    width: 380px;
+  }
+  .detail_page .migration_service .upgrade_Store .select-wrapper,
+  .migration_store .select-wrapper {
+    padding: 10px 25px 10px 10px;
+    gap: 40px;
+  }
+  .detail_page .migration_service .label {
+    font-size: 17px;
+    line-height: 17px;
+  }
+  .detail_page .migration_service select {
+    font-size: 17px;
+    line-height: 17px;
+  }
+  .detail_page .migration_service .button {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .detail_page .migration_service .migration-container {
+    gap: 70px;
+    padding-top: 65px;
+  }
+  .detail_page .migration_service .card_title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  /* Develipment Service */
+  .detail_page .development_service .service {
+    padding: 35px 25px 0px;
+  }
+
+  /* More Services */
+  .detail_page .more_services .service_title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .detail_page .more_services .slick-prev,
+  .detail_page .more_services .slick-next {
+    width: 22px;
+    height: 22px;
+  }
+  .detail_page .more_services .slick-prev {
+    left: -20px;
+  }
+  .detail_page .more_services .slick-next {
+    right: -20px;
+  }
+  .detail_page .more_services .slick-next:before {
+    width: 13px;
+    height: 15px;
+  }
+  .detail_page .more_services .slick-prev:before {
+    width: 13px;
+    height: 15px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .detail_page .top_part {
+    gap: 80px;
+  }
+  .detail_page .heading > .section_title {
+    width: 100%;
+  }
+
+  /* Prestashop Migration */
+  .detail_page .customer_needs .steps {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+  }
+
+  /* More Services */
+  .detail_page .more_services {
+    gap: 40px;
+  }
+  .detail_page .more_services .service_card {
+    margin: 0 12px;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  .detail_page .more_services .service_title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* Data Migration */
+  .data_migration .section-header {
+    padding-bottom: 50px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .data_migration .step-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* Migration Service */
+  .detail_page .migration_service .heading {
+    max-width: 390px;
+  }
+  .detail_page  .sub_text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .detail_page .migration_service .services {
+    padding-top: 40px;
+  }
+  .detail_page .migration_service .upgrade_Store,
+  .detail_page .migration_service .migration_store {
+    padding: 45px 30px;
+  }
+  .detail_page .migration_service .title {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 25px;
+  }
+  .detail_page .migration_service .select-container {
+    width: 360px;
+  }
+  .detail_page .migration_service .upgrade_Store .select-wrapper,
+  .migration_store .select-wrapper {
+    padding: 8px 20px 10px 12px;
+    gap: 30px;
+    margin-bottom: 15px;
+  }
+  .detail_page .migration_service .label {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .detail_page .migration_service .select_option {
+    gap: 13px;
+  }
+  .detail_page .migration_service select {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .detail_page .migration_service .button {
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .detail_page .migration_service .migration-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    padding-top: 55px;
+  }
+  .detail_page .migration_service .migration-card {
+    gap: 15px;
+  }
+  .detail_page .migration_service .card_title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  /* Offers */
+  .detail_page .main_description {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+  .detail_page .top_part {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    text-align: center;
+    gap: 20px;
+  }
+  .detail_page .heading > .section_title {
+    width: 100%;
+
+  }
+
+
+  /* Main Banner Section  */
+  .detail_page .banner_caption {
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .detail_page .banner_text {
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  /* Prestashop Migration */
+  .detail_page .customer_needs .steps {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .detail_page .customer_needs .step {
+    max-width: 100%;
+  }
+
+  /* Testimonials */
+  .detail_page .review_section .review_left_col {
+    align-items: flex-start;
+  }
+  .detail_page .review_section {
+    gap: 40px;
+  }
+
+  /* Offers */
+
+  .detail_page .development_service .main_heading {
+    padding-bottom: 20px;
+  }
+  .detail_page .main_description {
+    max-width: 100%;
+  }
+
+  /* More Services  */
+  .detail_page .more_services {
+    flex-direction: column;
+  }
+  .detail_page .more_services .left_side,
+  .detail_page .more_services .right_side {
+    width: 100%;
+  }
+  .detail_page .more_services .slick-prev,
+  .detail_page .more_services .slick-next {
+    width: 22px;
+    height: 22px;
+  }
+  .detail_page .more_services .slick-prev {
+    left: -20px;
+  }
+  .detail_page .more_services .slick-next {
+    right: -20px;
+  }
+  .detail_page .more_services .slick-next:before,
+  .detail_page .more_services .slick-prev:before {
+    width: 13px;
+    height: 20px;
+  }
+  .detail_page .more_services .service_title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .detail_page .more_services .service_card {
+    gap: 20px;
+    padding: 25px;
+  }
+
+  /* Data Migration */
+  .data_migration .section-header {
+    padding-bottom: 40px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  /* .data_migration .section-title { font-size: 26px; line-height: 38px; } */
+  .data_migration .section-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .data_migration .steps-grid {
+    gap: 35px 50px;
+  }
+  .data_migration .step-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .data_migration .step-description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .data_migration .step:not(:last-child)::after {
+    right: -30px;
+    top: 105px;
+  }
+
+  /* Migration Service */
+
+  .detail_page .migration_service .heading {
+    max-width: 100%;
+  }
+  .detail_page  .sub_text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .detail_page .migration_service .services {
+    padding-top: 30px;
+  }
+  .detail_page .migration_service .upgrade_Store,
+  .detail_page .migration_service .migration_store {
+    padding: 30px;
+  }
+  .detail_page .migration_service .title {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 25px;
+  }
+  .detail_page .migration_service .select-container {
+    width: 300px;
+  }
+  .detail_page .migration_service .upgrade_Store .select-wrapper,
+  .migration_store .select-wrapper {
+    padding: 7px 20px 7px 10px;
+    gap: 25px;
+    margin-bottom: 15px;
+  }
+  .detail_page .migration_service .label {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .detail_page .migration_service .select_option {
+    gap: 10px;
+  }
+  .detail_page .migration_service select {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .detail_page .migration_service .button {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .detail_page .migration_service .migration-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding-top: 45px;
+  }
+  .detail_page .migration_service .migration-card {
+    gap: 15px;
+  }
+  .detail_page .migration_service .card_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .detail_page .top_part {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .detail_page .heading > .section_title {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  /* Main Banner Section  */
+  .detail_page .banner_caption {
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .detail_page .banner_text {
+    padding-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* Prestashop Migration */
+  .detail_page .customer_needs .steps {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+
+  /* Testimonials */
+  .detail_page .review_section {
+    gap: 30px;
+  }
+  .detail_page .review_section .review_left_col {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Offers */
+
+  .detail_page .development_service .main_heading {
+    padding-bottom: 10px;
+  }
+  .detail_page .main_description {
+    max-width: 100%;
+  }
+
+  /* More Services */
+  .detail_page .more_services {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .detail_page .more_services .left_side,
+  .detail_page .more_services .right_side {
+    width: 100%;
+  }
+  .detail_page .more_services .section_title {
+    padding-bottom: 15px;
+  }
+  .detail_page .more_services .left_side .primary_text {
+    padding-bottom: 15px;
+  }
+  .detail_page .more_services .service_card {
+    gap: 15px;
+    padding: 20px;
+  }
+  .detail_page .more_services .service_title {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .detail_page .more_services .slick-prev,
+  .detail_page .more_services .slick-next {
+    width: 22px;
+    height: 22px;
+  }
+  .detail_page .more_services .slick-prev {
+    left: -20px;
+  }
+  .detail_page .more_services .slick-next {
+    right: -20px;
+  }
+  .detail_page .more_services .slick-next:before,
+  .detail_page .more_services .slick-prev:before {
+    width: 13px;
+    height: 20px;
+  }
+
+  /* Data Migration */
+  .data_migration .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 30px;
+  }
+  /* .data_migration .section-title { font-size: 24px; line-height: 34px; } */
+  .data_migration .section-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .data_migration .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .data_migration .step-title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .data_migration .step-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .data_migration .step:not(:last-child)::after {
+    display: none;
+  }
+
+  /* Migration Service */
+  .detail_page .migration_service .heading {
+    max-width: 100%;
+  }
+  .detail_page  .sub_text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .detail_page .migration_service .services {
+    padding-top: 25px;
+  }
+  .detail_page .migration_service .upgrade_Store {
+    padding: 20px;
+  }
+  .detail_page .migration_service .migration_store {
+    padding: 20px;
+  }
+  .detail_page .migration_service .select-container {
+    width: 250px;
+  }
+  .detail_page .migration_service .title {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 20px;
+  }
+  .detail_page .migration_service .upgrade_Store .select-wrapper,
+  .migration_store .select-wrapper {
+    padding: 7px 15px 7px 10px;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .detail_page .migration_service .label {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .detail_page .migration_service .select_option {
+    gap: 8px;
+  }
+  .detail_page .migration_service select {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .detail_page .migration_service .button {
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .detail_page .migration_service .migration-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding-top: 40px;
+  }
+  .detail_page .migration_service .migration-card {
+    gap: 10px;
+    align-items: center;
+  }
+  .detail_page .migration_service .card_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Prestashop Migration */
+  .detail_page .customer_needs .steps {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Data Migration */
+  .data_migration .steps-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Migration Service */
+  .detail_page .migration_service .services {
+    flex-direction: column;
+  }
+  .detail_page .migration_service .select-container {
+    width: 100%;
+  }
+  .detail_page .migration_service .upgrade_Store {
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+    border-right: 1px solid rgba(0, 0, 0, 12%);
+  }
+  .detail_page .migration_service .migration_store {
+    border-radius: 0 0 10px 10px;
+    border-right: 1px solid rgba(0, 0, 0, 12%);
+    border-left: 1px solid rgba(0, 0, 0, 12%);
+  }
+  .detail_page .migration_service .migration-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

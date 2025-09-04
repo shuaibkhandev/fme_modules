@@ -1,0 +1,218 @@
+/* Why Hire Us */
+.hire_developers .section_header { display: flex; justify-content: space-between; align-items: flex-start; gap: 150px; padding-bottom: 80px; }
+.detail_page .development_service { background-color: transparent; }
+.hire_developers .development_service .main_heading { padding-bottom: 0; }
+.hire_developers .main_heading { width: 40%; }
+.hire_developers .main_text { width: 60%; }
+
+/* Testimonial */
+.hire_developers .testimonial_section.section_bg {
+    background-color: #eeeeee;
+}
+
+/* Get Started */
+.hire_developers .get-started-container { text-align: center; }      
+.hire_developers .get-started-container h2 { padding-bottom: 25px; }
+.hire_developers .get-started-container .primary_text { max-width: 700px; margin: 0 auto; }
+.hire_developers .steps { display: flex; align-items: center; justify-content: space-between; padding: 70px 0 100px; }
+.hire_developers .steps .step { text-align: center; flex: 1; position: relative; }
+.hire_developers .steps .step:after { content: ""; position: absolute; width: calc(80% - 90px); top: 80px; left: 68%; border-top: 4px dashed; }
+.hire_developers .steps .step .secondary_title { color: #000000; padding-top: 20px; }
+
+
+/* Service Charges */
+.hire_developers .service_charges { text-align: center; }
+.hire_developers .service_charges__title { padding-bottom: 25px; }
+.hire_developers .service_charges__description { max-width: 700px; margin-left: auto; margin-right: auto; }
+.hire_developers .service_charges_details { display: flex; gap: 30px; justify-content: center; padding: 100px 0 55px; }
+.hire_developers .service_card { flex: 1; padding: 70px 25px; border-radius: 10px; border: 1px solid #b3b3b3; background: #fff; text-align: left; box-shadow: 0px 1px 3px 0.75px rgba(0, 0, 0, 10%); }
+.hire_developers .service_card--highlighted { border: 2px solid #6DC034; position: relative; }
+.hire_developers .service_card__badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #6EB234; color: white; padding: 5px 8px; border-radius: 8px; font-size: 16px; line-height: 16px; }
+.hire_developers .service_card__title { font-size: 32px; line-height: 32px; padding-bottom: 45px; font-weight: 500; }
+.hire_developers .service_card__description { padding-bottom: 22px; }
+.hire_developers .feature-list { list-style: none; padding: 0; margin: 0; }
+.hire_developers .feature-list .feature-list__item { display: flex; align-items: center; gap: 13px; color: #282626; font-size: 17px; line-height: 24px; padding-bottom: 15px; }
+.hire_developers .service_card--highlighted .feature-list__item svg { fill: #6DC034; }
+
+
+/* Badges */
+.stats-list {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 75px; */
+
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat-value {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #030303;
+}
+
+.stat-label {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #6EB234;
+}
+  
+
+@media screen and (min-width: 1281px) and (max-width: 1400px) {
+    /* Why Hire Us */
+    .hire_developers .section_header { gap: 100px; }
+
+    /* Get Started */
+    .hire_developers .steps { padding: 60px 0 80px; }
+
+    /* Service Charges */
+    .hire_developers .service_card { padding: 60px 25px; }
+    .hire_developers .service_card__title { font-size: 28px; line-height: 28px; padding-bottom: 35px; }
+    .hire_developers .service_card__description { padding-bottom: 18px; }
+    .hire_developers  .feature-list .feature-list__item { gap: 11px; font-size: 16px; line-height: 22px; padding-bottom: 13px; }
+
+
+    /* Badges */
+    .stats-list {
+        gap: 45px;
+    }
+    .stat-item {
+        gap:15px
+    }
+
+    .stat-value {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .stat-label {
+        font-size: 17px;
+        line-height: 17px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    /* Why Hire Us */
+    .hire_developers .section_header { gap: 70px; padding-bottom: 60px; }
+
+    /* Get Started */
+    .hire_developers .steps { padding: 50px 0 70px; }
+    .hire_developers .steps .step:after { width: 50%; left: 75%; }
+
+
+    /* Service Charges */
+    .hire_developers .service_charges_details { gap: 25px; }
+    .hire_developers .service_card { padding: 50px 25px; }
+    .hire_developers .service_card__title { font-size: 25px; line-height: 30px; padding-bottom: 30px; }
+    .hire_developers .service_card__description { padding-bottom: 15px; font-size: 15px; line-height: 22px; }
+    .hire_developers .feature-list .feature-list__item { font-size: 15px; line-height: 21px; padding-bottom: 12px; }
+    
+    /* Badges */
+    .stats-list {
+        gap: 30px;
+    }
+
+    .stat-item {
+        gap: 13px;
+    }
+
+    .stat-value {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .stat-label {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Why Hire Us */
+    .hire_developers .section_header { gap: 30px; padding-bottom: 45px; flex-direction: column; }
+    .hire_developers .main_heading, .hire_developers .main_text { width: 100%; }
+
+    /* Get Started */
+    .hire_developers .steps { padding: 40px 0 60px; }
+    .hire_developers .steps .step:after { width: 30%; left: 85%; }
+
+
+    /* Service Charges */
+    .hire_developers .service_charges_details { gap: 25px; padding: 50px 0 30px; flex-direction: column; }
+    .hire_developers .service_card { padding: 40px 25px; }
+    .hire_developers .service_card__title { font-size: 24px; line-height: 24px; padding-bottom: 30px; }
+    .hire_developers .service_card__description { padding-bottom: 15px; font-size: 15px; line-height: 20px; }
+    .hire_developers .feature-list .feature-list__item { gap: 8px; font-size: 15px; line-height: 20px; padding-bottom: 10px; }
+
+    /* Badges */
+    .stats-list {
+        gap: 25px; 
+    }
+
+    .stat-item {
+        gap: 13px;
+    }
+
+    .stat-value {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .stat-label {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* Why Hire Us */
+    .hire_developers .section_header { flex-direction: column; gap: 15px; padding-bottom: 20px; }
+    .hire_developers .main_heading, .hire_developers .main_text { width: 100%; }
+
+    /* Get Started */
+    .hire_developers .steps { padding: 20px 0 30px; gap: 25px; flex-wrap: wrap; }
+    .hire_developers .steps .step:after { display: none; }
+
+
+    /* Service Charges */
+    .hire_developers .service_charges_details { gap: 20px; padding: 25px 0; flex-direction: column; }
+    .hire_developers .service_card { padding: 25px; }
+    .hire_developers .service_card__title { font-size: 20px; line-height: 20px; padding-bottom: 20px; }
+    .hire_developers .service_card__description { padding-bottom: 12px; font-size: 14px; line-height: 18px; }
+    .hire_developers .feature-list__item { gap: 8px; font-size: 14px; line-height: 18px; padding-bottom: 10px; }
+
+    /* Badges */
+    .stats-list {
+        grid-gap: 15px;
+    }
+
+    .stat-item {
+        gap: 10px;
+    }
+
+    .stat-value {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .stat-label {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+
+}
