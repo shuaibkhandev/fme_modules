@@ -68,29 +68,35 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// footer menu for responsive
-const footer_title = document.querySelectorAll(".foot_title");
-const footer_list = document.querySelectorAll(".foot_list");
+const footer_title = document.querySelectorAll(".footer_title");
+const footer_list = document.querySelectorAll(".footer_list");
 
-footer_title.forEach((item, index) => {
-  item.addEventListener("click", function () {
-    // Check if the clicked item is already active
-    const isActive = this.classList.contains("active");
+function initFooterAccordion() {
+  if (window.innerWidth <= 1080) {
+    footer_title.forEach((item, index) => {
+      item.addEventListener("click", function toggleAccordion() {
+        const isActive = this.classList.contains("active");
 
-    // Remove 'active' class from all titles
+        // Remove 'active' from all
+        footer_title.forEach((t) => t.classList.remove("active"));
+        footer_list.forEach((list) => (list.style.display = "none"));
+
+        if (!isActive) {
+          this.classList.add("active");
+          footer_list[index].style.display = "inline-block";
+        }
+      });
+    });
+  } else {
+    // Reset styles when back to desktop
     footer_title.forEach((item) => item.classList.remove("active"));
+    footer_list.forEach((list) => (list.style.display = "inline-block")); 
+  }
+}
 
-    // Hide all footer lists
-    footer_list.forEach((list) => (list.style.display = "none"));
-
-    // If the clicked item was not active, add 'active' class and show the corresponding list
-    if (!isActive) {
-      this.classList.add("active");
-      footer_list[index].style.display = "block";
-    }
-    // If the clicked item was active, it will now have no active class and the list remains hidden
-  });
-});
+// Run on load and resize
+window.addEventListener("load", initFooterAccordion);
+window.addEventListener("resize", initFooterAccordion);
 
 
 // script for support Center Faq (accordion)

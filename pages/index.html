@@ -24,8 +24,10 @@
 
   <body>
     <section class="page_wrapper home_page">
-      <!-- Header -->
+      <!-- Header Container -->
       <header class="header_container">
+
+        <!-- Top Header -->
         <ul class="header_top_list">
             <li class="item currency_list" data-pushbar-target="curr" aria-label="Open Currency"> <img src="../assets/images/dollar.svg" alt="dollar icon"> <span>USD</span>
             </li>
@@ -37,6 +39,7 @@
             <li class="item resp_hide"><a href="#" class="header_top_text">Get Support</a></li>
         </ul>
 
+        <!-- Sidebar for Language -->
         <aside data-pushbar-id="lang" data-pushbar-direction="right" class="main_sidebar">
             <div class="lang_cur_block">
                 <div class="lang_cur_inner">
@@ -59,6 +62,7 @@
             </div>
         </aside>
 
+        <!-- Sidebar for Currency -->
         <aside data-pushbar-id="curr" data-pushbar-direction="right" class="main_sidebar">
             <div class="lang_cur_block">
                 <div class="lang_cur_inner">
@@ -84,6 +88,7 @@
             </div>
         </aside>
 
+        <!-- Main Header -->
         <section class="header">
             <div class="logo">
                 <a href="#">
@@ -98,6 +103,7 @@
                 </a>
             </div>
 
+            <!-- Navigation -->
             <nav class="navigation">
                 <aside data-pushbar-id="menu" data-pushbar-direction="right">
                     <div>
@@ -134,6 +140,7 @@
                 </aside>
             </nav>
 
+            <!-- Left Side Icons -->
             <ul class="header_icon">
                 <li>
                     <div class="block search_desk">
@@ -164,8 +171,10 @@
                 </li>
             </ul>
 
+            <!-- Overlay for when open search popup -->
             <div class="search_overlay" style="background-color: rgba(54, 54, 54, 0.4);"></div>
 
+            <!-- Search Bar Popup -->
             <div class="search_field_head">
                 <div class="search_outer header_search">
                     <div class="dialog_block search">
@@ -280,88 +289,93 @@
 
 
 
-       <!-- Footer -->
-      <!-- <footer class="footer_container">
+       <!-- Footer Container -->
+      <footer class="footer_container">
         <div class="footer_inner_sec">
-          <div class="foot_top_row">
+            <!-- Footer First Row | Top Row -->
+          <div class="footer_top_row">
             <div class="main_content">
               <h3 class="main_text">Start Your Journey With Us</h3>
               <a class="secondary_cta" href="#"  aria-label="Request a Quote">Request a Quote <img src="../assets/images/right-arrow-45deg.svg" alt="left arrow"> </a>
             </div>
             <div class="testimonials">
+                <div class="image">
               <img src="../assets/images/clutch.svg" alt="cluch comp image">
+              </div>
+              <div class="image">
               <img src="../assets/images/trustpilot.svg" alt="trustpilot comp image">
+              </div>
+              <div class="image">
               <img src="../assets/images/design-rush.svg" alt="design rush comp image">
+              </div>
             </div>
           </div>
      
-
+<!-- Footer Middle Row | Second Row -->
         <div class="footer_middle_row">
           <div class="footer_block footer_logo_container">
-            <div class="foot_logo">
-              <img
-                src="../assets/images/footer_logo.webp"
-                alt="footer Logo"
-                class="logo"
-              />
-              <p class="foot_logo_text">
+            <div class="footer_logo">
+             <img src="../assets/images/main-logo.svg" alt="">
+                    </div>
+              <p class="footer_logo_text">
                 FME Modules is the top-notch PrestaShop migration service.
               </p>
-            </div>
+            
           </div>
           <div class="footer_block">
-            <h3 class="foot_title">Corporate</h3>
-            <ul class="foot_list">
-              <li class="foot_links">
-                <a class="foot_text" href="#">Modules</a>
+            <h3 class="footer_title">Corporate</h3>
+            <ul class="footer_list">
+              <li class="footer_item">
+                <a class="footer_text" href="#">Modules</a>
               </li>
-              <li class="foot_links">
-                <a class="foot_text" href="#">Portfolio</a>
+              <li class="footer_item">
+                <a class="footer_text" href="#">Portfolio</a>
               </li>
-              <li class="foot_links">
-                <a class="foot_text" href="#">Blog</a>
+              <li class="footer_item">
+                <a class="footer_text" href="#">Blog</a>
               </li>
             </ul>
           </div>
           <div class="footer_block">
-            <h3 class="foot_title">Knowledge Base</h3>
-            <ul class="foot_list">
-              <li class="foot_links">
-                <a class="foot_text" href="#">Free Stuff</a>
+            <h3 class="footer_title">Knowledge Base</h3>
+            <ul class="footer_list">
+              <li class="footer_item">
+                <a class="footer_text" href="#">Free Stuff</a>
               </li>
-              <li class="foot_links">
-                <a class="foot_text" href="#">Services</a>
+              <li class="footer_item">
+                <a class="footer_text" href="#">Services</a>
               </li>
-              <li class="foot_links">
-                <a class="foot_text" href="#">Stuff</a>
+              <li class="footer_item">
+                <a class="footer_text" href="#">Stuff</a>
               </li>
             </ul>
           </div>
           <div class="footer_block">
-            <h3 class="foot_title">Legal</h3>
-            <ul class="foot_list">
-              <li class="foot_links">
-                <a class="foot_text" href="#">Privacy Policy</a>
+            <h3 class="footer_title">Legal</h3>
+            <ul class="footer_list">
+              <li class="footer_item">
+                <a class="footer_text" href="#">Privacy Policy</a>
               </li>
-              <li class="foot_links">
-                <a class="foot_text" href="#">Terms & Conditions</a>
+              <li class="footer_item">
+                <a class="footer_text" href="#">Terms & Conditions</a>
               </li>
-              <li class="foot_links">
-                <a class="foot_text" href="#">Customer Services</a>
+              <li class="footer_item">
+                <a class="footer_text" href="#">Customer Services</a>
               </li>
             </ul>
           </div>
           <div class="footer_block">
             <div class="foot_contact_details">
-              <h2 class="foot_title">Say Hello</h2>
-              <div class="foot_list footer_contact">
-                <p class="foot_email">support@fmemodules.com</p>
+              <h2 class="footer_title">Say Hello</h2>
+              <div class="footer_list footer_contact">
+                <p class="foot_email footer_text">support@fmemodules.com</p>
                 <p class="foot_phone">+(919) 335-6315</p>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Footer Third Row | Bottom Row -->
         <div class="footer_bottom">
           <div class="copy_right">
             <p class="primary_text">
@@ -394,7 +408,7 @@
           </ul>
         </div>
            </div>
-      </footer> -->
+      </footer>
  
 
      
