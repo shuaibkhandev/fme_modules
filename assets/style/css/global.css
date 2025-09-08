@@ -104,9 +104,9 @@ section {
 
 body {
   line-height: 1;
-  background: #fff;
+  background: var(--secondary-color);
   font-family: "Inter", sans-serif;
-  color: #000000;
+  color: var(--primary-color)
 }
 
 * {
@@ -213,7 +213,7 @@ p {
 }
 
 .section_bg {
-  background-color: var(--section_bg);
+  background-color: var(--section-bg);
 }
 
 .section_padding {
@@ -231,10 +231,11 @@ p {
   line-height: 48px;
   color: var(--title-color);
   text-transform: capitalize;
+  font-weight: 800;
 }
 
 .primary_text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 26px;
   color: var(--text-color);
 }
@@ -245,8 +246,8 @@ p {
   line-height: 26px;
   padding: 10px 20px;
   border-radius: 50px;
-  color: var(--primary_color);
-  border: 1px solid var(--primary_color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   background-color: transparent;
   min-width: 11em;
   text-align: center;
@@ -254,7 +255,7 @@ p {
 }
 
 .primary_cta:hover {
-  background-color: var(--primary_color);
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -283,9 +284,9 @@ p {
 }
 
 .tertiary_text {
-  font-size: 18px;
-  line-height: 36px;
-  color: #494949;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--text-color);
 }
 
 .sec_top_row {
@@ -313,7 +314,7 @@ p {
 }
 
 .inner_sec_top {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .page_wrapper{
@@ -337,10 +338,6 @@ p {
   color: rgba(91, 91, 91, 1);
   font-size: 16px;
   font-weight: 400;
-}
-
-.home_page .prod_listing {
-  background-color: #f8f8f8;
 }
 
 

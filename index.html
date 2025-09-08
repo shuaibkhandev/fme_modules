@@ -1,327 +1,893 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FME MODULES - Home Page</title>
-    <link rel="stylesheet" href="/assets/style/css/pushbar.css" />
-    <link rel="stylesheet" href="/assets/style/css/global.css" />
-    <link rel="stylesheet" href="/assets/style/css/header.css" />
-    <link rel="stylesheet" href="/assets/style/css/footer.css" />
-    <link rel="stylesheet" href="/assets/style/css/style.css" />
-    <link
-      rel="stylesheet"
-      media="all"
-      href="/assets/style/css/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      href="/assets/style/css/slick-theme.css"
-    />
-    <link rel="stylesheet" href="/assets/fonts/font.css" />
-    <script src="./assets/js/footer.js" defer></script>
-  </head>
 
-  <body>
-    <section class="page_wrapper home_page">
-      <!-- Header Container -->
-      <header class="header_container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FME MODULES - Home Page</title>
+  <link rel="stylesheet" href="/assets/style/css/pushbar.css" />
+  <link rel="stylesheet" href="/assets/style/css/global.css" />
+  <link rel="stylesheet" href="/assets/style/css/header.css" />
+  <link rel="stylesheet" href="/assets/style/css/footer.css" />
+  <link rel="stylesheet" href="/assets/style/css/style.css" />
+  <link rel="stylesheet" href="/assets/style/css/product-card.css" />
+  <link rel="stylesheet" media="all" href="/assets/style/css/slick.min.css" />
+  <link rel="stylesheet" media="all" href="/assets/style/css/slick-theme.css" />
+  <link rel="stylesheet" href="/assets/fonts/font.css" />
+  <script src="./assets/js/footer.js" defer></script>
+</head>
 
-        <!-- Top Header -->
-        <ul class="header_top_list">
-            <li class="item currency_list" data-pushbar-target="curr" aria-label="Open Currency"> <img src="/assets/images/dollar.svg" alt="dollar icon"> <span>USD</span>
-            </li>
-            <li class="item language_list" data-pushbar-target="lang" aria-label="Open Language">
-              <img src="/assets/images/world.svg" alt="world icon">
-             <span>English</span>
-            </li>
-            <li class="item resp_hide"><a href="#" class="header_top_text">Hire an Expert</a></li>
-            <li class="item resp_hide"><a href="#" class="header_top_text">Get Support</a></li>
+<body>
+  <section class="page_wrapper home_page">
+    <!-- Header Container -->
+    <header class="header_container">
+
+      <!-- Top Header -->
+      <ul class="header_top_list">
+        <li class="item currency_list" data-pushbar-target="curr" aria-label="Open Currency"> <img
+            src="/assets/images/dollar.svg" alt="dollar icon"> <span>USD</span>
+        </li>
+        <li class="item language_list" data-pushbar-target="lang" aria-label="Open Language">
+          <img src="/assets/images/world.svg" alt="world icon">
+          <span>English</span>
+        </li>
+        <li class="item resp_hide"><a href="#" class="header_top_text">Hire an Expert</a></li>
+        <li class="item resp_hide"><a href="#" class="header_top_text">Get Support</a></li>
+      </ul>
+
+      <!-- Sidebar for Language -->
+      <aside data-pushbar-id="lang" data-pushbar-direction="right" class="main_sidebar">
+        <div class="lang_cur_block">
+          <div class="lang_cur_inner">
+            <div class="side_bar_top">
+              <h3 class="title">Select a Language</h3>
+              <div class="close_side_bar" data-pushbar-close>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
+                  </path>
+                </svg>
+              </div>
+              <ul class="lang_cur_list">
+                <li value="en" class="list_item active">English</li>
+                <li value="ur" class="list_item">Urdu</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom_block"><button class="secondary_cta">Confirm selection</button></div>
+        </div>
+      </aside>
+
+      <!-- Sidebar for Currency -->
+      <aside data-pushbar-id="curr" data-pushbar-direction="right" class="main_sidebar">
+        <div class="lang_cur_block">
+          <div class="lang_cur_inner">
+            <div class="side_bar_top">
+              <h3 class="title">Select a Currency</h3>
+              <div class="close_side_bar" data-pushbar-close>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
+                  </path>
+                </svg>
+              </div>
+              <ul class="lang_cur_list">
+                <li class="list_item active">USD</li>
+                <li class="list_item">EUR</li>
+                <li class="list_item">GBP</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom_block">
+            <button class="secondary_cta">Confirm selection</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Header -->
+      <section class="header">
+        <div class="logo">
+          <a href="#">
+            <picture>
+              <source width="auto" height="auto" media="(min-width:768px)" srcset="/assets/images/main-logo.svg">
+              <source width="auto" height="auto" media="(max-width:767px)" srcset="/assets/images/resp-logo.webp">
+              <img width="auto" height="auto" class="loading_action" src="/assets/images/logo.webp" alt="logo">
+            </picture>
+          </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+          <aside data-pushbar-id="menu" data-pushbar-direction="right">
+            <div>
+              <div class="side_bar_head">
+                <div class="logo">
+                  <a href="#">
+                    <picture>
+                      <source width="auto" height="auto" media="(min-width:768px)" srcset="/assets/images/logo.webp">
+                      <source width="auto" height="auto" media="(max-width:767px)"
+                        srcset="/assets/images/resp-logo.webp">
+                      <img width="auto" height="auto" class="loading_action" src="/assets/images/logo.webp" alt="logo">
+                    </picture>
+                  </a>
+                </div>
+                <div class="close_side_bar" data-pushbar-close>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="25" height="25" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+              </div>
+
+              <ul class="nav_bar">
+                <li class="nav_list"> <a href="#" class="nav_link active"> Prestashop Modules </a> </li>
+                <li class="nav_list"> <a href="#" class="nav_link"> Services </a> </li>
+                <li class="nav_list"> <a href="#" class="nav_link"> Portfolio </a> </li>
+                <li class="nav_list"> <a href="#" class="nav_link"> Free Stuff </a> </li>
+                <li class="nav_list"> <a href="#" class="nav_link"> Support </a> </li>
+                <li class="nav_list"> <a href="#" class="nav_link">Blog</a> </li>
+              </ul>
+            </div>
+          </aside>
+        </nav>
+
+        <!-- Left Side Icons -->
+        <ul class="header_icon">
+          <li>
+            <div class="block search_desk">
+              <img src="/assets/images/search.svg" alt="search icon">
+            </div>
+          </li>
+          <li class="account">
+            <a class="loading_action" aria-label="Login" href="#">
+              <img src="/assets/images/user.svg" alt="user icon">
+            </a>
+          </li>
+          <li class="cart loading_action">
+            <a aria-label="Go To Cart" class="loading_action" href="#">
+              <img src="/assets/images/cart.svg" alt="">
+
+              <span class="cart_count">1</span>
+
+            </a>
+          </li>
+          <li class="resp_menu">
+            <button aria-label="Open Menu" data-pushbar-target="menu" class="openMenu">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="#ffffff">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+                </path>
+              </svg>
+            </button>
+          </li>
         </ul>
 
-        <!-- Sidebar for Language -->
-        <aside data-pushbar-id="lang" data-pushbar-direction="right" class="main_sidebar">
-            <div class="lang_cur_block">
-                <div class="lang_cur_inner">
-                    <div class="side_bar_top">
-                        <h3 class="title">Select a Language</h3>
-                        <div class="close_side_bar" data-pushbar-close>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
-                                </path>
-                            </svg>
-                        </div>
-                        <ul class="lang_cur_list">
-                            <li value="en" class="list_item active">English</li>
-                            <li value="ur" class="list_item">Urdu</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="bottom_block"><button class="secondary_cta">Confirm selection</button></div>
-            </div>
-        </aside>
+        <!-- Overlay for when open search popup -->
+        <div class="search_overlay" style="background-color: rgba(54, 54, 54, 0.4);"></div>
 
-        <!-- Sidebar for Currency -->
-        <aside data-pushbar-id="curr" data-pushbar-direction="right" class="main_sidebar">
-            <div class="lang_cur_block">
-                <div class="lang_cur_inner">
-                    <div class="side_bar_top">
-                        <h3 class="title">Select a Currency</h3>
-                        <div class="close_side_bar" data-pushbar-close>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12">
-                                </path>
-                            </svg>
-                        </div>
-                        <ul class="lang_cur_list">
-                            <li class="list_item active">USD</li>
-                            <li class="list_item">EUR</li>
-                            <li class="list_item">GBP</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="bottom_block">
-                    <button class="secondary_cta">Confirm selection</button>
-                </div>
-            </div>
-        </aside>
+        <!-- Search Bar Popup -->
+        <div class="search_field_head">
+          <div class="search_outer header_search">
+            <div class="dialog_block search">
+              <button class="close_search_btn">
+                <svg class="gridicon gridicons-chevron-left" height="20" width="20" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24">
+                  <g>
+                    <path d="M14 20l-8-8 8-8 1.414 1.414L8.828 12l6.586 6.586z"></path>
+                  </g>
+                </svg>
+              </button>
 
-        <!-- Main Header -->
-        <section class="header">
-            <div class="logo">
-                <a href="#">
-                    <picture>
-                        <source width="auto" height="auto" media="(min-width:768px)"
-                            srcset="/assets/images/main-logo.svg">
-                        <source width="auto" height="auto" media="(max-width:767px)"
-                            srcset="/assets/images/resp-logo.webp">
-                        <img width="auto" height="auto" class="loading_action" src="/assets/images/logo.webp"
-                            alt="logo">
-                    </picture>
+              <button type="submit" class="search_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 25" fill="none">
+                  <path
+                    d="M23 24L17.692 18.4507M17.692 18.4507C18.5999 17.5014 19.3201 16.3745 19.8115 15.1343C20.3029 13.8941 20.5558 12.5648 20.5558 11.2224C20.5558 9.87995 20.3029 8.55067 19.8115 7.31044C19.3202 6.0702 18.5999 4.9433 17.692 3.99406C16.784 3.04483 15.7061 2.29185 14.5198 1.77813C13.3335 1.26441 12.062 1 10.7779 1C9.49386 1 8.22238 1.26441 7.03607 1.77813C5.84976 2.29185 4.77185 3.04483 3.86389 3.99406C2.03017 5.91113 1 8.51123 1 11.2224C1 13.9335 2.03017 16.5336 3.86389 18.4507C5.6976 20.3677 8.18465 21.4447 10.7779 21.4447C13.3712 21.4447 15.8582 20.3677 17.692 18.4507Z"
+                    stroke="#4E4E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+
+              <input type="search" class="srch_input" id="search" placeholder="Type a command or search" value="">
+            </div>
+          </div>
+          <ul class="search-suggestions" id="suggestions">
+            <span class="primary_text search-suggestion-title">Showing Results</span>
+            <li class="search_suggest_list">
+              <div class="search_suggest_link">
+                <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                  <img src="/assets/images/srch_1.png" alt="srch_1">
                 </a>
-            </div>
-
-            <!-- Navigation -->
-            <nav class="navigation">
-                <aside data-pushbar-id="menu" data-pushbar-direction="right">
-                    <div>
-                        <div class="side_bar_head">
-                            <div class="logo">
-                                <a href="#">
-                                    <picture>
-                                        <source width="auto" height="auto" media="(min-width:768px)"
-                                            srcset="/assets/images/logo.webp">
-                                        <source width="auto" height="auto" media="(max-width:767px)"
-                                            srcset="/assets/images/resp-logo.webp">
-                                        <img width="auto" height="auto" class="loading_action"
-                                            src="/assets/images/logo.webp" alt="logo">
-                                    </picture>
-                                </a>
-                            </div>
-                            <div class="close_side_bar" data-pushbar-close>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="25" height="25"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <ul class="nav_bar">
-                            <li class="nav_list"> <a href="#" class="nav_link active"> Prestashop Modules </a> </li>
-                            <li class="nav_list"> <a href="#" class="nav_link"> Services </a> </li>
-                            <li class="nav_list"> <a href="#" class="nav_link"> Portfolio </a> </li>
-                            <li class="nav_list"> <a href="#" class="nav_link"> Free Stuff </a> </li>
-                            <li class="nav_list"> <a href="#" class="nav_link"> Support </a> </li>
-                            <li class="nav_list"> <a href="#" class="nav_link">Blog</a> </li>
-                        </ul>
-                    </div>
-                </aside>
-            </nav>
-
-            <!-- Left Side Icons -->
-            <ul class="header_icon">
-                <li>
-                    <div class="block search_desk">
-                      <img src="/assets/images/search.svg" alt="search icon">
-                    </div>
-                </li>
-                <li class="account">
-                    <a class="loading_action" aria-label="Login" href="#">
-                        <img src="/assets/images/user.svg" alt="user icon">
-                    </a>
-                </li>
-                <li class="cart loading_action">
-                    <a aria-label="Go To Cart" class="loading_action" href="#">
-                       <img src="/assets/images/cart.svg" alt="">
-
-                        <span class="cart_count">1</span>
-
-                    </a>
-                </li>
-                <li class="resp_menu">
-                    <button aria-label="Open Menu" data-pushbar-target="menu" class="openMenu">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="#ffffff">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-
-            <!-- Overlay for when open search popup -->
-            <div class="search_overlay" style="background-color: rgba(54, 54, 54, 0.4);"></div>
-
-            <!-- Search Bar Popup -->
-            <div class="search_field_head">
-                <div class="search_outer header_search">
-                    <div class="dialog_block search">
-                        <button class="close_search_btn">
-                            <svg class="gridicon gridicons-chevron-left" height="20" width="20"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <g>
-                                    <path d="M14 20l-8-8 8-8 1.414 1.414L8.828 12l6.586 6.586z"></path>
-                                </g>
-                            </svg>
-                        </button>
-
-                        <button type="submit" class="search_icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 25"
-                                fill="none">
-                                <path
-                                    d="M23 24L17.692 18.4507M17.692 18.4507C18.5999 17.5014 19.3201 16.3745 19.8115 15.1343C20.3029 13.8941 20.5558 12.5648 20.5558 11.2224C20.5558 9.87995 20.3029 8.55067 19.8115 7.31044C19.3202 6.0702 18.5999 4.9433 17.692 3.99406C16.784 3.04483 15.7061 2.29185 14.5198 1.77813C13.3335 1.26441 12.062 1 10.7779 1C9.49386 1 8.22238 1.26441 7.03607 1.77813C5.84976 2.29185 4.77185 3.04483 3.86389 3.99406C2.03017 5.91113 1 8.51123 1 11.2224C1 13.9335 2.03017 16.5336 3.86389 18.4507C5.6976 20.3677 8.18465 21.4447 10.7779 21.4447C13.3712 21.4447 15.8582 20.3677 17.692 18.4507Z"
-                                    stroke="#4E4E4E" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-
-                        <input type="search" class="srch_input" id="search" placeholder="Type a command or search"
-                            value="">
-                    </div>
+                <div class="search_cnt_col">
+                  <a class="loading_action search_pd_name" href="#">Prestashop Buy from External Link
+                    Module</a>
+                  <p class="pd_type">(3.0.1)</p>
                 </div>
-                <ul class="search-suggestions" id="suggestions">
-                  <span class="primary_text search-suggestion-title">Showing Results</span>
-                    <li class="search_suggest_list">
-                        <div class="search_suggest_link">
-                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
-                                <img src="/assets/images/srch_1.png" alt="srch_1">
-                            </a>
-                            <div class="search_cnt_col">
-                                <a class="loading_action search_pd_name" href="#">Prestashop Buy from External Link
-                                    Module</a>
-                                <p class="pd_type">(3.0.1)</p>
-                            </div>
-                            <p class="price">€47</p>
-                        </div>
-                    </li>
-                    <li class="search_suggest_list">
-                        <div class="search_suggest_link">
-                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
-                                <img src="/assets/images/srch_2.png" alt="srch_2">
-                            </a>
-                            <div class="search_cnt_col">
-                                <a class="loading_action search_pd_name" href="#">PrestaShop Cart Countdown Timer
-                                    Module</a>
-                                <p class="pd_type">(2.0.1)</p>
-                            </div>
-                            <p class="price">€35</p>
-                        </div>
-                    </li>
-                    <li class="search_suggest_list">
-                        <div class="search_suggest_link">
-                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
-                                <img src="/assets/images/srch_3.png" alt="srch_3">
-                            </a>
-                            <div class="search_cnt_col">
-                                <a class="loading_action search_pd_name" href="#">Prestashop Mobile App Builder
-                                    Native for iOS, Andriod & PrestaMobApp</a>
-                                <p class="pd_type">(2.1.1)</p>
-                            </div>
-                            <p class="price">€65</p>
-                        </div>
-                    </li>
-                    <li class="search_suggest_list">
-                        <div class="search_suggest_link">
-                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
-                                <img src="/assets/images/srch_1.png" alt="srch_1">
-                            </a>
-                            <div class="search_cnt_col">
-                                <a class="loading_action search_pd_name" href="#">Prestashop Buy from External Link
-                                    Module</a>
-                                <p class="pd_type">(3.0.1)</p>
-                            </div>
-                            <p class="price">€47</p>
-                        </div>
-                    </li>
-                    <li class="search_suggest_list">
-                        <div class="search_suggest_link">
-                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
-                                <img src="/assets/images/srch_2.png" alt="srch_2">
-                            </a>
-                            <div class="search_cnt_col">
-                                <a class="loading_action search_pd_name" href="#">PrestaShop Cart Countdown Timer
-                                    Module</a>
-                                <p class="pd_type">(2.0.1)</p>
-                            </div>
-                            <p class="price">€35</p>
-                        </div>
-                    </li>
-                    <li class="search_suggest_list">
-                        <div class="search_suggest_link">
-                            <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
-                                <img src="/assets/images/srch_3.png" alt="srch_3">
-                            </a>
-                            <div class="search_cnt_col">
-                                <a class="loading_action search_pd_name" href="#">Prestashop Mobile App Builder
-                                    Native for iOS, Andriod & PrestaMobApp</a>
-                                <p class="pd_type">(2.1.1)</p>
-                            </div>
-                            <p class="price">€65</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <p class="price">€47</p>
+              </div>
+            </li>
+            <li class="search_suggest_list">
+              <div class="search_suggest_link">
+                <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                  <img src="/assets/images/srch_2.png" alt="srch_2">
+                </a>
+                <div class="search_cnt_col">
+                  <a class="loading_action search_pd_name" href="#">PrestaShop Cart Countdown Timer
+                    Module</a>
+                  <p class="pd_type">(2.0.1)</p>
+                </div>
+                <p class="price">€35</p>
+              </div>
+            </li>
+            <li class="search_suggest_list">
+              <div class="search_suggest_link">
+                <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                  <img src="/assets/images/srch_3.png" alt="srch_3">
+                </a>
+                <div class="search_cnt_col">
+                  <a class="loading_action search_pd_name" href="#">Prestashop Mobile App Builder
+                    Native for iOS, Andriod & PrestaMobApp</a>
+                  <p class="pd_type">(2.1.1)</p>
+                </div>
+                <p class="price">€65</p>
+              </div>
+            </li>
+            <li class="search_suggest_list">
+              <div class="search_suggest_link">
+                <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                  <img src="/assets/images/srch_1.png" alt="srch_1">
+                </a>
+                <div class="search_cnt_col">
+                  <a class="loading_action search_pd_name" href="#">Prestashop Buy from External Link
+                    Module</a>
+                  <p class="pd_type">(3.0.1)</p>
+                </div>
+                <p class="price">€47</p>
+              </div>
+            </li>
+            <li class="search_suggest_list">
+              <div class="search_suggest_link">
+                <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                  <img src="/assets/images/srch_2.png" alt="srch_2">
+                </a>
+                <div class="search_cnt_col">
+                  <a class="loading_action search_pd_name" href="#">PrestaShop Cart Countdown Timer
+                    Module</a>
+                  <p class="pd_type">(2.0.1)</p>
+                </div>
+                <p class="price">€35</p>
+              </div>
+            </li>
+            <li class="search_suggest_list">
+              <div class="search_suggest_link">
+                <a class="loading_action" href="/woocommerce-plugins-extensions/shop-as-a-customer">
+                  <img src="/assets/images/srch_3.png" alt="srch_3">
+                </a>
+                <div class="search_cnt_col">
+                  <a class="loading_action search_pd_name" href="#">Prestashop Mobile App Builder
+                    Native for iOS, Andriod & PrestaMobApp</a>
+                  <p class="pd_type">(2.1.1)</p>
+                </div>
+                <p class="price">€65</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </header>
 
 
 
+    <!-- Main -->
+    <main>
 
-       <!-- Footer Container -->
-      <footer class="footer_container">
-        <div class="footer_inner_sec">
-            <!-- Footer First Row | Top Row -->
-          <div class="footer_top_row">
-            <div class="main_content">
-              <h3 class="main_text">Start Your Journey With Us</h3>
-              <a class="secondary_cta" href="#"  aria-label="Request a Quote">Request a Quote <img src="/assets/images/right-arrow-45deg.svg" alt="left arrow"> </a>
+      <!-- Main | Home Banner Section -->
+      <section class="main_banner main_banner_bg">
+        <!-- This video for main banner background -->
+        <video autoplay muted loop playsinline class="banner_video">
+          <source src="/assets/videos/main-banner.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+
+        <div class="main_container">
+          <div class="banner_inner">
+            <div class="banner_block">
+              <span class="banner_span">Reliable PrestaShop</span>
+              <h1 class="banner_title">
+                Modules built for growth
+              </h1>
+              <div class="search">
+                <div class="banner_search_iner">
+                  <input type="text" name="search" id="" placeholder="What are you looking for?" />
+                  <button class="search_cta" aria-label="Submit search">
+                    <img src="assets/images/search.svg" alt="search icon">
+                  </button>
+                </div>
+              </div>
+              <ul class="banner_points">
+                <li>
+                  <div class="image_block">
+                    <img src="../assets/images/module.svg" alt="module">
+                  </div>
+                  <p>140+ FME Modules</p>
+                </li>
+                <li>
+                  <div class="image_block">
+                    <img src="../assets/images/money_back.svg" alt="money back">
+                  </div>
+                  <p>Money Back Guarantee</p>
+                </li>
+                <li>
+                  <div class="image_block">
+                    <img src="../assets/images/support.svg" alt="support">
+                  </div>
+                  <p>Free Life Time Support</p>
+                </li>
+              </ul>
+
+
             </div>
-            <div class="testimonials">
-                <div class="image">
-              <img src="/assets/images/clutch.svg" alt="cluch comp image">
-              </div>
-              <div class="image">
-              <img src="/assets/images/trustpilot.svg" alt="trustpilot comp image">
-              </div>
-              <div class="image">
-              <img src="/assets/images/design-rush.svg" alt="design rush comp image">
+            <div class="banner_bottom_block">
+              <div class="experts">
+                <div class="images_container">
+                  <img src="assets/images/expert_1.svg" alt="expert image">
+                  <img src="assets/images/expert_2.svg" alt="expert image">
+                  <img src="assets/images/expert_3.svg" alt="expert image">
+                </div>
+                <div class="content">
+                  <div class="expert_badge"><span>EXPERT</span>
+                    <div class="expert_stars">
+                      <img src="assets/images/expert_star.svg" alt="">
+                      <img src="assets/images/expert_star.svg" alt="">
+                      <img src="assets/images/expert_star.svg" alt="">
+                    </div>
+                  </div>
+                  <p>PrestaShop Experts, Modules, Dev & Gold Partner</p>
+                </div>
               </div>
             </div>
           </div>
-     
-<!-- Footer Middle Row | Second Row -->
+        </div>
+      </section>
+
+
+
+
+      <!-- Product Listing Section -->
+      <section class="prod_listing">
+        <div class="main_container section_padding">
+          <div class="sec_top_row">
+            <div class="cnt">
+              <h2 class="section_title">prestashop best sellers module</h2>
+              <p class="primary_text">
+                Boost sales by showcasing your top-selling products with the PrestaShop Best Seller module.
+              </p>
+            </div>
+            <button class="primary_cta">Explore More</button>
+          </div>
+
+          <div class="home_prod_listing grid_4 inner_sec_top">
+            <div class="prod_card">
+              <div class="badge"> 19% OFF </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+
+                  <img src="../assets/images/prod_6.png" alt="prod_1">
+
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+                <div class="pd_card_bs_info">
+                  <div class="block rating">
+                    <span class="ttl_rating">4.4</span>
+                    <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
+                    <!-- <span class="rating_count">(105)</span> -->
+                  </div>
+                  <div class="block downloads">
+                    <img src="../assets/images/download.svg" alt="download icon">
+                    24.6k
+                  </div>
+                  <div class="block">
+                    <img src="../assets/images/time.svg" alt="time icon">
+                    Sept 2024
+                  </div>
+                </div>
+
+              </div>
+              <div class="prod_price_row">
+                <div class="price">
+                  <span class="actual_price">€49</span>
+                </div>
+                <a href="" class="prod_buy">Buy Now</a>
+              </div>
+            </div>
+            <div class="prod_card">
+              <div class="badge"> 19% OFF </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+
+                  <img src="../assets/images/prod_6.png" alt="prod_1">
+
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+                <div class="pd_card_bs_info">
+                  <div class="block rating">
+                    <span class="ttl_rating">4.4</span>
+                    <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
+                    <!-- <span class="rating_count">(105)</span> -->
+                  </div>
+                  <div class="block downloads">
+                    <img src="../assets/images/download.svg" alt="download icon">
+                    24.6k
+                  </div>
+                  <div class="block">
+                    <img src="../assets/images/time.svg" alt="time icon">
+                    Sept 2024
+                  </div>
+                </div>
+
+              </div>
+              <div class="prod_price_row">
+                <div class="price">
+                  <span class="actual_price">€49</span>
+                </div>
+                <a href="" class="prod_buy">Buy Now</a>
+              </div>
+            </div>
+            <div class="prod_card">
+              <div class="badge"> 19% OFF </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+
+                  <img src="../assets/images/prod_6.png" alt="prod_1">
+
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+                <div class="pd_card_bs_info">
+                  <div class="block rating">
+                    <span class="ttl_rating">4.4</span>
+                    <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
+                    <!-- <span class="rating_count">(105)</span> -->
+                  </div>
+                  <div class="block downloads">
+                    <img src="../assets/images/download.svg" alt="download icon">
+                    24.6k
+                  </div>
+                  <div class="block">
+                    <img src="../assets/images/time.svg" alt="time icon">
+                    Sept 2024
+                  </div>
+                </div>
+
+              </div>
+              <div class="prod_price_row">
+                <div class="price">
+                  <span class="actual_price">€49</span>
+                </div>
+                <a href="" class="prod_buy">Buy Now</a>
+              </div>
+            </div>
+            <div class="prod_card">
+              <div class="badge"> 19% OFF </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+
+                  <img src="../assets/images/prod_6.png" alt="prod_1">
+
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+                <div class="pd_card_bs_info">
+                  <div class="block rating">
+                    <span class="ttl_rating">4.4</span>
+                    <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
+                    <!-- <span class="rating_count">(105)</span> -->
+                  </div>
+                  <div class="block downloads">
+                    <img src="../assets/images/download.svg" alt="download icon">
+                    24.6k
+                  </div>
+                  <div class="block">
+                    <img src="../assets/images/time.svg" alt="time icon">
+                    Sept 2024
+                  </div>
+                </div>
+
+              </div>
+              <div class="prod_price_row">
+                <div class="price">
+                  <span class="actual_price">€49</span>
+                </div>
+                <a href="" class="prod_buy">Buy Now</a>
+              </div>
+            </div>
+            <div class="prod_card">
+              <div class="badge"> 19% OFF </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+
+                  <img src="../assets/images/prod_6.png" alt="prod_1">
+
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+                <div class="pd_card_bs_info">
+                  <div class="block rating">
+                    <span class="ttl_rating">4.4</span>
+                    <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
+                    <!-- <span class="rating_count">(105)</span> -->
+                  </div>
+                  <div class="block downloads">
+                    <img src="../assets/images/download.svg" alt="download icon">
+                    24.6k
+                  </div>
+                  <div class="block">
+                    <img src="../assets/images/time.svg" alt="time icon">
+                    Sept 2024
+                  </div>
+                </div>
+
+              </div>
+              <div class="prod_price_row">
+                <div class="price">
+                  <span class="actual_price">€49</span>
+                </div>
+                <a href="" class="prod_buy">Buy Now</a>
+              </div>
+            </div>
+            <div class="prod_card">
+              <div class="badge"> 19% OFF </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+
+                  <img src="../assets/images/prod_6.png" alt="prod_1">
+
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+                <div class="pd_card_bs_info">
+                  <div class="block rating">
+                    <span class="ttl_rating">4.4</span>
+                    <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
+                    <!-- <span class="rating_count">(105)</span> -->
+                  </div>
+                  <div class="block downloads">
+                    <img src="../assets/images/download.svg" alt="download icon">
+                    24.6k
+                  </div>
+                  <div class="block">
+                    <img src="../assets/images/time.svg" alt="time icon">
+                    Sept 2024
+                  </div>
+                </div>
+
+              </div>
+              <div class="prod_price_row">
+                <div class="price">
+                  <span class="actual_price">€49</span>
+                </div>
+                <a href="" class="prod_buy">Buy Now</a>
+              </div>
+            </div>
+            <div class="prod_card">
+              <div class="badge"> 19% OFF </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+
+                  <img src="../assets/images/prod_6.png" alt="prod_1">
+
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+                <div class="pd_card_bs_info">
+                  <div class="block rating">
+                    <span class="ttl_rating">4.4</span>
+                    <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
+                    <!-- <span class="rating_count">(105)</span> -->
+                  </div>
+                  <div class="block downloads">
+                    <img src="../assets/images/download.svg" alt="download icon">
+                    24.6k
+                  </div>
+                  <div class="block">
+                    <img src="../assets/images/time.svg" alt="time icon">
+                    Sept 2024
+                  </div>
+                </div>
+
+              </div>
+              <div class="prod_price_row">
+                <div class="price">
+                  <span class="actual_price">€49</span>
+                </div>
+                <a href="" class="prod_buy">Buy Now</a>
+              </div>
+            </div>
+            <div class="prod_card">
+              <div class="badge"> 19% OFF </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+
+                  <img src="../assets/images/prod_6.png" alt="prod_1">
+
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+                <div class="pd_card_bs_info">
+                  <div class="block rating">
+                    <span class="ttl_rating">4.4</span>
+                    <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
+                    <!-- <span class="rating_count">(105)</span> -->
+                  </div>
+                  <div class="block downloads">
+                    <img src="../assets/images/download.svg" alt="download icon">
+                    24.6k
+                  </div>
+                  <div class="block">
+                    <img src="../assets/images/time.svg" alt="time icon">
+                    Sept 2024
+                  </div>
+                </div>
+
+              </div>
+              <div class="prod_price_row">
+                <div class="price">
+                  <span class="actual_price">€49</span>
+                </div>
+                <a href="" class="prod_buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FME Modules excellence section -->
+      <section class="section_bg excellence_section">
+        <div class="main_container section_padding">
+          <div class="sec_top_row">
+            <div class="excellence_left">
+              <h2 class="section_title">FME Module Committed To Excellence</h2>
+            </div>
+            <div class="excellence_right">
+              <p class="primary_text">
+                With 15+ years of PrestaShop expertise, FME Modules delivers powerful, scalable solutions designed to
+                help your online store grow, innovate, and stay competitive. Our 200+ modules are trusted by over
+                100,000 merchants.
+              </p>
+              <p class="primary_text">
+                We specialize in developing custom modules, ensuring smooth integration, and providing expert support,
+                all tailored to match your unique goals.
+              </p>
+              <button href="#" class="primary_cta">Explore More</button>
+            </div>
+          </div>
+
+
+
+          <div class="excellence_stats inner_sec_top">
+            <div class="stat_card large">
+              <h3 class="stat_number">1500+</h3>
+              <h4 class="primary_text">Development Projects Completed</h4>
+              <p class="tertiary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="stat_image small">
+              <img src="assets/images/stat_1.svg" alt="stat image">
+            </div>
+
+            <div class="stat_card small">
+              <h3 class="stat_number">150+</h3>
+              <h4 class="primary_text">Development Projects Completed</h4>
+              <p class="tertiary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+
+            <div class="stat_card small">
+              <h4 class="stat_number">100k+</h4>
+              <h4 class="primary_text">Development Projects Completed</h4>
+              <p class="tertiary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="stat_image">
+              <img src="assets/images/stat_1.svg" alt="stat image">
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <!-- Projects Section -->
+       <section class="project_section">
+        <div class="main_container">
+          <div class="projects grid_4">
+<div class="project">
+  <img src="assets/images/pro_1.svg" alt="">
+  <div class="content">
+<img src="assets/images/ivapeo.svg" alt="">
+  <p class="primary_text">Recognized as one of the top 5 most innovative UK transport tech firms by Transport Tech 2023.</p>
+  <ul class="list">
+    <li class="item tertiary_text">Innovative Solutions</li>
+    <li class="item tertiary_text">Trusted Partner</li>
+    <li class="item tertiary_text">Scalable Architecture</li>
+    <li class="item tertiary_text">Efficient Delivery</li>
+    <li class="item tertiary_text">Reliable Performance</li>
+  </ul>
+  </div>
+</div>
+<div class="project">
+    <img src="assets/images/pro_3.svg" alt="">
+  <div class="content">
+<img src="assets/images/ivapeo.svg" alt="">
+  <p class="primary_text">Recognized as one of the top 5 most innovative UK transport tech firms by Transport Tech 2023.</p>
+  <ul class="list">
+    <li class="item tertiary_text">Innovative Solutions</li>
+    <li class="item tertiary_text">Trusted Partner</li>
+    <li class="item tertiary_text">Scalable Architecture</li>
+    <li class="item tertiary_text">Efficient Delivery</li>
+    <li class="item tertiary_text">Reliable Performance</li>
+  </ul>
+  </div>
+</div>
+<div class="project">
+    <img src="assets/images/project_2.svg" alt="">
+      <div class="content">
+<img src="assets/images/ivapeo.svg" alt="">
+  <p class="primary_text">Recognized as one of the top 5 most innovative UK transport tech firms by Transport Tech 2023.</p>
+  <ul class="list">
+    <li class="item tertiary_text">Innovative Solutions</li>
+    <li class="item tertiary_text">Trusted Partner</li>
+    <li class="item tertiary_text">Scalable Architecture</li>
+    <li class="item tertiary_text">Efficient Delivery</li>
+    <li class="item tertiary_text">Reliable Performance</li>
+  </ul>
+  </div>
+</div>
+<div class="project">
+    <img src="assets/images/pro_1.svg" alt="">
+      <div class="content">
+<img src="assets/images/ivapeo.svg" alt="">
+  <p class="primary_text">Recognized as one of the top 5 most innovative UK transport tech firms by Transport Tech 2023.</p>
+  <ul class="list">
+    <li class="item tertiary_text">Innovative Solutions</li>
+    <li class="item tertiary_text">Trusted Partner</li>
+    <li class="item tertiary_text">Scalable Architecture</li>
+    <li class="item tertiary_text">Efficient Delivery</li>
+    <li class="item tertiary_text">Reliable Performance</li>
+  </ul>
+  </div>
+</div>
+<div class="project">
+    <img src="assets/images/pro5.svg" alt="">
+      <div class="content">
+<img src="assets/images/ivapeo.svg" alt="">
+  <p class="primary_text">Recognized as one of the top 5 most innovative UK transport tech firms by Transport Tech 2023.</p>
+  <ul class="list">
+    <li class="item tertiary_text">Innovative Solutions</li>
+    <li class="item tertiary_text">Trusted Partner</li>
+    <li class="item tertiary_text">Scalable Architecture</li>
+    <li class="item tertiary_text">Efficient Delivery</li>
+    <li class="item tertiary_text">Reliable Performance</li>
+  </ul>
+  </div>
+</div>
+<div class="project">
+    <img src="assets/images/pro_6.svg" alt="">
+      <div class="content">
+<img src="assets/images/ivapeo.svg" alt="">
+  <p class="primary_text">Recognized as one of the top 5 most innovative UK transport tech firms by Transport Tech 2023.</p>
+  <ul class="list">
+    <li class="item tertiary_text">Innovative Solutions</li>
+    <li class="item tertiary_text">Trusted Partner</li>
+    <li class="item tertiary_text">Scalable Architecture</li>
+    <li class="item tertiary_text">Efficient Delivery</li>
+    <li class="item tertiary_text">Reliable Performance</li>
+  </ul>
+  </div>
+</div>
+<div class="project">
+    <img src="assets/images/pro_7.svg" alt="">
+      <div class="content">
+<img src="assets/images/ivapeo.svg" alt="">
+  <p class="primary_text">Recognized as one of the top 5 most innovative UK transport tech firms by Transport Tech 2023.</p>
+  <ul class="list">
+    <li class="item tertiary_text">Innovative Solutions</li>
+    <li class="item tertiary_text">Trusted Partner</li>
+    <li class="item tertiary_text">Scalable Architecture</li>
+    <li class="item tertiary_text">Efficient Delivery</li>
+    <li class="item tertiary_text">Reliable Performance</li>
+  </ul>
+  </div>
+</div>
+<div class="project">
+    <img src="assets/images/pro_8.svg" alt="">
+      <div class="content">
+<img src="assets/images/ivapeo.svg" alt="">
+  <p class="primary_text">Recognized as one of the top 5 most innovative UK transport tech firms by Transport Tech 2023.</p>
+  <ul class="list">
+    <li class="item tertiary_text">Innovative Solutions</li>
+    <li class="item tertiary_text">Trusted Partner</li>
+    <li class="item tertiary_text">Scalable Architecture</li>
+    <li class="item tertiary_text">Efficient Delivery</li>
+    <li class="item tertiary_text">Reliable Performance</li>
+  </ul>
+  </div>
+</div>
+
+          </div>
+        </div>
+       </section>
+
+       <!-- Services Section -->
+
+       <section class="services_section">
+        <div class="main_container section_padding">
+          <h2 class="section_title">Our Development Services</h2>
+
+          <div class="services inner_sec_top">
+            <div class="service">
+              <div class="left">
+                <span class="badge">
+                 <img src="assets/images/service_dev.svg" alt=""> DEVELOPMENT
+                </span>
+                <h3 class="title">Prestashop Development Services</h3>
+                <p>We specialize in custom PrestaShop development, delivering 
+scalable, flexible, tailored solutions to help your online store grow in every situation.</p>
+  <button class="primary_cta">Explore More</button>
+  <div class="types">
+    <span>UI Design</span> <span>customise Development</span> <span>UX audit</span> <span>user interviews</span>
+  </div>
+              </div>
+            
+              <div class="right">right</div>
+            </div>
+              <div class="service">
+            <div class="left">left</div>
+              <div class="right">right</div>
+            </div>
+              <div class="service">
+            <div class="left">left</div>
+              <div class="right">right</div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+    </main>
+
+
+
+
+
+    <!-- Footer Container -->
+    <footer class="footer_container">
+      <div class="footer_inner_sec">
+        <!-- Footer First Row | Top Row -->
+        <div class="footer_top_row">
+          <div class="main_content">
+            <h3 class="main_text">Start Your Journey With Us</h3>
+            <a class="secondary_cta" href="#" aria-label="Request a Quote">Request a Quote <img
+                src="/assets/images/right-arrow-45deg.svg" alt="left arrow"> </a>
+          </div>
+          <div class="testimonials">
+            <div class="image">
+              <img src="/assets/images/clutch.svg" alt="cluch comp image">
+            </div>
+            <div class="image">
+              <img src="/assets/images/trustpilot.svg" alt="trustpilot comp image">
+            </div>
+            <div class="image">
+              <img src="/assets/images/design-rush.svg" alt="design rush comp image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Middle Row | Second Row -->
         <div class="footer_middle_row">
           <div class="footer_block footer_logo_container">
             <div class="footer_logo">
-             <img src="/assets/images/main-logo.svg" alt="">
-                    </div>
-              <p class="footer_logo_text">
-                FME Modules is the top-notch PrestaShop migration service.
-              </p>
-            
+              <img src="/assets/images/main-logo.svg" alt="">
+            </div>
+            <p class="footer_logo_text">
+              FME Modules is the top-notch PrestaShop migration service.
+            </p>
+
           </div>
           <div class="footer_block">
             <h3 class="footer_title">Corporate</h3>
@@ -408,17 +974,18 @@
             </li>
           </ul>
         </div>
-           </div>
-      </footer>
- 
+      </div>
+    </footer>
 
-     
-    </section>
 
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/jquery-1.11.0.min.js"></script>
-    <script src="/assets/js/slick.min.js"></script>
-    <script src="/assets/js/pushbar.js"></script>
-    <script src="/assets/js/main.js"></script>
-  </body>
+
+  </section>
+
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery-1.11.0.min.js"></script>
+  <script src="/assets/js/slick.min.js"></script>
+  <script src="/assets/js/pushbar.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
 </html>

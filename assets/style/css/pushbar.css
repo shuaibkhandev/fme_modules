@@ -1,4 +1,4 @@
-/* @media (max-width:1080px){ */
+@media (max-width:1080px){
 
     html.pushbar_locked {
         overflow: hidden;
@@ -78,7 +78,7 @@
         
         
         
-    /* } */
+    }
     
     @media screen and (min-width: 200px) and (max-width: 1080px){
         [data-pushbar-direction="right"][data-pushbar-id], [data-pushbar-direction="left"][data-pushbar-id] {

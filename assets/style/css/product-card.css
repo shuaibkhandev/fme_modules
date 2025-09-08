@@ -4,7 +4,6 @@
   border-radius: 3px;
   position: relative;
   max-width: 410px;
-  margin: 50px auto; 
 }
 
 .prod_card .prod_info {
@@ -145,7 +144,7 @@
 
 
 
-@media screen and (min-width: 1281px) and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
 
   /* .prod_card .prod_info {
     padding: 30px 20px;
@@ -159,7 +158,7 @@
 
 
 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .prod_card .prod_info .prod_name .name {
     font-size: 18px;
     line-height: 24px;
@@ -178,7 +177,7 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
 
   /* .prod_card .prod_info {
