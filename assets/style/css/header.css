@@ -245,7 +245,7 @@
   inset: 0;
   z-index: 11;
   /* height: calc(100vh - 100px); */
-  top: 139px;
+  top: 117px;
 }
 .header_container .header .search_field_head {
   display: none;
@@ -476,9 +476,9 @@
   }
 
   /* Serach Bar */
-  .header_container .header .search_overlay {
+  /* .header_container .header .search_overlay {
     top: 145px;
-  }
+  } */
 }
 @media screen and (min-width: 1401px) {
   .header_container .header_top_list {
@@ -509,9 +509,9 @@
   .header_container .navigation {
     width: 62%;
   }
-  .header_container .header .search_overlay {
+  /* .header_container .header .search_overlay {
     top: 145px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1080px) {
@@ -611,9 +611,9 @@
   .header_container .header.search_active .logo {
     visibility: hidden;
   }
-  .header_container .header .search_overlay {
+  /* .header_container .header .search_overlay {
     top: 121px;
-  }
+  } */
   .header_container .header .search_field_head .search-suggestions {
     width: calc(100% - 50px);
   }
@@ -758,9 +758,9 @@
   .header_container .header.search_active .logo {
     visibility: hidden;
   }
-  .header_container .header .search_overlay {
+  /* .header_container .header .search_overlay {
     top: 121px;
-  }
+  } */
   .header_container .header .search_field_head .search-suggestions {
     width: calc(100% - 50px);
   }

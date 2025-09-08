@@ -81,9 +81,15 @@ margin-bottom: 10px;
 }
 
 
-.footer_container .footer_middle_row .footer_block .foot_email{
+.footer_container .footer_middle_row .footer_block .footer_text:hover{
+  color: #ffffff;  
+}
 
+.footer_container .footer_middle_row .footer_block .foot_email{
   border-bottom:1px solid #9ea8a5 ;
+}
+.footer_container .footer_middle_row .footer_block .foot_email:hover{
+   color: #9ea8a5;
 }
 .footer_container .footer_middle_row .footer_block .foot_phone {
   font-size: 20px;

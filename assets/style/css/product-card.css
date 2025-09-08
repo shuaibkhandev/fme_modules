@@ -1,0 +1,240 @@
+.prod_card {
+  box-shadow: 0px 0px 11.93px 0px #0000001A;
+  background-color: #fff;
+  border-radius: 3px;
+  position: relative;
+  max-width: 410px;
+  margin: 50px auto; 
+}
+
+.prod_card .prod_info {
+  /* padding: 30px 30px 0px 30px; */
+}
+
+.prod_card .prod_info .prod_name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 33px 54px 33px 23px;
+}
+
+.prod_card .prod_info .image_block {
+  /* flex: 0.2; */
+}
+
+.prod_card .prod_info .prod_name .name {
+  font-size: 19px;
+  line-height: 30px;
+  color: var(--title-color);
+  transition: 0.3s ease-in-out;
+  /* flex: 0.8; */
+  
+}
+
+.prod_card .pd_card_bs_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding-block: 12px;
+  padding-inline: 27px;
+}
+
+.prod_card .pd_card_bs_info .block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.prod_card .pd_card_bs_info .block .ttl_rating {
+  font-weight: 600;
+}
+
+.prod_card .buy_link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #313131;
+}
+
+.prod_card .buy_link .image_block img {
+  vertical-align: middle;
+}
+
+.prod_card .buy_link span {
+  transition: 0.3s ease-in-out;
+}
+
+.prod_card .buy_link:hover span {
+  color: var(--primary_color);
+  text-decoration: underline;
+}
+
+.prod_card .prod_price_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.prod_card .prod_price_row .price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prod_card .prod_price_row .price .actual_price {
+  font-size: 28px;
+  line-height: 36px;
+  color: var(--primary_color);
+  font-weight: 600;
+}
+
+.prod_card .prod_price_row del {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebeb;
+  font-weight: 600;
+}
+
+.prod_card .prod_price_row .prod_buy {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  color: var(--text-color);
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid var(--text-color);
+}
+
+.prod_card .badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #fff3d1;
+  border-bottom-left-radius: 15px;
+  padding: 7px 14px;
+  color: var(--title-color);
+}
+
+.prod_card:hover .prod_price_row .prod_buy {
+  /* background-color: var(--primary_color);
+  color: #fff; */
+}
+
+.prod_card .prod_info .prod_name:hover .name {
+  /* color: var(--primary_color); */
+}
+
+
+
+
+@media screen and (min-width: 1281px) and (max-width: 1400px) {
+
+  /* .prod_card .prod_info {
+    padding: 30px 20px;
+  } */
+
+  .prod_card .prod_info .prod_name .name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .prod_card .prod_info .prod_name .name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .prod_card .pd_card_bs_info .block {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .prod_card .buy_link {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+  /* .prod_card .prod_info {
+    padding: 35px 25px 15px;
+  } */
+
+  .prod_card .prod_info .prod_name .name {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .prod_card .pd_card_bs_info .block {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .prod_card .buy_link {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .prod_card .prod_price_row .price .actual_price {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+  /* .prod_card .prod_info {
+    padding: 30px 20px 15px;
+  } */
+
+  .prod_card .prod_info .prod_name .name {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .prod_card .pd_card_bs_info .block {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .prod_card .buy_link {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .prod_card .prod_price_row .price .actual_price {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .prod_card .prod_info .prod_name{
+    gap: 15px;
+  }
+}
