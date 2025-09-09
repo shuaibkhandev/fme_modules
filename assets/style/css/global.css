@@ -168,9 +168,8 @@ table {
   --primary-color: #000000;
   --secondary-color: #ffffff;
   --section-bg: #f9f9f9;
-  --title-color: #1A2130;
-  --secondary-title-color: #f9f9f9;
   --text-color: #5A5A5A;
+  --secondary-text-color:#9EA8A5;
 }
 
 h1,
@@ -219,18 +218,29 @@ p {
 .section_padding {
   padding-block: 80px;
 }
-
-.secondary_title {
+.primary_title {
   font-weight: 600;
   font-size: 28px;
   line-height: 38px;
   color: var(--primary-color);
 }
 
+.black_bg{
+  background-color: #000000;
+}
+
+
+.secondary_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--primary-color);
+}
+
 .section_title {
   font-size: 40px;
   line-height: 48px;
-  color: var(--title-color);
+  color: var(--primary-color);
   text-transform: capitalize;
   font-weight: 800;
 }
@@ -239,6 +249,22 @@ p {
   font-size: 20px;
   line-height: 26px;
   color: var(--text-color);
+}
+
+.secondary_text {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.tertiary_text {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+
+.black_bg :is(.primary_text, .secondary_text, .tertiary_text) {
+  color: var(--secondary-text-color);
 }
 
 .primary_cta {
@@ -293,17 +319,12 @@ p {
   color: var(--primary-color);
 }
 
-/* after primary, seconday i used tertiary class */
+
 .tertiary_title {
   font-size: 30px;
   line-height: 36px;
 }
 
-.tertiary_text {
-  font-size: 16px;
-  line-height: 32px;
-  color: var(--text-color);
-}
 
 .sec_top_row {
   display: flex;
@@ -313,9 +334,7 @@ p {
   justify-content: space-between;
 }
 
-.sec_top_row p {
-  padding-top: 18px;
-}
+
 
 .grid_3 {
   display: grid;
@@ -453,9 +472,6 @@ p {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .sec_top_row p {
-    padding-top: 14px;
-  }
 
   .section_title {
     font-size: 32px;
@@ -526,9 +542,7 @@ p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .sec_top_row p {
-    padding-top: 14px;
-}
+
 
 
   .section_padding {
@@ -617,9 +631,6 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .sec_top_row p {
-    padding-top: 10px;
-  }
 
 
 

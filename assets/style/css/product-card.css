@@ -1,33 +1,22 @@
 .prod_card {
   box-shadow: 0px 0px 11.93px 0px #0000001A;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   border-radius: 3px;
   position: relative;
   max-width: 410px;
 }
 
-.prod_card .prod_info {
-  /* padding: 30px 30px 0px 30px; */
-}
 
 .prod_card .prod_info .prod_name {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 33px 54px 33px 23px;
+  padding: 33px 42px 33px 23px;
 }
 
-.prod_card .prod_info .image_block {
-  /* flex: 0.2; */
-}
 
 .prod_card .prod_info .prod_name .name {
-  font-size: 19px;
-  line-height: 30px;
-  color: var(--title-color);
   transition: 0.3s ease-in-out;
-  /* flex: 0.8; */
-  
 }
 
 .prod_card .pd_card_bs_info {
@@ -62,7 +51,7 @@
   padding-top: 15px;
   font-size: 16px;
   line-height: 24px;
-  color: #313131;
+  color: var(--text-color);
 }
 
 .prod_card .buy_link .image_block img {
@@ -98,12 +87,7 @@
   font-weight: 600;
 }
 
-.prod_card .prod_price_row del {
-  font-size: 20px;
-  line-height: 28px;
-  color: #ebebeb;
-  font-weight: 600;
-}
+
 
 .prod_card .prod_price_row .prod_buy {
   font-size: 17px;
@@ -129,7 +113,7 @@
   background-color: #fff3d1;
   border-bottom-left-radius: 15px;
   padding: 7px 14px;
-  color: var(--title-color);
+  color: var(--primary-color);
 }
 
 .prod_card:hover .prod_price_row .prod_buy {
