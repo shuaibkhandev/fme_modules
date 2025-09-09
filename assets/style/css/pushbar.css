@@ -1,10 +1,15 @@
+    /* html.pushbar_locked .pushbar_overlay {
+        opacity: 0.6;
+        position: relative;
+        z-index: 1;
+    } */
 @media (max-width:1080px){
 
     html.pushbar_locked {
         overflow: hidden;
         -ms-touch-action: none;
         touch-action: none;
-    }
+    }s
     
     .pushbar_locked .pushbar_main_content.pushbar_blur {
         filter: blur(15px);
