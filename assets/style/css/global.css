@@ -233,7 +233,7 @@ p {
 .secondary_title {
   font-weight: 600;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 38px;
   color: var(--primary-color);
 }
 
@@ -494,10 +494,6 @@ p {
   }
   
 
-  .tertiary_text {
-    font-size: 16px;
-    line-height: 30px;
-  }
 
   .tertiary_title {
     font-size: 28px;
@@ -557,7 +553,8 @@ p {
   }
 
   .secondary_title {
-    font-size: 28px;
+    font-size: 19px;
+    line-height: 26px;
   }
 
   .section_title {
@@ -576,7 +573,7 @@ p {
 
   .tertiary_text {
     font-size: 15px;
-    line-height: 28px;
+    line-height: 21px;
   }
 
   .tertiary_title {
@@ -648,6 +645,7 @@ p {
 
   .secondary_title {
     font-size: 18px;
+    line-height: 24px;
   }
 .secondary_text {
   font-size: 17px;
@@ -684,7 +682,7 @@ p {
 
   .tertiary_text {
     font-size: 15px;
-    line-height: 26px;
+    line-height: 21px;
   }
 
   .pagination_container {
