@@ -714,22 +714,29 @@ margin-bottom: 15px;
       .main_banner .banner_inner .banner_block .banner_span{
     font-size: 17px;
     line-height: 26px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
   .main_banner .banner_inner .banner_block .banner_title {
     font-size: 26px;
     line-height: 34px;
   }
         .main_banner .banner_inner .banner_block .search {
-        padding: 35px 0px 30px;
+        padding: 20px 0px 15px;
         max-width: 320px;
     }
     .main_banner .banner_inner .banner_block .banner_points{
-      /* max-width: 320px; */
+      max-width: 320px;
+      gap: 10px;
+    }
+    .main_banner .banner_inner .banner_bottom_block .experts .images_container img{
+      width: 60px;
       gap: 10px;
     }
     .main_banner .banner_inner .banner_block .banner_search_iner{
       height: 52px;
+    }
+    .main_banner .banner_inner{
+      gap: 30px;
     }
     .main_banner .banner_inner .banner_block .banner_search_iner .search_cta {
     width: 42px;
