@@ -1,7 +1,9 @@
+
+
 .prod_card {
   box-shadow: 0px 0px 11.93px 0px #0000001A;
   background-color: var(--secondary-color);
-  border-radius: 3px;
+  border-radius: 10px;
   position: relative;
   max-width: 410px;
 }
@@ -90,8 +92,8 @@
 
 
 .prod_card .prod_price_row .prod_buy {
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 15px;
+  line-height: 23px;
   font-weight: 500;
   color: var(--text-color);
   background-color: transparent;
@@ -111,18 +113,19 @@
   font-size: 12px;
   font-weight: 500;
   background-color: #fff3d1;
+  border-top-right-radius: 10px;
   border-bottom-left-radius: 15px;
   padding: 7px 14px;
   color: var(--primary-color);
 }
 
 .prod_card:hover .prod_price_row .prod_buy {
-  /* background-color: var(--primary_color);
-  color: #fff; */
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .prod_card .prod_info .prod_name:hover .name {
-  /* color: var(--primary_color); */
+  color: var(--primary-color);
 }
 
 
