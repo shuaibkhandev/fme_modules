@@ -717,11 +717,10 @@ margin-bottom: 15px;
     padding: 20px 0px;
   }
 
-
   /* Product Listing */
   .prod_listing_section .prod_listing{
   gap: 10px;
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 }

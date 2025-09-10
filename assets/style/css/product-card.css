@@ -168,10 +168,6 @@
 @media screen and (max-width: 1024px) {
 
 
-  /* .prod_card .prod_info {
-    padding: 35px 25px 15px;
-  } */
-
   .prod_card .prod_info .prod_name .name {
     font-size: 16px;
     line-height: 23px;
@@ -197,10 +193,6 @@
 
 
 @media screen and (max-width: 767px) {
-  /* .prod_card .prod_info {
-    padding: 30px 20px 15px;
-  } */
-
   .prod_card .prod_info .prod_name .name {
     font-size: 15px;
     line-height: 21px;
