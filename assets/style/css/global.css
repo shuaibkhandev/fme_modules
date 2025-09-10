@@ -459,7 +459,6 @@ p {
 @media screen and (min-width: 1281px) and (max-width: 1400px) {
   .main_container {
     max-width: 1620px;
-    width: 90%;
   }
 
   .section_title {
@@ -491,7 +490,9 @@ p {
 
   .grid_4 {
     gap: 25px;
+
   }
+  
 
   .tertiary_text {
     font-size: 16px;

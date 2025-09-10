@@ -5,7 +5,8 @@
   background-color: var(--secondary-color);
   border-radius: 10px;
   position: relative;
-  max-width: 410px;
+  /* max-width: 410px; */
+  margin: auto;
 }
 
 
@@ -205,10 +206,11 @@
     line-height: 21px;
   }
 
+
   .prod_card .pd_card_bs_info .block {
-    font-size: 14px;
-    line-height: 22px;
-  }
+        font-size: 10px;
+        line-height: 16px;
+    }
 
   .prod_card .buy_link {
     font-size: 14px;
