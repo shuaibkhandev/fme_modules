@@ -736,11 +736,12 @@ margin-bottom: 15px;
       height: 52px;
     }
     .main_banner .banner_inner{
-      gap: 30px;
+      gap: 40px;
     }
     .main_banner .banner_inner .banner_bottom_block .experts{
       justify-content: flex-start;
       align-items: start;
+      gap: 10px;
     }
     .main_banner .banner_inner .banner_block{
       margin: 0;
