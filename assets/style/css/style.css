@@ -736,7 +736,7 @@ margin-bottom: 15px;
       height: 52px;
     }
     .main_banner .banner_inner{
-      gap: 15px;
+      gap: 0px;
     }
     .main_banner .banner_inner .banner_bottom_block .experts{
       justify-content: flex-start;
