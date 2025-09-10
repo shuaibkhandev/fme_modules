@@ -722,6 +722,9 @@ margin-bottom: 15px;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
+.prod_listing_section .cnt .prod_listing_title{
+  margin-bottom: 5px;
+}
 
 }
 
