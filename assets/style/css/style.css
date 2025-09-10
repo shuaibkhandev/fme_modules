@@ -711,6 +711,9 @@ margin-bottom: 15px;
     max-width: 620px;
     gap: 20px;
   }
+
+    /* Product Listing */
+
   
     /* Excellencec Section */
 
@@ -748,7 +751,18 @@ margin-bottom: 15px;
     padding: 20px 0px;
   }
 
+  .main_banner .banner_inner .banner_block .banner_search_iner input::placeholder{
+    font-size: 14px;
+  }
+
+   .main_banner .banner_inner .banner_bottom_block .content{
+    text-align: center;
+   }
+
   /* Product Listing */
+  .prod_listing_section .cnt .primary_text{
+    display: none;
+  }
   .prod_listing_section .prod_listing{
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -811,6 +825,7 @@ display: flex;
     max-width: 320px;
   }
   .main_banner .banner_inner .banner_block .banner_points {
+    display: none;
     max-width: 320px;
     gap: 10px;
   }
@@ -826,8 +841,6 @@ display: flex;
     padding: 20px 0px;
   }
   .main_banner .banner_inner .banner_bottom_block .experts {
-    justify-content: flex-start;
-    align-items: start;
     gap: 10px;
   }
   .main_banner .banner_inner .banner_block {

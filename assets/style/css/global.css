@@ -277,7 +277,6 @@ p {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   background-color: transparent;
-  min-width: 11em;
   text-align: center;
   cursor: pointer;
 }
@@ -297,7 +296,6 @@ p {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   background-color: var(--primary_color);
-  min-width: 11em;
   text-align: center;
     cursor: pointer;
 }
@@ -709,14 +707,13 @@ p {
     font-size: 16px;
     line-height: 22px;
     padding: 10px 15px;
-    min-width: 9em;
+
   }
 
   .secondary_cta {
     font-size: 16px;
     line-height: 22px;
     padding: 10px 15px;
-    min-width: 9em;
   }
 
   .blog_card .blog_title {
@@ -735,6 +732,7 @@ p {
   }
   .sec_top_row{
     gap: 10px;
+    flex-direction: column;
   }
 }
 
