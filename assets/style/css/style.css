@@ -736,7 +736,14 @@ margin-bottom: 15px;
       height: 52px;
     }
     .main_banner .banner_inner{
-      gap: 30px;
+      gap: 15px;
+    }
+    .main_banner .banner_inner .banner_bottom_block .experts{
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .main_banner .banner_inner .banner_bottom_block .images_container{
+      padding-left: 25px;
     }
     .main_banner .banner_inner .banner_block .banner_search_iner .search_cta {
     width: 42px;
