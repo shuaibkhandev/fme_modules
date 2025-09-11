@@ -387,13 +387,14 @@
 .tursted_partners_section .partners {
   gap: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .tursted_partners_section .partners .partner {
   border-bottom: 1px solid rgba(8, 13, 16, 0.14);
   border-right: 1px solid rgba(8, 13, 16, 0.14);
   min-height: 180px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -763,13 +764,23 @@
   .project_section .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+  
+
+  .project_section .projects .project:nth-child(4n) {
+    border-right: 1px solid rgba(8, 13, 16, 0.14);
+  }
+
+  .project_section .projects .project:nth-last-child(-n+4) {
+     border-bottom: 1px solid rgba(8, 13, 16, 0.14);
+  }
+
 
   .project_section .projects .project:nth-child(3n) {
-    border-right: none;
+    border-right: 0
   }
 
   .project_section .projects .project:nth-last-child(-n+2) {
-    border-bottom: 0;
+     border-bottom: 0;
   }
 
   /* Services Section */
@@ -785,6 +796,28 @@
   .services_section .services .service .left .types {
     margin-top: 30px;
   }
+
+  /* trusted partenrs section */
+  .tursted_partners_section .partners {
+  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+  .tursted_partners_section .partners .partner:nth-child(5n) {
+  border-right: 1px solid rgba(8, 13, 16, 0.14);
+}
+
+.tursted_partners_section .partners .partner:nth-last-child(-n+5) {
+    border-bottom: 1px solid rgba(8, 13, 16, 0.14);
+}
+
+  .tursted_partners_section .partners .partner:nth-child(4n) {
+  border-right: 0;
+}
+
+.tursted_partners_section .partners .partner:nth-last-child(-n+2) {
+    border-bottom: 0;
+}
 
   /* Results section */
   .result_section .results .result {
@@ -878,6 +911,7 @@
     line-height: 57px;
   }
 
+
   /* Projects Section */
   .project_section .projects {
 
@@ -885,13 +919,47 @@
   }
 
 
-  .project_section .projects .project:nth-child(2n) {
-    border-right: none;
+
+  
+
+  .project_section .projects .project:nth-child(3n) {
+      border-right: 1px solid rgba(8, 13, 16, 0.14);
   }
 
   .project_section .projects .project:nth-last-child(-n+2) {
-    border-bottom: 0;
+      border-bottom: 1px solid rgba(8, 13, 16, 0.14);
   }
+    .project_section .projects .project:nth-child(2n) {
+      border-right: 0;
+  }
+
+  .project_section .projects .project:nth-last-child(-n+2) {
+      border-bottom: 0;
+  }
+
+    /* trusted partenrs section */
+  .tursted_partners_section .partners {
+  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+  .tursted_partners_section .partners .partner:nth-child(4n) {
+  border-right: 1px solid rgba(8, 13, 16, 0.14);
+}
+
+.tursted_partners_section .partners .partner:nth-last-child(-n+2) {
+    border-bottom: 1px solid rgba(8, 13, 16, 0.14);
+}
+  .tursted_partners_section .partners .partner:nth-child(3n) {
+  border-right: 0;
+}
+
+.tursted_partners_section .partners .partner:nth-last-child(-n+1) {
+    border-bottom: 0;
+}
+
 
   /* Results Section */
   .result_section .results .result .count_number {
@@ -1005,6 +1073,30 @@
     margin-bottom: 5px;
   }
 
+      /* trusted partenrs section */
+  .tursted_partners_section .partners {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+  .tursted_partners_section .partners .partner:nth-child(3n) {
+  border-right: 1px solid rgba(8, 13, 16, 0.14);
+}
+
+.tursted_partners_section .partners .partner:nth-last-child(-n+1) {
+    border-bottom: 1px solid rgba(8, 13, 16, 0.14);
+}
+
+  .tursted_partners_section .partners .partner:nth-child(2n) {
+  border-right: 0;
+}
+
+.tursted_partners_section .partners .partner:nth-last-child(-n+2) {
+    border-bottom:0;
+}
+
+
   /* Excellencec Section */
   .excellence_section .sec_top_row {
     flex-direction: column;
@@ -1045,10 +1137,7 @@
     line-height: 48px;
   }
 
-  /* trusted Clients */
-  .tursted_partners_section .partners {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
+
 
   /* Testimonails */
   .testimonails_section .testimonials .swiper-slide {
@@ -1219,14 +1308,48 @@
   }
 
 
-  .project_section .projects .project {
-    border-right: none;
+ 
+  .project_section .projects .project:nth-child(2n) {
+      border-right: 1px solid rgba(8, 13, 16, 0.14);
   }
 
-  .project_section .projects .project:nth-last-child(-n+4) {
+  .project_section .projects .project:nth-last-child(-n+2) {
+      border-bottom: 1px solid rgba(8, 13, 16, 0.14);
+  }
+    .project_section .projects .project:nth-child(1n) {
+      border-right: 0;
+  }
 
+  .project_section .projects .project:nth-last-child(-n+1) {
+      border-bottom: 0;
+  }
+
+
+        /* trusted partenrs section */
+  .tursted_partners_section .partners {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+
+
+  .tursted_partners_section .partners .partner:nth-child(2n) {
+  border-right:  1px solid rgba(8, 13, 16, 0.14);
+}
+
+.tursted_partners_section .partners .partner:nth-last-child(-n+2) {
     border-bottom: 1px solid rgba(8, 13, 16, 0.14);
-  }
+}
+
+ .tursted_partners_section .partners .partner:nth-child(1n) {
+  border-right:  0;
+}
+
+.tursted_partners_section .partners .partner:nth-last-child(-n+1) {
+    border-bottom: 0;
+}
+
 
 
   /* Services Section */
