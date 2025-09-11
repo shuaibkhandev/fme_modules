@@ -1212,11 +1212,16 @@
  .faq_section .faq_header .primary_text {
     display: none;
   }
+  .faq_section .faq_header .faq_title{
+    margin-bottom: 10px;
+  }
   .faq_section .accordion {
     font-size: 16px;
     padding-block: 5px;
     line-height: 22px;
   }
+
+
 
 }
 
