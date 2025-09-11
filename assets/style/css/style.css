@@ -969,6 +969,9 @@ height: 42px;
 /* 576px */
 @media screen and (max-width: 576px) {
   /* Main Banner */
+  .main_banner.main_banner_bg {
+  min-height: auto;
+  }
   .main_banner .banner_inner .banner_block .banner_span {
     font-size: 17px;
     line-height: 26px;
