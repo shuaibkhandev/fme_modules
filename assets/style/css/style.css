@@ -381,6 +381,8 @@ margin-bottom: 15px;
 /* Trusted Partners and Awards */
 .tursted_partners_section .partners {
   gap: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px , 1fr));
 }
 
 .tursted_partners_section .partners .partner {
@@ -833,6 +835,22 @@ display: flex;
     font-size: 36px;
     line-height: 48px;
   }
+
+  /* trusted Clients */
+  .tursted_partners_section .partners {
+  grid-template-columns: repeat(auto-fit, minmax(240px , 1fr));
+}
+
+/* Testimonails */
+.testimonails_section .testimonials .swiper-slide {
+  padding: 16px;
+  gap: 14px;
+}
+.testimonails_section .swiper-button-next, .testimonails_section .swiper-button-prev{
+width: 42px;
+height: 42px;
+}
+
 }
 
 
@@ -910,6 +928,18 @@ flex-direction: column-reverse;
 .project_section .projects .project:nth-last-child(-n+4) {
 
  border-bottom: 1px solid rgba(8, 13, 16, 0.14);
+}
+
+/* Testimonails */
+.testimonails_section .testimonials .testimonials_swiper {
+    padding-bottom: 54px;
+}
+    .testimonails_section .swiper-button-next, .testimonails_section .swiper-button-prev {
+        width: 38px;
+        height: 38px;
+    }
+.testimonails_section .swiper-button-prev {
+    right: 60px !important;
 }
 }
 
