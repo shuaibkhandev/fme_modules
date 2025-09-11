@@ -667,7 +667,10 @@ p {
   .breadcrumb_section .breadcrumb span {
     font-size: 12px;
   }
-
+.primary_title{
+      font-size: 22px;
+    line-height: 28px;
+}
   .section_title {
     font-size: 20px;
     line-height: 28px;

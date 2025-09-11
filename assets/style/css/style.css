@@ -549,6 +549,9 @@ margin-bottom: 15px;
 /* Blogs Section */
 .blogs_section .blogs {
   gap: 20px;
+  row-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
 }
 .blogs_section .blogs .blog .content {
   display: flex;
@@ -567,6 +570,7 @@ margin-bottom: 15px;
   background-color: var(--secondary-color);
   border-radius: 8px;
   padding: 10px 15px;
+  font-size: 15px;
   border: 1px solid #E7E7E7;
 }
 
@@ -694,6 +698,19 @@ margin-bottom: 15px;
 .result_section .results .result{
   gap: 25px;
 }
+
+
+/* FAQ Section */
+.faq_section .faq_inner{
+  gap: 42px;
+}
+.faq_section .accordion{
+  font-size: 20px;
+  line-height: 28px;
+}
+.faq_section .faq_header .primary_text {
+padding: 20px 0;
+}
 }
 
 /* 1024px */
@@ -715,6 +732,18 @@ margin-bottom: 15px;
     font-size: 48px;
     line-height: 65px;
   }
+  
+/* FAQ Section */
+.faq_section .faq_inner{
+  gap: 30px;
+}
+.faq_section .accordion{
+  font-size: 18px;
+  line-height: 26px;
+}
+.faq_section .faq_header .primary_text {
+padding: 15px 0;
+}
 }
 
 
@@ -770,6 +799,35 @@ margin-bottom: 15px;
     .result_section .results .result {
         gap: 20px;
     }
+
+        /* Blogs section */
+    .blogs_section .blogs .blog .content .types .type{
+  font-size: 14px;
+}
+
+/* FAQ Section */
+.faq_section .faq_inner{
+  gap: 30px;
+  flex-direction: column;
+}
+.faq_section .faq_inner .faq_header{
+  width: auto;
+}
+.faq_section .faq_inner .faq_listing{
+  width: 100%;
+}
+.faq_section .accordion{
+  font-size: 18px;
+  padding-block: 8px;
+  line-height: 26px;
+  padding-left:0 ;
+}
+.faq_section .panel{
+  margin-left: 0;
+}
+.faq_section .faq_header .primary_text {
+padding: 15px 0;
+}
 }
 
 /* 767px */
@@ -814,6 +872,7 @@ margin-bottom: 15px;
   }
   .prod_listing_section .prod_listing{
   gap: 10px;
+   
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .prod_listing_section .cnt .prod_listing_title{
@@ -876,6 +935,33 @@ height: 42px;
         line-height: 46px;
         padding-bottom: 8px;
     }
+
+
+    /* Blogs section */
+    .blogs_section .blogs {
+  gap: 10px;
+   row-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.blogs_section .blogs .blog .content .types{
+  margin-top: 5px;
+}
+    .blogs_section .blogs .blog .content .types .type{
+  font-size: 12px;
+  padding: 8px 12px;
+}
+.blogs_section .blogs .blog .content{
+  margin-top: 12px;
+}
+
+
+/* FAQ Section */
+
+.faq_section .accordion{
+  font-size: 16px;
+  padding-block: 5px;
+  line-height: 22px;
+}
 
 }
 
