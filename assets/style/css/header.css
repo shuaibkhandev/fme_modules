@@ -166,6 +166,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  overflow: auto;
 }
 .header_container .lang_cur_block .lang_cur_inner {
   padding: 30px;
@@ -735,6 +736,7 @@
     width: 100%;
     max-width: 375px;
     height: 100vh;
+    overflow-x: auto;
   }
   .header_container .lang_cur_block .lang_cur_inner {
     padding: 30px 20px;
