@@ -1,15 +1,8 @@
-    /* html.pushbar_locked .pushbar_overlay {
-        opacity: 0.6;
-        position: relative;
-        z-index: 1;
-    } */
-@media (max-width:1080px){
-
     html.pushbar_locked {
-        overflow: hidden;
+        overflow: auto;
         -ms-touch-action: none;
         touch-action: none;
-    }s
+    }
     
     .pushbar_locked .pushbar_main_content.pushbar_blur {
         filter: blur(15px);
@@ -30,7 +23,36 @@
     
     html.pushbar_locked .pushbar_overlay {
         opacity: 0.6;
-        z-index: 1;
+        z-index: 2;
+    }
+@media (max-width:1080px){
+
+    html.pushbar_locked {
+        /* overflow: hidden; */
+        -ms-touch-action: none;
+        touch-action: none;
+    }
+    
+    .pushbar_locked .pushbar_main_content.pushbar_blur {
+        filter: blur(15px);
+    }
+    
+    .pushbar_overlay {
+        z-index: -999;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        will-change: opacity;
+        transition: opacity 0.5s ease;
+        opacity: 0;
+        background: #000;
+    }
+    
+    html.pushbar_locked .pushbar_overlay {
+        opacity: 0.6;
+        z-index: 2;
     }
     
     [data-pushbar-id] {
