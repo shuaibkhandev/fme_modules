@@ -1,5 +1,5 @@
     html.pushbar_locked {
-        overflow: auto;
+        overflow: hidden;
         -ms-touch-action: none;
         touch-action: none;
     }
@@ -25,6 +25,11 @@
         opacity: 0.6;
         z-index: 2;
     }
+
+   html.pushbar_locked  .page_wrapper{
+        padding-right: 15px;
+    }
+
 @media (max-width:1080px){
 
     html.pushbar_locked {
