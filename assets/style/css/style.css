@@ -582,7 +582,7 @@ margin-bottom: 15px;
 .faq_section .faq_inner .faq_listing { width: calc(100% - 450px); }
 .faq_section .faq_inner .faq_listing .faq_item { background-color: var(--secondary-color);  margin-bottom: 20px; }
 .faq_section .accordion { position: relative; width: 100%; cursor: pointer; font-size: 22px; line-height: 34px; border: none; border-radius: 10px; outline: none; font-weight: 600; color: rgba(0, 0, 0, 0.7); background-color: transparent; padding: 12px 28px; box-sizing: border-box; text-align: left; }
-.faq_section .accordion::after { content: ""; position: absolute; right: 10px; background-image: url("../../images/plu.svg"); background-repeat: no-repeat; background-size: 100%; background-position: right; width: 20px; height: 20px; top: 20px; }
+.faq_section .accordion::after { content: ""; position: absolute; right: 0px; background-image: url("../../images/plu.svg"); background-repeat: no-repeat; background-size: 100%; background-position: right; width: 20px; height: 20px; top: 20px; }
 .faq_section .accordion.active::after {
   background-image: url("../../images/cross.svg");
 }
