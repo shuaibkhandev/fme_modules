@@ -318,8 +318,9 @@ margin-bottom: 15px;
   margin: auto;
   border-radius: 4px;
   padding: 43px;
-  position: sticky;
-  top: 200px;
+  position: relative;
+  /* position: sticky; */
+  /* top: 200px; */
 }
 
 .services_section .services .service .left,
@@ -682,16 +683,26 @@ margin-bottom: 15px;
 
   /* Projects Section */
   .project_section .projects {
-
    grid-template-columns: repeat(3, 1fr);
 }
-
 
 .project_section .projects .project:nth-child(3n) {
   border-right: none;
 }
 .project_section .projects .project:nth-last-child(-n+2) {
   border-bottom: 0;
+}
+
+/* Services Section */
+.services_section .services .service .left .content{
+  padding-right: 0;
+}
+.services_section .services .service .left .service_title {
+    font-size: 36px;
+    line-height: 48px;
+}
+.services_section .services .service .left .types {
+    margin-top: 30px;
 }
 
 /* Results section */
@@ -799,6 +810,15 @@ padding: 15px 0;
     .result_section .results .result {
         gap: 20px;
     }
+
+    /* Services Section */
+.services_section .services .service{
+  flex-direction: column;
+}
+
+.services_section .services .service .right{
+  text-align: center;
+}
 
         /* Blogs section */
     .blogs_section .blogs .blog .content .types .type{
@@ -936,6 +956,29 @@ height: 42px;
         padding-bottom: 8px;
     }
 
+    /* Services Section */
+    .services_section .services .service{
+      padding: 25px;
+    }
+    .services_section .services .service .left .content{
+      gap: 10px;
+    }
+    .services_section .services .service .left .service_title {
+        font-size: 32px;
+        line-height: 44px;
+    }
+    .services_section .services .service .left .types{
+      margin-top: 20px;
+      gap: 10px;
+    }
+    .services_section .services .service .left .types .type{
+      font-size: 12px;
+      padding: 10px 12px;
+    }
+    .services_section .services .service .left .badge {
+      font-size: 12px;
+      line-height: 19px;
+    }
 
     /* Blogs section */
     .blogs_section .blogs {
@@ -1045,6 +1088,15 @@ flex-direction: column-reverse;
  border-bottom: 1px solid rgba(8, 13, 16, 0.14);
 }
 
+
+/* Services Section */
+    .services_section .services .service .left .service_title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .services_section .services .service .left .badge {
+    font-size: 10px;
+    line-height: 16px;}
 /* Testimonails */
 .testimonails_section .testimonials .testimonials_swiper {
     padding-bottom: 54px;
