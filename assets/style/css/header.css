@@ -1,3 +1,10 @@
+.header_container {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    background: transparent;
+}
+
 .header_container .header_top_list {
   display: flex;
   justify-content: flex-end;
@@ -6,6 +13,7 @@
   padding-block: 15px;
   padding-inline: 25px; 
   color: var(--secondary-color);
+
 }
 
 .header_container .header_top_list .item {
@@ -266,8 +274,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 0 10px;
+  padding: 0 10px 0px 18px;
   background-color: rgba(238, 238, 238, 1);
   border-radius: 35px;
   border: 1px solid rgba(237, 237, 237, 1);
