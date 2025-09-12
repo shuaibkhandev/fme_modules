@@ -1,5 +1,17 @@
 
 
+.prod_listing_section .cnt .prod_listing_title {
+  margin-bottom: 15px;
+}
+
+.prod_listing_section .prod_listing {
+  gap: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+}
+
+
+
 .prod_card {
   box-shadow: 0px 0px 11.93px 0px #0000001A;
   background-color: var(--secondary-color);
@@ -193,6 +205,21 @@
 
 
 @media screen and (max-width: 767px) {
+  
+
+  .prod_listing_section .cnt .primary_text {
+    display: none;
+  }
+
+  .prod_listing_section .prod_listing {
+    gap: 10px;
+
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .prod_listing_section .cnt .prod_listing_title {
+    margin-bottom: 5px;
+  }
   .prod_card .prod_info .prod_name .name {
     font-size: 15px;
     line-height: 21px;

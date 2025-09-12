@@ -180,16 +180,6 @@
 }
 
 
-/* Product Listing Section */
-.prod_listing_section .cnt .prod_listing_title {
-  margin-bottom: 15px;
-}
-
-.prod_listing_section .prod_listing {
-  gap: 22px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-}
 
 
 /* FME Modules Excellence Section */
@@ -1075,20 +1065,6 @@
     text-align: center;
   }
 
-  /* Product Listing */
-  .prod_listing_section .cnt .primary_text {
-    display: none;
-  }
-
-  .prod_listing_section .prod_listing {
-    gap: 10px;
-
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
-
-  .prod_listing_section .cnt .prod_listing_title {
-    margin-bottom: 5px;
-  }
 
       /* trusted partenrs section */
   .tursted_partners_section .partners {
