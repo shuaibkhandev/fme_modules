@@ -32,6 +32,17 @@
     margin-top: 14px;
 }
 
+
+
+
+/* All Modules Section */
+.all_modules_section .sec_top_row .sorting{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.all_modules_section .categories{}
 @media screen and (max-width:1200px) {
     /* Banner */
     .listing_banner{
