@@ -13,11 +13,10 @@
 
 
 .prod_card {
-  box-shadow: 0px 0px 11.93px 0px #0000001A;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: var(--secondary-color);
   border-radius: 10px;
   position: relative;
-  /* max-width: 410px; */
   margin: auto;
 }
 
@@ -32,6 +31,7 @@
 
 .prod_card .prod_info .prod_name .name {
   transition: 0.3s ease-in-out;
+  line-height: 30px;
 }
 
 .prod_card .pd_card_bs_info {
@@ -214,7 +214,7 @@
   .prod_listing_section .prod_listing {
     gap: 10px;
 
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .prod_listing_section .cnt .prod_listing_title {
