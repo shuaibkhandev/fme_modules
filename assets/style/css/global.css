@@ -216,7 +216,7 @@ p {
 }
 
 .section_padding {
-  padding-block: 80px;
+  padding-block: 100px;
 }
 .primary_title {
   font-weight: 600;
@@ -247,7 +247,7 @@ p {
 
 .primary_text {
   font-size: 20px;
-  line-height: 28px;
+  line-height: 34px;
   color: var(--text-color);
 }
 
@@ -483,7 +483,7 @@ p {
 
   .primary_text {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 28px;
   }
 
   .grid_3 {
@@ -560,12 +560,10 @@ p {
 
 
   .section_padding {
-    padding-block: 40px;
+    padding-block: 50px;
   }
 
-  .primary_text {
-    font-size: 16px;
-  }
+
 
   .secondary_title {
     font-size: 19px;
@@ -651,13 +649,10 @@ p {
 
 
   .section_padding {
-    padding-block: 40px;
+    padding-block: 45px;
   }
 
-  .primary_text {
-    font-size: 16px;
-    line-height: 23px;
-  }
+
 
   .secondary_title {
     font-size: 18px;
