@@ -32,6 +32,18 @@
 .prod_card .prod_info .prod_name .name {
   transition: 0.3s ease-in-out;
   line-height: 30px;
+  flex: 1;
+}
+
+.prod_card .prod_info .prod_name  .prod_image{
+width: 85px;
+align-self: flex-start;
+height: 85px;
+background-color: #ECF2E2;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
 }
 
 .prod_card .pd_card_bs_info {

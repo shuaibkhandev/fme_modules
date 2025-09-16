@@ -32,6 +32,7 @@
   position: relative;
   max-width: 1080px;
   height: 100vh;
+  min-height: 800px;
   margin: auto;
   padding: 120px 0px 80px;
   display: flex;
@@ -207,6 +208,17 @@
   padding: 32px;
 }
 
+.excellence_section .excellence_stats .second_stat, .excellence_section .excellence_stats .third_stat{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.excellence_section .excellence_stats  h3{
+  padding-bottom: 48px;
+}
+
 
 
 .excellence_section .excellence_stats .stat_card .stat_number {
@@ -299,6 +311,7 @@
   background-color: transparent;
   background-color: var(--primary-color);
   background-image: url("../../images/service1_bg.png");
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
       background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -759,6 +772,9 @@
     font-size: 55px;
     line-height: 78px;
   }
+  .excellence_section .excellence_stats  h3{
+  padding-bottom: 35px;
+}
 
   /* Projects Section */
   .project_section .projects {
@@ -862,6 +878,9 @@
     font-size: 48px;
     line-height: 65px;
   }
+    .excellence_section .excellence_stats  h3{
+  padding-bottom: 30px;
+}
 
   /* FAQ Section */
   .faq_section .faq_inner {
@@ -1086,6 +1105,9 @@ display: none;
   .excellence_section .sec_top_row {
     flex-direction: column;
   }
+    .excellence_section .excellence_stats  h3{
+  padding-bottom: 25px;
+}
 
   .excellence_section .sec_top_row .excellence_right {
     gap: 10px;
@@ -1107,6 +1129,7 @@ display: none;
   .excellence_stats .stat_image img {
     object-fit: cover;
     border-radius: 10px;
+    flex: 1;
   }
 
   .excellence_stats .first_stat {
@@ -1220,6 +1243,7 @@ display: none;
   min-height: auto;
   }
 .main_banner .banner_inner{
+  min-height: 730px;
   height: 730px;
   padding-top: 110px;
   padding-bottom: 40px;
