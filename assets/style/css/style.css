@@ -324,7 +324,21 @@
   position: sticky;
   top: 200px;
 }
+.services_section .services .service:nth-child(1) {
+  max-width: 1440px;
+}
 
+.services_section .services .service:nth-child(2) {
+  max-width: 1480px;
+}
+
+.services_section .services .service:nth-child(3) {
+  max-width: 1520px;
+}
+
+.services_section .services .service:nth-child(4) {
+  max-width: 1560px;
+}
 .services_section .services .service .left,
 .services_section .services .service .right {
   flex: 1;
