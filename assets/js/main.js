@@ -31,7 +31,7 @@ var swiper = new Swiper(".testimonials_swiper", {
  },
  992:{
   slidesPerView:3,
-  spaceBetween:32
+  spaceBetween:24
  }
   },
 });

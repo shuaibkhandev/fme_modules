@@ -9,7 +9,11 @@
   align-items: start;
    padding: 90px 90px 60px;
 }
-
+.footer_container .footer_top_row .main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .footer_container .footer_top_row .main_content  .main_text {
   font-size: 48px;
   line-height: 58px;
@@ -112,10 +116,13 @@ margin-bottom: 10px;
 }
 .footer_container .footer_bottom .social_icons .social_item {
   border: 1.25px solid var(--text-color);
-  padding: 15px;
   border-radius: 50px;
   width: 50px;
   height: 50px;
+      display: flex
+;
+    align-items: center;
+    justify-content: center;
 }
 .footer_container .footer_bottom .copy_right .primary_text {
   color: var(text-color);
