@@ -45,6 +45,7 @@ const header = document.querySelector(".header");
 const srch_field = document.querySelector(".search_field_head");
 const navigation = document.querySelector(".navigation");
 const overlay = document.querySelector(".search_overlay");
+const closeSearchBtn = document.getElementById("close_search_btn")
 
 srch_btn.addEventListener("click", function (event) {
   event.stopPropagation();
@@ -68,6 +69,14 @@ overlay.addEventListener("click", function () {
   overlay.style.display = "none";
   page_wrapper.classList.remove("fixed");
 });
+closeSearchBtn.addEventListener("click", function(){
+    srch_btn.classList.remove("hidden_icons");
+  header.classList.remove("search_active");
+  navigation.classList.remove("hide_nav_main");
+  srch_field.style.display = "none";
+  overlay.style.display = "none";
+  page_wrapper.classList.remove("fixed");
+})
 
 const searchInput = document.getElementById("search");
 const suggestionsList = document.getElementById("suggestions");

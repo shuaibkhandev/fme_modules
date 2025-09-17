@@ -302,7 +302,9 @@
   .search_outer
   .dialog_block.search
   .close_search_btn {
-  display: none;
+  display: block;
+  position: absolute;
+    right: 20px;
 }
 .header_container .header .header_icon .currency_list .curr_icon,
 .header_container .header .header_icon .language_list .lang_icon {
@@ -329,6 +331,7 @@
   box-shadow: unset;
   color: var(--text-color);
   padding: 10px;
+  padding-right: 41px;
   min-height: 50px;
   font-size: 20px;
   line-height: 24px;
@@ -358,7 +361,14 @@
   width: 100%;
   border-radius: 6px;
   max-height: 400px;
-  overflow-y: scroll;
+  border-radius: 20px;
+overflow: auto;
+    overflow-x: hidden;
+}
+
+.header_container .header .search_field_head .search-suggestions::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;
 }
 
 .header_container .header .search_field_head .search-suggestions .search-suggestion-title{
@@ -379,9 +389,7 @@
   .search_field_head
   .search-suggestions
   .search_suggest_list:nth-child(even) {
-  background-color: #f3f3f3;
   padding: 15px;
-  border-radius: 6px;
 }
 .header_container
   .header
@@ -398,11 +406,13 @@
   .search_field_head
   .search-suggestions
   .search_suggest_list
-  .search_suggest_link
-  img {
-  width: 32px;
-  height: auto;
-}
+  .search_suggest_link 
+  .search_cnt_col{
+    flex: 1;
+    align-items: start;
+    text-align: start;
+  }
+
 .header_container
   .header
   .search_field_head
@@ -410,10 +420,10 @@
   .search_suggest_list
   .search_suggest_link
   .search_pd_name {
-  font-size: 16px;
-  line-height: 20px;
-  color: #263238;
-  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  color: #232323;
+  font-weight: 400;
   transition: 0.3s ease-in-out;
 }
 .header_container
@@ -424,8 +434,16 @@
   .search_suggest_link
   .pd_type {
   font-size: 12px;
+  margin-bottom: auto;
+padding: 3px 5px;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
   line-height: 15px;
-   color: var(--text-color);
+   color: rgba(46, 43, 43, 0.8);
+   border: 1px solid rgba(0,0,0,0.6);
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .header_container
   .header
@@ -447,8 +465,9 @@
   .search_suggest_list
   .search_suggest_link
   .price {
-  text-align: end;
-  flex: 1;
+font-size: 18px;
+font-weight: 600;
+color: #000;
 }
 .header_container .header .header_icon .resp_menu,
 .header_container .header .navigation .side_bar_head,

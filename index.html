@@ -22,7 +22,7 @@
   <body>
     <section class="page_wrapper home_page">
       <!-- Header Container -->
-      <header class="header_container">
+    <header class="header_container">
         <!-- Top Header -->
         <ul class="header_top_list">
           <li
@@ -274,20 +274,8 @@
           <div class="search_field_head">
             <div class="search_outer header_search">
               <div class="dialog_block search">
-                <button class="close_search_btn">
-                  <svg
-                    class="gridicon gridicons-chevron-left"
-                    height="20"
-                    width="20"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <g>
-                      <path
-                        d="M14 20l-8-8 8-8 1.414 1.414L8.828 12l6.586 6.586z"
-                      ></path>
-                    </g>
-                  </svg>
+                <button class="close_search_btn" id="close_search_btn">
+          <img src="/assets/images/cross_icon2.svg" alt="">
                 </button>
 
                 <button type="submit" class="search_icon">
@@ -309,7 +297,7 @@
                 </button>
 
                 <input
-                  type="search"
+                  type="text"
                   class="srch_input"
                   id="search"
                   placeholder="Type a command or search"
@@ -318,41 +306,25 @@
               </div>
             </div>
             <ul class="search-suggestions" id="suggestions">
-              <span class="primary_text search-suggestion-title"
+              <!-- <span class="primary_text search-suggestion-title"
                 >Showing Results</span
-              >
+              > -->
               <li class="search_suggest_list">
                 <div class="search_suggest_link">
                   <a
                     class="loading_action"
                     href="/woocommerce-plugins-extensions/shop-as-a-customer"
                   >
-                    <img src="/assets/images/srch_1.png" alt="srch_1" />
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
                   </a>
                   <div class="search_cnt_col">
                     <a class="loading_action search_pd_name" href="#"
                       >Prestashop Buy from External Link Module</a
                     >
-                    <p class="pd_type">(3.0.1)</p>
-                  </div>
                   <p class="price">€47</p>
-                </div>
-              </li>
-              <li class="search_suggest_list">
-                <div class="search_suggest_link">
-                  <a
-                    class="loading_action"
-                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
-                  >
-                    <img src="/assets/images/srch_2.png" alt="srch_2" />
-                  </a>
-                  <div class="search_cnt_col">
-                    <a class="loading_action search_pd_name" href="#"
-                      >PrestaShop Cart Countdown Timer Module</a
-                    >
-                    <p class="pd_type">(2.0.1)</p>
                   </div>
-                  <p class="price">€35</p>
+                  
+                    <p class="pd_type">3.0.1</p>
                 </div>
               </li>
               <li class="search_suggest_list">
@@ -361,68 +333,88 @@
                     class="loading_action"
                     href="/woocommerce-plugins-extensions/shop-as-a-customer"
                   >
-                    <img src="/assets/images/srch_3.png" alt="srch_3" />
-                  </a>
-                  <div class="search_cnt_col">
-                    <a class="loading_action search_pd_name" href="#"
-                      >Prestashop Mobile App Builder Native for iOS, Andriod &
-                      PrestaMobApp</a
-                    >
-                    <p class="pd_type">(2.1.1)</p>
-                  </div>
-                  <p class="price">€65</p>
-                </div>
-              </li>
-              <li class="search_suggest_list">
-                <div class="search_suggest_link">
-                  <a
-                    class="loading_action"
-                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
-                  >
-                    <img src="/assets/images/srch_1.png" alt="srch_1" />
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
                   </a>
                   <div class="search_cnt_col">
                     <a class="loading_action search_pd_name" href="#"
                       >Prestashop Buy from External Link Module</a
                     >
-                    <p class="pd_type">(3.0.1)</p>
-                  </div>
                   <p class="price">€47</p>
+                  </div>
+                  
+                    <p class="pd_type">3.0.1</p>
                 </div>
               </li>
-              <li class="search_suggest_list">
+                <li class="search_suggest_list">
                 <div class="search_suggest_link">
                   <a
                     class="loading_action"
                     href="/woocommerce-plugins-extensions/shop-as-a-customer"
                   >
-                    <img src="/assets/images/srch_2.png" alt="srch_2" />
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
                   </a>
                   <div class="search_cnt_col">
                     <a class="loading_action search_pd_name" href="#"
-                      >PrestaShop Cart Countdown Timer Module</a
+                      >Prestashop Buy from External Link Module</a
                     >
-                    <p class="pd_type">(2.0.1)</p>
+                  <p class="price">€47</p>
                   </div>
-                  <p class="price">€35</p>
+                  
+                    <p class="pd_type">3.0.1</p>
                 </div>
               </li>
-              <li class="search_suggest_list">
+                <li class="search_suggest_list">
                 <div class="search_suggest_link">
                   <a
                     class="loading_action"
                     href="/woocommerce-plugins-extensions/shop-as-a-customer"
                   >
-                    <img src="/assets/images/srch_3.png" alt="srch_3" />
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
                   </a>
                   <div class="search_cnt_col">
                     <a class="loading_action search_pd_name" href="#"
-                      >Prestashop Mobile App Builder Native for iOS, Andriod &
-                      PrestaMobApp</a
+                      >Prestashop Buy from External Link Module</a
                     >
-                    <p class="pd_type">(2.1.1)</p>
+                  <p class="price">€47</p>
                   </div>
-                  <p class="price">€65</p>
+                  
+                    <p class="pd_type">3.0.1</p>
+                </div>
+              </li>
+                <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                  <p class="price">€47</p>
+                  </div>
+                  
+                    <p class="pd_type">3.0.1</p>
+                </div>
+              </li>
+                <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                    <img src="/assets/images/search_prod.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                  <p class="price">€47</p>
+                  </div>
+                  
+                    <p class="pd_type">3.0.1</p>
                 </div>
               </li>
             </ul>
