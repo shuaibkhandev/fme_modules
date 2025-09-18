@@ -649,17 +649,19 @@
   content: "";
   position: absolute;
   right: 0px;
-  background-image: url("../../images/plu.svg");
+  background-image: url("../../images/plu.svg"); /* use only plus icon */
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: right;
+  background-position: center;
   width: 29px;
   height: 29px;
   top: 20px;
+  transition: transform 0.3s ease; 
 }
 
+/* Rotate when active */
 .faq_section .accordion.active::after {
-  background-image: url("../../images/cross.svg");
+  transform: rotate(45deg);
 }
 
 .faq_section .panel {
