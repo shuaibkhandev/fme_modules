@@ -625,7 +625,7 @@
 
 .faq_section .faq_inner .faq_listing .faq_item {
   background-color: var(--secondary-color);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .faq_section .accordion {
@@ -640,7 +640,7 @@
   font-weight: 600;
   color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  padding: 12px 28px;
+  padding: 0px 28px;
   box-sizing: border-box;
   text-align: left;
 }
@@ -648,14 +648,14 @@
 .faq_section .accordion::after {
   content: "";
   position: absolute;
-  right: 0px;
+  right: -5px;
   background-image: url("../../images/plu.svg"); /* use only plus icon */
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   width: 29px;
   height: 29px;
-  top: 20px;
+  top: 0px;
   transition: transform 0.3s ease; 
 }
 
@@ -1151,7 +1151,6 @@
 
   .faq_section .accordion {
     font-size: 18px;
-    padding-block: 8px;
     line-height: 26px;
     padding-left: 0;
   }
@@ -1355,11 +1354,13 @@ display: none;
     margin-bottom: 10px;
   }
   .faq_section .accordion {
-    font-size: 16px;
-    padding-block: 5px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 20px;
   }
-
+.faq_section .accordion::after{
+  width: 22px;
+  height: 22px;
+}
 
 
 }
