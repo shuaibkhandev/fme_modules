@@ -619,9 +619,10 @@ color: #000;
     border: 0;
     padding: 0;
     outline: none;
+    cursor: pointer;
   }
   .header_container .header .header_icon .resp_menu .openMenu {
-    width: 25px;
+    width: 32px;
   }
 
   .header_container .header .navigation .nav_bar .nav_list .nav_link.active{
