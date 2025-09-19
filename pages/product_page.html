@@ -16,9 +16,9 @@
   </head>
 
   <body>
-    <section class="page_wrapper product_detail">
+    <section class="page_wrapper product_detail_page">
         <!-- Header Container -->
-    <header class="header_container in_product_page">
+    <header class="header_container no_absolute">
         <!-- Top Header -->
         <ul class="header_top_list">
           <li
@@ -447,8 +447,10 @@
           </div>
         </section>
 
-            <section class="content-wrapper main_container">
+            <section class="product_details_section">
+              <div class="content-wrapper main_container">
                 <div class="prouct_data">
+                
                     <div class="column_image">
                         <div class="product-gallery">
                             <div class="main_slider">
@@ -485,7 +487,7 @@
                         </div>
         
                         <div class="action-buttons">
-                              <a href="#" class="primary_cta action-btn  user_guide">User Guide      <svg
+                              <a href="#" class="primary_cta action-btn user_guide">User Guide      <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="29"
@@ -524,6 +526,9 @@
                     </div>
         
                     <div class="column_info">
+                        <div class="average_rating">
+                    <span>3.0.1</span>
+                  </div>
                             <h1 class="primary_title">Prestashop Pretty URL- Remove Id from URL and make Clean SEO Friendly URL</h1>
                         
                     <div class="product_meta">
@@ -658,6 +663,77 @@
                         </div>
                     </div>
                 </div>
+                </div>
+            </section>
+
+
+            <section class="core_capability_section">
+              <div class="main_container section_padding">
+                    <div class="sec_top_row">
+              <div class="cnt">
+                <h2 class="section_title prod_listing_title">
+                  prestashop best sellers module
+                </h2>
+                <p class="primary_text prod_listing_text">
+                  Boost sales by showcasing your top-selling products with the
+                  PrestaShop Best Seller module.
+                </p>
+              </div>
+
+            </div>
+                        <!-- Feature Header (TAB) -->
+            <div class="core_capability_header inner_sec_top">         
+                    <div class="tabs_container">
+                        <nav class="tabs_list">
+                            <button href="#" class="tab_btn active"> <img src="/assets/images/desc-ham.svg" alt="">Description</button>
+                            <button href="#" class="tab_btn"> <img src="/assets/images/trans-star.svg" alt="">Reviews </button>
+                            <button href="#" class="tab_btn"> <img src="/assets/images/q-t.svg" alt="">FAQs</button>
+                            <button href="#" class="tab_btn"> <img src="/assets/images/cuts.svg" alt="">Customization</button>
+                            <button href="#" class="tab_btn"> <img src="/assets/images/log.svg" alt="">Change log</button>
+                        </nav>
+                </div>
+                <p class="primary_text core_capability_header_para">
+                  Improve your conversion rate by attaching detailed guides, tutorials, manuals, warranties, and policies directly to your product and CMS pages with the PrestaShop Product Attachments module. Easily upload PDFs, DOCs, XLS, and other file types, and enhance their appearance with custom icons for a professional, user-friendly display.
+                </p>
+            </div>
+
+
+              </div>
+
+                    <!-- Description Section (TAB) -->
+            <section class="tab_section description_section">
+              <div class="main_container ">
+              <h1>Description Section</h1>
+              </div>
+            </section>
+
+                        <!-- Reviews Section (TAB) -->
+            <section class="tab_section description_section">
+                      <div class="main_container ">
+              <h1>Reviews Section</h1>
+              </div>
+            </section>
+
+                               <!-- Faq Section (TAB) -->
+            <section class="tab_section faq_section">
+                      <div class="main_container ">
+              <h1>Faq Section</h1>
+              </div>
+            </section>
+
+                                        <!-- Customization Section (TAB) -->
+            <section class="tab_section faq_section">
+                      <div class="main_container ">
+              <h1>Customization Section</h1>
+              </div>
+            </section>
+
+                                               <!-- Customization Section (TAB) -->
+            <section class="tab_section change_log_section">
+                      <div class="main_container ">
+              <h1>Change Log</h1>
+              </div>
+            </section>
             </section>
 
 
@@ -817,6 +893,27 @@
     <script src="../assets/js/slick.min.js"></script>
     <script src="../assets/js/pushbar.js"></script>
     <script src="../assets/js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab_btn");
+    const sections = document.querySelectorAll(".tab_section");
+
+    // Show first section by default
+    sections[0].classList.add("active");
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        // Remove active from all
+        tabs.forEach(btn => btn.classList.remove("active"));
+        sections.forEach(sec => sec.classList.remove("active"));
+
+        // Add active to clicked tab + its section
+        tab.classList.add("active");
+        sections[index].classList.add("active");
+      });
+    });
+  });
+</script>
 
 
     <script>

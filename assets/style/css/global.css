@@ -230,6 +230,11 @@ p {
 }
 
 
+.header_container.no_absolute{
+  position: static;
+  background-color: #1D1D1B;
+  padding-bottom: 26px;
+}
 .secondary_title {
   font-weight: 600;
   font-size: 20px;
@@ -753,6 +758,9 @@ p {
   .sec_top {
   gap: 10px;
 
+}
+.header_container.no_absolute{
+  padding-bottom: 0px;
 }
 
 }
