@@ -31,22 +31,29 @@
 }
 
 .column_info .product_meta{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
     border-top: 1px solid rgba(0, 0, 0, 0.09);
     border-bottom: 1px solid rgba(0, 0, 0, 0.09);
     padding: 15px;
     margin-top: 25px;
+ overflow: hidden;
     margin-bottom: 10px;
+    overflow: hidden;
+   
 }
-
+.column_info .product_meta .inner{
+  display: flex;
+  gap: 15px;
+  overflow-x: auto; 
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none; 
+}
 .column_info .product_meta > div{
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 16px;
+    padding-right: 10px;
 }
 
 .column_info .product_meta .line{
