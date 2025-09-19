@@ -15,6 +15,20 @@
     gap: 14px;
 }
 
+.bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__link, .bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__item{
+    font-size: 18px;
+    line-height: 28px;
+    color: #5B5B5B;
+        font-weight: 400;
+}
+.bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__item.home{
+    flex: none;
+}
+.bread_crumb_section .breadcrumb .breadcrumb__list .modules_link{
+    color: #818181;
+
+}
+
 .column_info  .product_description .product_actions{
     display: flex;
     align-items: center;
@@ -24,6 +38,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 16px;
 }
 .column_info .product_description  .product_actions .product_action__link span{
     text-decoration: underline;
@@ -107,7 +122,7 @@
 .product_detail .content-wrapper .column_info .features-section .feature-item { display: flex; align-items: center; gap: 20px; font-size: 16px; line-height: 34px; padding-bottom: 10px; box-sizing: border-box;  color: #2E2B2B;}
 .product_detail .content-wrapper .column_info .features-section .feature-icon { background-color: #F5F5F5; display: flex; width: 35px; height: 35px; text-align: center; padding: 8px; border-radius: 50px; }
 .product_detail .content-wrapper .column_info .support-features { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 15px; }
-.product_detail .content-wrapper .column_info .support-features .support-item { font-size: 16px; line-height: 24px; text-align: center; flex: 1; background-color: #fafafa; border: 1px dashed rgba(0, 0, 0, 24%); border-radius: 3px; padding: 15px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.product_detail .content-wrapper .column_info .support-features .support-item { font-size: 16px; min-width: 142px; line-height: 24px; text-align: center; flex: 1; background-color: #fafafa; border: 1px dashed rgba(0, 0, 0, 24%); border-radius: 3px; padding: 15px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 10px; }
 
 
 .product_detail .content-wrapper .column_price { width: 360px; }
@@ -167,27 +182,13 @@
     .product_detail .content-wrapper .column_price .pricing-card .domain-section { padding: 0 25px 25px 25px; }
     .product_detail .content-wrapper .column_price .pricing-card .domain-section .counter { font-size: 17px; padding: 0 15px; }
     .product_detail .content-wrapper .column_price .pricing-card .setup-section { padding: 0 25px 25px; }
+.bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__link, .bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__item{
+    font-size: 16px;
+    line-height: 28px;
 
-    /* Features Header */
-    .product_detail .features_header .header { padding: 12px 70px; }
+}
 
-    /* Features */
-    .product_detail .features .heading { padding-bottom: 40px; }
-    .product_detail .features .features_grid { grid-gap: 18px 23px; }
-    .product_detail .features .feature_card { padding: 28px; gap: 20px; }
-    .product_detail .features .feature_title { font-size: 21px; line-height: 29px; }
-    .product_detail .features .feature_description { font-size: 16px; line-height: 28px; }
 
-    /* Image with Text */
-    .product_detail .features_detail { gap: 70px; }
-    .product_detail .features_detail .feature-list { padding: 25px 0 60px; }
-
-    /* Features */
-    .product_detail .services .heading { padding-bottom: 40px; }
-    .product_detail .services .services_grid { grid-gap: 18px 23px; }
-    .product_detail .services .service_card { padding: 28px; gap: 20px; }
-    .product_detail .services .service_title { font-size: 21px; line-height: 29px; }
-    .product_detail .services .service_description { font-size: 16px; line-height: 28px; }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -212,38 +213,14 @@
     .product_detail .content-wrapper .column_price .version-card .version-number { font-size: 15px; line-height: 15px; }
     .product_detail .content-wrapper .column_price .version-card .compatibility { font-size: 15px; }
     .product_detail .content-wrapper .column_price .version-card .date-info { font-size: 15px; line-height: 15px; }
+.bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__link, .bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__item{
+    font-size: 15px;
+    line-height: 24px;
+
+}
 
 
-    /* Feeatures Header */
-    .product_detail .features_header .header { padding: 12px 50px; }
-    .product_detail .features_header .navigation { gap: 30px; }
-    .product_detail .features_header .navigation .nav-menu { gap: 20px; }
-    .product_detail .features_header .navigation .nav-buttons { gap: 15px; }
-    .product_detail .features_header .navigation .nav-buttons a { padding: 13px 25px; font-size: 16px; line-height: 16px; }
 
-
-    /* Features */
-    .product_detail .features .heading { padding-bottom: 35px; }
-    .product_detail .features .features_grid { gap: 15px 20px; }
-    .product_detail .features .feature_card { padding: 22px; gap: 17px; }
-    .product_detail .features .feature_title { font-size: 18px; line-height: 26px; }
-    .product_detail .features .feature_description { font-size: 15px; line-height: 26px; }
-
-
-    /* Image with Text */
-    .product_detail .features_detail { gap: 50px; }
-    .product_detail .features_detail .heading { padding-bottom: 15px; }
-    .product_detail .features_detail .feature-list { padding: 20px 0 50px; }
-    .product_detail .features_detail .feature-item { line-height: 26px; }
-    .product_detail .features_detail .guidelines_button { line-height: 23px; }
-
-
-    /* Features */
-    .product_detail .services .heading { padding-bottom: 35px; }
-    .product_detail .services .services_grid { gap: 15px 20px; }
-    .product_detail .services .service_card { padding: 22px; gap: 17px; }
-    .product_detail .services .service_title { font-size: 18px; line-height: 26px; }
-    .product_detail .services .service_description { font-size: 15px; line-height: 26px; }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -256,40 +233,13 @@
     .product_detail .content-wrapper .column_price { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; width: 100%; }
     .product_detail .content-wrapper .column_info .product_rating { gap: 12px; padding-bottom: 12px; font-size: 14px; line-height: 22px; }
     .product_detail .content-wrapper .column_info .product_description { gap: 15px; padding-top: 15px;  }
+    
+.bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__link, .bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__item{
+    font-size: 15px;
+    line-height: 22px;
 
+}
 
-    /* Features Header */
-    .product_detail .features_header .header { padding: 12px 35px; }
-    .product_detail .features_header .navigation { gap: 20px; flex-direction: column; align-items: flex-end; }
-    .product_detail .features_header .navigation .nav-menu { gap: 15px; }
-    .product_detail .features_header .navigation .nav-buttons { gap: 15px; }
-    .product_detail .features_header .navigation .nav-buttons a { padding: 12px 20px; font-size: 16px; line-height: 16px; }
-
-
-    /* Features */
-    .product_detail .features .heading { padding-bottom: 30px; }
-    .product_detail .features .features_grid { grid-gap: 15px; }
-    .product_detail .features .feature_card { padding: 20px; gap: 15px; }
-    .product_detail .features .feature_title { font-size: 18px; line-height: 26px; }
-
-    /* Image with Text */
-    .product_detail .features_detail { gap: 40px; }
-    .product_detail .features_detail .heading { padding-bottom: 15px; }
-    .product_detail .features_detail .feature-list { padding: 20px 0 40px; }
-    .product_detail .features_detail .feature-item { line-height: 24px; }
-    .product_detail .features_detail .guidelines_button { line-height: 20px; }
-
-
-    /* Services */
-    .product_detail .services .heading { padding-bottom: 30px; }
-    .product_detail .services .services_grid { grid-gap: 15px; }
-    .product_detail .services .service_card { padding: 20px; gap: 15px; }
-    .product_detail .services .service_title { font-size: 18px; line-height: 26px; }
-
-
-    /* Review Section */
-    .product_detail .product_review_section .review_descripion { max-width: 450px; }
-    .product_detail .product_review_section .load_more { margin-top: 20px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -318,57 +268,43 @@
     .product_detail .content-wrapper .column_price .faq_box { padding: 15px; }
     .product_detail .content-wrapper .column_price .text { font-size: 14px; line-height: 22px; padding-bottom: 20px; }
     .product_detail .content-wrapper .column_price .request-btn .primary_cta { width: 100%; padding: 10px; }
+    .product_detail .content-wrapper .column_info .features-section .feature-item{
+        font-size: 15px;
+        line-height: 32px;
+        gap: 15px;
+    }
+    .product_detail .content-wrapper .column_info .features-section .feature-icon {
+width: 32px;
+height: 32px;
+    }
 .column_info .product_meta .inner > div{
     font-size: 14px;
 }
+.bread_crumb_section {
+    display: none;
+}
+.bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__link, .bread_crumb_section .breadcrumb .breadcrumb__list .breadcrumb__item{
+    font-size: 14px;
+    line-height: 20px;
 
+}
 
-    /* Features Header */
-    .product_detail .features_header .header { padding: 20px; flex-direction: column; }
-    .product_detail .features_header .navigation { gap: 15px; flex-direction: column;  padding-top: 10px; }
-    .product_detail .features_header .navigation .nav-menu { gap: 15px; flex-wrap: wrap; justify-content: center; }
-    .product_detail .features_header .navigation .nav-link { font-size: 15px; line-height: 24px; }
-    .product_detail .features_header .navigation .nav-buttons a { padding: 10px 20px; font-size: 15px; line-height: 15px; }
-
-
-    /* Features */
-    .product_detail .features .heading { padding-bottom: 20px; }
-    .product_detail .features .features_grid { grid-gap: 10px; }
-    .product_detail .features .feature_card { padding: 15px; gap: 15px; }
-    .product_detail .features .feature_title { font-size: 16px; line-height: 24px; }
-    .product_detail .features .feature_description { font-size: 14px; line-height: 24px; }
-
-
-    /* Image with Text */
-    .product_detail .features_detail { gap: 20px; flex-direction: column; }
-    .product_detail .features_detail .image-section, .product_detail .features_detail .content-section { width: 100%; }
-    .product_detail .features_detail .heading { padding-bottom: 15px; }
-    .product_detail .features_detail .feature-list { padding: 15px 0 30px; }
-    .product_detail .features_detail .feature-item { line-height: 22px; }
-    .product_detail .features_detail .feature-item { line-height: 22px; }
-
-
-    /* Services */
-    .product_detail .services .heading { padding-bottom: 20px; }
-    .product_detail .services .services_grid { grid-gap: 10px; }
-    .product_detail .services .service_card { padding: 15px; gap: 15px; }
-    .product_detail .services .service_title { font-size: 16px; line-height: 24px; }
-    .product_detail .services .service_description { font-size: 14px; line-height: 24px; }
-
-
-
-    /* Review Section */
-    .product_detail .product_review_section .header { flex-direction: column; align-items: flex-start; margin-bottom: 20px;}
-    .product_detail .product_review_section .review_btn { font-size: 16px; line-height: 30px; }
-    .product_detail .product_review_section .ratings_overview { flex-direction: column; gap: 15px; margin-bottom: 20px;}
-    .product_detail .product_review_section .rating_bars { gap: 10px; width: 100%; }
-    .product_detail .product_review_section .average_rating { padding: 20px; width: 100%; }
-    .product_detail .product_review_section .rating_number { font-size: 22px; line-height: 18px; }
-    .product_detail .product_review_section .stars { padding: 15px 0; }
-    .product_detail .product_review_section .total_reviews { font-size: 15px; line-height: 25px; }
-    .product_detail .product_review_section .review_card { flex-direction: column; }
-    .product_detail .product_review_section .review_header { flex-direction: column; gap: 10px; }
-    .product_detail .product_review_section .review_descripion { max-width: 100%; }
-    .product_detail .product_review_section .load_more { margin-top: 20px; }
+.bread_crumb_section .breadcrumb .breadcrumb__list{
+    gap: 6px;
+}
+.column_info .product_description .product_actions{
+    gap: 12px;
+}
+.column_info  .product_description  .product_actions .product_action__link{
+    font-size: 15px;
+}
     
 }
+
+@media screen and (max-width:576px) {
+  .column_info .product_description .product_actions{
+   flex-direction: column;
+   align-items: start;
+}  
+}
+
