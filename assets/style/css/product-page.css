@@ -48,7 +48,7 @@
   white-space: nowrap;
   scrollbar-width: none; 
 }
-.column_info .product_meta > div{
+.column_info .product_meta .inner > div{
     display: flex;
     align-items: center;
     gap: 5px;
@@ -318,7 +318,9 @@
     .product_detail .content-wrapper .column_price .faq_box { padding: 15px; }
     .product_detail .content-wrapper .column_price .text { font-size: 14px; line-height: 22px; padding-bottom: 20px; }
     .product_detail .content-wrapper .column_price .request-btn .primary_cta { width: 100%; padding: 10px; }
-
+.column_info .product_meta .inner > div{
+    font-size: 14px;
+}
 
 
     /* Features Header */
