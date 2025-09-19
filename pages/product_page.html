@@ -3,25 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FME MODULES - Product Page</title>
-    <link rel="stylesheet" href="/assets/style/css/pushbar.css" />
-    <link rel="stylesheet" href="/assets/style/css/global.css" />
-    <link rel="stylesheet" href="/assets/style/css/header.css" />
-    <link rel="stylesheet" href="/assets/style/css/footer.css" />
-    <link rel="stylesheet" href="/assets/style/css/product-card.css" />
-    <link rel="stylesheet" href="/assets/style/css/product_page.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <link rel="stylesheet" href="/assets/fonts/font.css" />
-    <script src="./assets/js/footer.js" defer></script>
+    <title>Product Page</title>
+    <link rel="stylesheet" media="all" href="../assets/style/css/slick-theme.css" />
+    <link rel="stylesheet" media="all" href="../assets/style/css/slick.min.css" />
+    <link rel="stylesheet" href="../assets/style/css/pushbar.css" />
+    <link rel="stylesheet" href="../assets/style/css/global.css" />
+    <link rel="stylesheet" href="../assets/style/css/header.css" />
+    <link rel="stylesheet" href="../assets/style/css/footer.css" />
+    <link rel="stylesheet" href="../assets/style/css/style.css" />
+    <link rel="stylesheet" href="../assets/style/css/product-page.css" />
+    <link rel="stylesheet" href="../assets/fonts/font.css" />
   </head>
+
   <body>
-    <section class="page_wrapper product_page">
-      <!-- Header Container -->
-      <header class="header_container in_product_page">
+    <section class="page_wrapper product_detail">
+        <!-- Header Container -->
+    <header class="header_container in_product_page">
         <!-- Top Header -->
         <ul class="header_top_list">
           <li
@@ -423,7 +420,7 @@
 
       <!-- Main -->
       <main>
-        <!-- BreadCrumb Section -->
+                 <!-- BreadCrumb Section -->
         <section class="bread_crumb_section">
           <div class="main_container">
             <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -449,17 +446,46 @@
             </nav>
           </div>
         </section>
+
+            <section class="content-wrapper main_container">
+                <div class="prouct_data">
+                    <div class="column_image">
+                        <div class="product-gallery">
+                            <div class="main_slider">
+                                <div class="slick-list">
+                                    <img alt="back" loading="lazy" src="../assets/images/main.png">
+                                </div>
+                                <div class="slick-list">
+                                    <img alt="back" loading="lazy" src="../assets/images/main.png">
+                                </div>
+                                <div class="slick-list">
+                                    <img alt="back" loading="lazy" src="../assets/images/main.png">
+                                </div>
+                                <div class="slick-list">
+                                    <img alt="back" loading="lazy" src="../assets/images/main.png">
+                                </div>
+                            </div>
+                            <div class="thumbnails_slider">
+                                <div class="thumb-item">
+                                    <img src="../assets/images/thumb_1.png" alt="Thumbnail 1.png">
+                                </div>
+                                <div class="thumb-item">
+                                    <img src="../assets/images/thumb_2.png" alt="Thumbnail 2.png">
+                                </div>
+                                <div class="thumb-item">
+                                    <img src="../assets/images/thumb_3.png" alt="Thumbnail 3.png">
+                                </div>
+                                <div class="thumb-item">
+                                    <img src="../assets/images/thumb_4.png" alt="Thumbnail 4.png">
+                                </div>
+                                <div class="thumb-item">
+                                    <img src="../assets/images/thumb_1.png" alt="Thumbnail 1.png">
+                                </div>
+                            </div>
+                        </div>
         
-        <section class="product_details_section">
-            <div class="main_container">
-                <div class="product_details">
-                <!-- Left Column (Gallery) -->
-                 <div class="product_gallery">
-                    <div class="gallery">
-                        123
-                    </div>
-                    <div class="guide_live_demo_buttons">
-                     <button class="user_guide_cta primary_cta">User Guide     <svg
+                        <div class="action-buttons">
+                              <a href="#" class="primary_cta action-btn  user_guide">User Guide      <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="29"
@@ -473,8 +499,8 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
-                </svg></button>
-                         <button class="live_demo_cta primary_cta">Live demo    <svg
+                </svg></a>
+                            <a href="#" class="primary_cta action-btn ">Live Demo      <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="29"
@@ -488,100 +514,104 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
-                </svg></button>
+                </svg></a>
+                        
+                        </div>
+        
+                        <div class="certificate">
+                            <img src="../assets/images/logos-cont.svg" alt="logo">
+                        </div>
                     </div>
-                    <div class="product_badges">
-                        <img src="/assets/images/logos-cont.svg" alt="">
-                    </div>
-                 </div>
-                 <!-- Middle Column (Info) -->
-                  <div class="product_info">
-                    <div class="rating">
-                      <span>3.0.1</span>
-                    </div>
-                    <h1 class="primary_title">Prestashop Pretty URL- Remove Id from URL and make Clean SEO Friendly URL</h1>
+        
+                    <div class="column_info">
+                            <h1 class="primary_title">Prestashop Pretty URL- Remove Id from URL and make Clean SEO Friendly URL</h1>
+                        
                     <div class="product_meta">
                       <div class="reviews"><img src="/assets/images/stars.svg" alt=""> <span class="total_reviews">369 Reviews</span> <a href="#" class="add_review">Add Review</a></div>
                       <span class="line">|</span>
                       <div class="downloads"><span>1000+</span> Downloads</div>
                       <span class="line">|</span>
-        <div class="trust_badge"><img src="/assets/images/trustpilot.svg" alt=""></div>
+        <div class="trust_badge"><img src="/assets/images/trustpilot1.png" alt=""></div>
         <span class="line">|</span>
         <div class="verified"><img src="/assets/images/verified.svg" alt=""> verified</div>
                     </div>
-                    <div class="product_short_desc secondary_text">Make your online store look super professional with neat URLs that are easy to read and optimized for search engines. The Prestashop Friendly URL Module by FME is as pretty as its name and a total game changer! Imagine your Prestashop store.</div>
-                    <div class="popularity_features">
-                      <h3 class="secondary_title title">It’s Popularity and Features</h3>
-                      <ol class="list">
-                        <li class="item">
-                      <div class="image">
-                          <img src="/assets/images/seo.svg" alt=""></div> SEO friendly URLs
-                        </li>
-                        <li  class="item">
-                        <div class="image">
-                          <img src="/assets/images/presta.svg" alt=""></div>    PrestaShop  v1.6.x - v1.7 - v8.x
-                        </li>
-                        <li  class="item">
-                          <div class="image">
-                          <img src="/assets/images/down.svg" alt=""></div>  623+ Downloads!
-                        </li>
-                      </ol>
-                    </div>
-                    <div class="product_actions">
+    
+                        <div class="product_description">
+                            <p class="secondary_text description">
+                                Prestashop Pretty URL helps merchants create a pretty, SEO-friendly, and human-written URL by removing auto-generated IDs/numbers from the URLs of products, categories, and other pages. Clean URLs are an essential requirement for SEO and PrestaShop SEO URL do this job for you.
+                            </p>
+        
+                            <div class="features-section">
+                                <h3 class="features-heading">It's Popularity and Features</h3>
+                                <ul class="feature-list">
+                                    <li class="feature-item">
+                                        <span class="feature-icon"> <img src="../assets/images/url.png" alt="url"> </span>
+                                        <span>SEO friendly URLs</span>
+                                    </li>
+                                    <li class="feature-item">
+                                        <span class="feature-icon"> <img src="../assets/images/version.png" alt="version"> </span>
+                                        <span>PrestaShop v1.6.x - v1.7 - v8.x</span>
+                                    </li>
+                                    <li class="feature-item">
+                                        <span class="feature-icon"> <img src="../assets/images/download.png" alt="download"> </span>
+                                        <span>623+ Downloads!</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="product_actions">
   <a href="#" class="product_action__link">
     <img src="/assets/images/ask-q.svg" alt="Ask a Question" />
-  <span>Ask a Question</span>
+   <span>Ask a Question</span>
   </a>
   <a href="#" class="product_action__link">
     <img src="/assets/images/live-demo.svg" alt="Book a live demo" />
-  <span> Book a live demo</span>
+   <span>Book a live demo</span>
   </a>
 </div>
-
-
-<!-- Features -->
-<div class="product_features">
-  <div class="product_feature__item">
-    <img src="/assets/images/support2.svg" alt="Life Time Support" />
-    <span>Life Time Support</span>
-  </div>
-  <div class="product_feature__item">
-    <img src="/assets/images/gauranty.svg" alt="Money Back Guarantee" />
-    <span>Money Back Guarantee</span>
-  </div>
-  <div class="product_feature__item">
-    <img src="/assets/images/time1.svg" alt="Life Time Updates" />
-    <span>Life Time Updates</span>
-  </div>
-</div>
-                  </div>
-                  <!-- Right Column (Buy Box) -->
-                   <div class="product_buy_box">
-                    <div class="price_box">
-                       <div class="head">
-                        <h2 class="secondary_title">Buy Now</h2>
-                       </div>
-                       <div class="price_box_inner">
-                       <div class="prices cc">
-                        <span class="original_price">€69.00</span>
-                        <span class="old_price">€79.00</span>
-                       </div>
-                       <div class="quanity cc">
-                        <span class="tertiary_text">Domain</span>
-                         <div>
-                            <button><img src="/assets/images/minus.svg" alt=""></button>
-                            <span>1</span>
-                            <button><img src="/assets/images/plus.svg" alt=""></button>
-                         </div>
-                       </div>
-                       <div class="installation">
-                        <span class="tertiary_text">Installation & Setup</span>
-                        <div>
-                        <input type="radio" id="option" name="inst_price"> <label for="option">+€35.00</label>
+        
+                            <div class="support-features">
+                                <div class="support-item">
+                                    <img src="../assets/images/support_icon.png" alt="supporticon">
+                                    <span>Life Time Support</span>
+                                </div>
+                                <div class="support-item">
+                                    <img src="../assets/images/gurantee.png" alt="gurantee">
+                                    <span>Money Back Guarantee</span>
+                                </div>
+                                <div class="support-item">
+                                    <img src="../assets/images/updates.png" alt="">
+                                    <span>Life Time Updates</span>
+                                </div>
+                            </div>
                         </div>
-                       </div>
-                       <button class="primary_cta req_cust_cta">
-                        Request Customization <svg
+                    </div>
+                </div>
+
+                <div class="column_price">
+                    <div class="pricing-card">
+                        <button class="buy-now">Buy Now</button>
+                        <div class="price">
+                          <span class="current-price">€69.00</span>
+                            <span class="original-price">€89.00</span>
+                        </div>
+                        <div class="domain-section">
+                            <span>Domain</span>
+                            <div class="domain-counter">
+                                 <button class="counter-btn"> <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.875 0.756516C9.875 1.17433 9.5363 1.51303 9.11848 1.51303H0.881516C0.463704 1.51303 0.125 1.17433 0.125 0.756516C0.125 0.338704 0.463704 0 0.881516 0H9.11848C9.5363 0 9.875 0.338704 9.875 0.756516Z" fill="#1A2130"/> </svg>                                      </button>
+                                <span class="counter">1</span>
+                                <button class="counter-btn"> <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.2168 5C9.2168 5.35504 8.92898 5.64286 8.57394 5.64286H7.28823C6.22311 5.64286 5.35965 6.50631 5.35965 7.57143V8.85714C5.35965 9.21218 5.07184 9.5 4.7168 9.5C4.36176 9.5 4.07394 9.21218 4.07394 8.85714V7.57143C4.07394 6.50631 3.21049 5.64286 2.14537 5.64286H0.859655C0.504614 5.64286 0.216797 5.35504 0.216797 5C0.216797 4.64496 0.504614 4.35714 0.859654 4.35714H2.14537C3.21049 4.35714 4.07394 3.49369 4.07394 2.42857V1.14286C4.07394 0.787818 4.36176 0.5 4.7168 0.5C5.07184 0.5 5.35965 0.787817 5.35965 1.14286V2.42857C5.35965 3.49369 6.2231 4.35714 7.28822 4.35714H8.57394C8.92898 4.35714 9.2168 4.64496 9.2168 5Z" fill="#1A2130"/> </svg> </button>
+                            </div>
+                        </div>
+                        <div class="setup-section">
+                            <span>Installation & Setup</span>
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" id="checkbox1" class="custom-checkbox">
+                                    <label for="checkbox1" class="checkbox-label">+€35.00</label>
+                                </div>
+                        </div>
+                        <div class="request-btn">
+                            <button class="primary_cta">Request Customization    <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="29"
@@ -595,59 +625,55 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
-                </svg>
-                       </button>
-                       </div>
+                </svg></button>
+                        </div>
                     </div>
-                    <div class="version_box">
-                       <h2 class="secondary_title head">Latest Version</h2>
-                       <div class="compatibility">
-                        <span class="tertiary_text">Compatibility</span>
-                        <div class="tertiary_text">
-                            <span>Version 1.6.x or higher</span> | <span>Version 1.7 </span> | <span> Version 8.x or higher</span>
+            
+                    <div class="version-card">
+                        <h3 class="title">Latest Version</h3>
+                        <div class="version-detail">
+                            <label class="heading">Compatibility</label>
+                            <div class="compatibility">
+                                Version 1.6.x or higher |
+                                Version 1.7 | Version 8.x or higher
+                            </div>
                         </div>
-                       </div>
-                       <div class="release_date compatibility">
-                        <span class="tertiary_text">Release Date</span>
-                        <div class="tertiary_text">
-                            <span>Feb 06, 2011</span>
+                        <div class="version-detail">
+                            <label class="heading">Release Date:</label>
+                            <div class="date-info"> Feb 06, 2011</div>
                         </div>
-                       </div>
-                        <div class="last_update compatibility">
-                        <span class="tertiary_text">Last update</span>
-                        <div class="tertiary_text">
-                            <span>Oct 29, 2024</span>
+                        <div class="version-detail">
+                            <label class="heading">Last update:</label>
+                            <div class="date-info"> Oct 29, 2024</div>
                         </div>
-                       </div>
-                       <div class="translated_into compatibility">
-                        <span class="tertiary_text">Translated into</span>
-                        <div class="tertiary_text">
-                            <img src="/assets/images/translated-flags.svg" alt="">
+                        <div class="version-detail">
+                            <label class="heading">Translated into</label>
+                        <div class="flags">
+                            <img src="../assets/images/flag.png" alt="flag">
                         </div>
-                       </div>
+                        </div>
                     </div>
-                   </div>
-                   </div>
-            </div>
-        </section>
+                </div>
+            </section>
+
 
       </main>
 
-      <!-- Footer Container -->
+    <!-- Footer Container -->
       <footer class="footer_container black_bg">
         <div class="footer_inner_sec">
           <div class="footer_block footer_logo_container_mobile">
-            <div class="footer_logo">
-              <img src="/assets/images/main-logo.svg" alt="" />
+              <div class="footer_logo">
+                <img src="/assets/images/main-logo.svg" alt="">
+              </div>
             </div>
-          </div>
           <!-- Footer First Row | Top Row -->
           <div class="footer_top_row">
             <div class="main_content">
               <h3 class="main_text">Start Your Journey With Us</h3>
               <a class="secondary_cta" href="#" aria-label="Request a Quote"
                 >Request a Quote
-                <svg
+              <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="29"
@@ -782,10 +808,37 @@
       </footer>
     </section>
 
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/jquery-1.11.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/assets/js/pushbar.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/pushbar.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+    <script>
+        $(".main_slider").slick({
+            dots: false,
+            arrows: false,
+            autoplay: false,
+            infinite: false,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            
+        });
+
+        $('.thumbnails_slider').slick({
+            arrows: false,
+            dots: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            asNavFor: '.main_slider',
+            focusOnSelect: true,
+            centerPadding: '10px',
+            variableWidth: true
+        });
+
+    </script>
   </body>
 </html>

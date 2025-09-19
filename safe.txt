@@ -1,803 +1,791 @@
-   <!-- Main -->
-      <main>
-        <!-- Main Banner Section -->
-        <section class="main_banner_bg">
-          <div class="main_container">
-            <div class="banner_inner">
-              <div class="banner_block">
-                <h1 class="banner_title">
-                  Your Trusted Destination for Top-Notch Prestashop Modules
-                </h1>
-                <div class="search">
-                  <div class="banner_search_iner">
-                    <input
-                      type="text"
-                      name="search"
-                      id=""
-                      placeholder="What are you looking for?"
-                    
-                    />
-                    <button class="search_cta" aria-label="Submit search" >Search</button>
-                  </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FME MODULES - Product Page</title>
+    <link rel="stylesheet" href="/assets/style/css/pushbar.css" />
+    <link rel="stylesheet" href="/assets/style/css/global.css" />
+    <link rel="stylesheet" href="/assets/style/css/header.css" />
+    <link rel="stylesheet" href="/assets/style/css/footer.css" />
+    <link rel="stylesheet" href="/assets/style/css/product-card.css" />
+    <link rel="stylesheet" href="/assets/style/css/product_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/fonts/font.css" />
+    <script src="./assets/js/footer.js" defer></script>
+  </head>
+  <body>
+    <section class="page_wrapper product_page">
+      <!-- Header Container -->
+      <header class="header_container in_product_page">
+        <!-- Top Header -->
+        <ul class="header_top_list">
+          <li
+            class="item currency_list"
+            data-pushbar-target="curr"
+            aria-label="Open Currency"
+          >
+            <img src="/assets/images/dollar.svg" alt="dollar icon" />
+            <span>USD</span>
+          </li>
+          <li
+            class="item language_list"
+            data-pushbar-target="lang"
+            aria-label="Open Language"
+          >
+            <img src="/assets/images/world.svg" alt="world icon" />
+            <span>English</span>
+          </li>
+          <li class="item resp_hide">
+            <a href="#" class="header_top_text">Hire an Expert</a>
+          </li>
+          <li class="item resp_hide">
+            <a href="#" class="header_top_text">Get Support</a>
+          </li>
+        </ul>
+
+        <!-- Sidebar for Language -->
+        <aside
+          data-pushbar-id="lang"
+          data-pushbar-direction="right"
+          class="main_sidebar"
+        >
+          <div class="lang_cur_block">
+            <div class="lang_cur_inner">
+              <div class="side_bar_top">
+                <h3 class="title">Select a Language</h3>
+                <div class="close_side_bar" data-pushbar-close>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
                 </div>
-                <ul class="banner_points">
-                    <li>
-                        <div class="image_block">
-                            <img src="../assets/images/module.png" alt="module">
-                        </div>
-                        <p>140+ FME Modules</p>
-                    </li>
-                    <li>
-                        <div class="image_block">
-                            <img src="../assets/images/money back.png" alt="money back">
-                        </div>
-                        <p>Money Back Guarantee</p>
-                    </li>
-                    <li>
-                        <div class="image_block">
-                            <img src="../assets/images/support.png" alt="support">
-                        </div>
-                        <p>Free Life Time Support</p>
-                    </li>
-                    <li>
-                        <div class="image_block">
-                            <img src="../assets/images/open source.png" alt="open source">
-                        </div>
-                        <p>100% Open Source</p>
-                    </li>
+                <ul class="lang_cur_list">
+                  <li value="en" class="list_item active">English</li>
+                  <li value="ur" class="list_item">Urdu</li>
                 </ul>
               </div>
-              <div class="banner_block banner_image">
-                <img src="../assets/images/banner_image.webp" alt="banner" />
-              </div>
+            </div>
+            <div class="bottom_block">
+              <button class="primary_cta">Confirm selection</button>
             </div>
           </div>
-        </section>
-    
-        <!-- Product Listing Section -->
-        <section class="section_bg prod_listing">
-          <div class="main_container section_padding">
-            <div class="sec_top_row">
-              <div class="cnt">
-                <h2 class="section_title">prestashop best sellers module</h2>
-                <p class="primary_text">
-                  Prestashop 8.x Compatible Prestashop Solutions 
-                </p>
-              </div>
-            </div>
+        </aside>
 
-            <ul class="home_prod_listing grid_3 inner_sec_top">
-              <li class="prod_card">
-                <div class="badge"><img src="../assets/images/badge.png" alt="badge"> 19% OFF </div>
-                <div class="prod_info">
-                    <a href="" class="prod_name">
-                        <div class="image_block">
-                            <img src="../assets/images/prod_6.png" alt="prod_1">
-                        </div>
-                        <h3 class="name">Prestashop Limit Order Quantity Cart Quantity Module</h3>
-                    </a>
-                    <div class="pd_card_bs_info">
-                        <div class="block rating">
-                            <span class="ttl_rating">4.4</span>
-                            <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
-                            <span class="rating_count">(105)</span>
-                        </div>
-                        <div class="block downloads">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                                fill="none">
-                                <path
-                                    d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                                    fill="#4B4B4B" />
-                            </svg>
-                            24.6k
-                        </div>
-                        <div class="block">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                                fill="none">
-                                <path
-                                    d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                                    fill="#4B4B4B" />
-                            </svg>
-                            Sept 2024
-                        </div>
-                    </div>
-                    <p class="primary_text">The Prestashop Buy From External Link Module offers a versatile solution for
-                        enhancing your product pages within PrestaShop. With this module, you have the capability to
-                        seamlessly integrate</p>
-                    <a href="#" class="buy_link">
-                        <div class="image_block">
-                            <img src="../assets/images/purchase_link.webp" alt="alt">
-                        </div>
-                        <span>Purchase from External Link</span>
-                    </a>
+        <!-- Sidebar for Currency -->
+        <aside
+          data-pushbar-id="curr"
+          data-pushbar-direction="right"
+          class="main_sidebar"
+        >
+          <div class="lang_cur_block">
+            <div class="lang_cur_inner">
+              <div class="side_bar_top">
+                <h3 class="title">Select a Currency</h3>
+                <div class="close_side_bar" data-pushbar-close>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
                 </div>
-                <div class="prod_price_row">
-                    <div class="price">
-                        <span class="actual_price">€ 49</span>
-                        <del>€ 99</del>
-                    </div>
-                    <a href="" class="prod_buy">Buy Now</a>
+                <ul class="lang_cur_list">
+                  <li class="list_item active">USD</li>
+                  <li class="list_item">EUR</li>
+                  <li class="list_item">GBP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bottom_block">
+              <button class="primary_cta">Confirm selection</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Header -->
+        <section class="header">
+          <div class="logo">
+            <a href="#">
+              <picture>
+                <source
+                  width="auto"
+                  height="auto"
+                  media="(min-width:768px)"
+                  srcset="/assets/images/main-logo.svg"
+                />
+                <source
+                  width="auto"
+                  height="auto"
+                  media="(max-width:767px)"
+                  srcset="/assets/images/resp-logo.webp"
+                />
+                <img
+                  width="auto"
+                  height="auto"
+                  class="loading_action"
+                  src="/assets/images/main-logo.svg"
+                  alt="logo"
+                />
+              </picture>
+            </a>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="navigation">
+            <aside data-pushbar-id="menu" data-pushbar-direction="right">
+              <div class="side_bar_wrapper">
+                <div class="side_bar_head">
+                  <div class="logo">
+                    <a href="#">
+                      <picture>
+                        <source
+                          width="auto"
+                          height="auto"
+                          media="(min-width:768px)"
+                          srcset="/assets/images/main-logo.svg"
+                        />
+                        <source
+                          width="auto"
+                          height="auto"
+                          media="(max-width:767px)"
+                          srcset="/assets/images/resp-logo.webp"
+                        />
+                        <img
+                          width="auto"
+                          height="auto"
+                          class="loading_action"
+                          src="/assets/images/main-logo.svg"
+                          alt="logo"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="close_side_bar" data-pushbar-close>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </div>
                 </div>
+
+                <ul class="nav_bar">
+                  <li class="nav_list">
+                    <a href="#" class="nav_link active"> Prestashop Modules </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#" class="nav_link"> Services </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#" class="nav_link"> Portfolio </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#" class="nav_link"> Free Stuff </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#" class="nav_link"> Support </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#" class="nav_link">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </nav>
+
+          <!-- Left Side Icons -->
+          <ul class="header_icon">
+            <li>
+              <div class="block search_desk">
+                <img src="/assets/images/search.svg" alt="search icon" />
+              </div>
             </li>
-            <li class="prod_card">
-              <div class="badge"><img src="../assets/images/badge.png" alt="badge"> 19% OFF </div>
-              <div class="prod_info">
-                  <a href="" class="prod_name">
-                      <div class="image_block">
-                          <img src="../assets/images/prod_6.png" alt="prod_1">
-                      </div>
-                      <h3 class="name">Prestashop Limit Order Quantity Cart Quantity Module</h3>
-                  </a>
-                  <div class="pd_card_bs_info">
-                      <div class="block rating">
-                          <span class="ttl_rating">4.4</span>
-                          <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
-                          <span class="rating_count">(105)</span>
-                      </div>
-                      <div class="block downloads">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                              fill="none">
-                              <path
-                                  d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                                  fill="#4B4B4B" />
-                          </svg>
-                          24.6k
-                      </div>
-                      <div class="block">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                              fill="none">
-                              <path
-                                  d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                                  fill="#4B4B4B" />
-                          </svg>
-                          Sept 2024
-                      </div>
-                  </div>
-                  <p class="primary_text">The Prestashop Buy From External Link Module offers a versatile solution for
-                      enhancing your product pages within PrestaShop. With this module, you have the capability to
-                      seamlessly integrate</p>
-                  <a href="#" class="buy_link">
-                      <div class="image_block">
-                          <img src="../assets/images/purchase_link.webp" alt="alt">
-                      </div>
-                      <span>Purchase from External Link</span>
-                  </a>
-              </div>
-              <div class="prod_price_row">
-                  <div class="price">
-                      <span class="actual_price">€ 49</span>
-                      <del>€ 99</del>
-                  </div>
-                  <a href="" class="prod_buy">Buy Now</a>
-              </div>
-          </li>
-          <li class="prod_card">
-            <div class="badge"><img src="../assets/images/badge.png" alt="badge"> 19% OFF </div>
-            <div class="prod_info">
-                <a href="" class="prod_name">
-                    <div class="image_block">
-                        <img src="../assets/images/prod_6.png" alt="prod_1">
-                    </div>
-                    <h3 class="name">Prestashop Limit Order Quantity Cart Quantity Module</h3>
-                </a>
-                <div class="pd_card_bs_info">
-                    <div class="block rating">
-                        <span class="ttl_rating">4.4</span>
-                        <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
-                        <span class="rating_count">(105)</span>
-                    </div>
-                    <div class="block downloads">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                            fill="none">
-                            <path
-                                d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                                fill="#4B4B4B" />
-                        </svg>
-                        24.6k
-                    </div>
-                    <div class="block">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                            fill="none">
-                            <path
-                                d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                                fill="#4B4B4B" />
-                        </svg>
-                        Sept 2024
-                    </div>
-                </div>
-                <p class="primary_text">The Prestashop Buy From External Link Module offers a versatile solution for
-                    enhancing your product pages within PrestaShop. With this module, you have the capability to
-                    seamlessly integrate</p>
-                <a href="#" class="buy_link">
-                    <div class="image_block">
-                        <img src="../assets/images/purchase_link.webp" alt="alt">
-                    </div>
-                    <span>Purchase from External Link</span>
-                </a>
-            </div>
-            <div class="prod_price_row">
-                <div class="price">
-                    <span class="actual_price">€ 49</span>
-                    <del>€ 99</del>
-                </div>
-                <a href="" class="prod_buy">Buy Now</a>
-            </div>
-        </li>
-        <li class="prod_card">
-          <div class="badge"><img src="../assets/images/badge.png" alt="badge"> 19% OFF </div>
-          <div class="prod_info">
-              <a href="" class="prod_name">
-                  <div class="image_block">
-                      <img src="../assets/images/prod_6.png" alt="prod_1">
-                  </div>
-                  <h3 class="name">Prestashop Limit Order Quantity Cart Quantity Module</h3>
+            <li class="account">
+              <a class="loading_action" aria-label="Login" href="#">
+                <img src="/assets/images/user.svg" alt="user icon" />
               </a>
-              <div class="pd_card_bs_info">
-                  <div class="block rating">
-                      <span class="ttl_rating">4.4</span>
-                      <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
-                      <span class="rating_count">(105)</span>
-                  </div>
-                  <div class="block downloads">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                          fill="none">
-                          <path
-                              d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                              fill="#4B4B4B" />
-                      </svg>
-                      24.6k
-                  </div>
-                  <div class="block">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                          fill="none">
-                          <path
-                              d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                              fill="#4B4B4B" />
-                      </svg>
-                      Sept 2024
-                  </div>
-              </div>
-              <p class="primary_text">The Prestashop Buy From External Link Module offers a versatile solution for
-                  enhancing your product pages within PrestaShop. With this module, you have the capability to
-                  seamlessly integrate</p>
-              <a href="#" class="buy_link">
-                  <div class="image_block">
-                      <img src="../assets/images/purchase_link.webp" alt="alt">
-                  </div>
-                  <span>Purchase from External Link</span>
+            </li>
+            <li class="cart loading_action">
+              <a aria-label="Go To Cart" class="loading_action" href="#">
+                <img src="/assets/images/cart.svg" alt="" />
+
+                <span class="cart_count">1</span>
               </a>
-          </div>
-          <div class="prod_price_row">
-              <div class="price">
-                  <span class="actual_price">€ 49</span>
-                  <del>€ 99</del>
-              </div>
-              <a href="" class="prod_buy">Buy Now</a>
-          </div>
-      </li>
-      <li class="prod_card">
-        <div class="badge"><img src="../assets/images/badge.png" alt="badge"> 19% OFF </div>
-        <div class="prod_info">
-            <a href="" class="prod_name">
-                <div class="image_block">
-                    <img src="../assets/images/prod_6.png" alt="prod_1">
-                </div>
-                <h3 class="name">Prestashop Limit Order Quantity Cart Quantity Module</h3>
-            </a>
-            <div class="pd_card_bs_info">
-                <div class="block rating">
-                    <span class="ttl_rating">4.4</span>
-                    <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
-                    <span class="rating_count">(105)</span>
-                </div>
-                <div class="block downloads">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                        fill="none">
-                        <path
-                            d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                            fill="#4B4B4B" />
-                    </svg>
-                    24.6k
-                </div>
-                <div class="block">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                        fill="none">
-                        <path
-                            d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                            fill="#4B4B4B" />
-                    </svg>
-                    Sept 2024
-                </div>
-            </div>
-            <p class="primary_text">The Prestashop Buy From External Link Module offers a versatile solution for
-                enhancing your product pages within PrestaShop. With this module, you have the capability to
-                seamlessly integrate</p>
-            <a href="#" class="buy_link">
-                <div class="image_block">
-                    <img src="../assets/images/purchase_link.webp" alt="alt">
-                </div>
-                <span>Purchase from External Link</span>
-            </a>
-        </div>
-        <div class="prod_price_row">
-            <div class="price">
-                <span class="actual_price">€ 49</span>
-                <del>€ 99</del>
-            </div>
-            <a href="" class="prod_buy">Buy Now</a>
-        </div>
-    </li>
-    <li class="prod_card">
-      <div class="badge"><img src="../assets/images/badge.png" alt="badge"> 19% OFF </div>
-      <div class="prod_info">
-          <a href="" class="prod_name">
-              <div class="image_block">
-                  <img src="../assets/images/prod_6.png" alt="prod_1">
-              </div>
-              <h3 class="name">Prestashop Limit Order Quantity Cart Quantity Module</h3>
-          </a>
-          <div class="pd_card_bs_info">
-              <div class="block rating">
-                  <span class="ttl_rating">4.4</span>
-                  <span class="rating_star"><img src="../assets/images/star.png" alt="star"></span>
-                  <span class="rating_count">(105)</span>
-              </div>
-              <div class="block downloads">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                      fill="none">
-                      <path
-                          d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                          fill="#4B4B4B" />
+            </li>
+            <li class="resp_menu">
+              <button
+                aria-label="Open Menu"
+                data-pushbar-target="menu"
+                class="openMenu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+          <!-- Overlay for when open search popup -->
+          <div
+            class="search_overlay"
+            style="background-color: rgba(54, 54, 54, 0.4)"
+          ></div>
+
+          <!-- Search Bar Popup -->
+          <div class="search_field_head">
+            <div class="search_outer header_search">
+              <div class="dialog_block search">
+                <button class="close_search_btn" id="close_search_btn">
+          <img src="/assets/images/cross_icon2.svg" alt="">
+                </button>
+
+                <button type="submit" class="search_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M23 24L17.692 18.4507M17.692 18.4507C18.5999 17.5014 19.3201 16.3745 19.8115 15.1343C20.3029 13.8941 20.5558 12.5648 20.5558 11.2224C20.5558 9.87995 20.3029 8.55067 19.8115 7.31044C19.3202 6.0702 18.5999 4.9433 17.692 3.99406C16.784 3.04483 15.7061 2.29185 14.5198 1.77813C13.3335 1.26441 12.062 1 10.7779 1C9.49386 1 8.22238 1.26441 7.03607 1.77813C5.84976 2.29185 4.77185 3.04483 3.86389 3.99406C2.03017 5.91113 1 8.51123 1 11.2224C1 13.9335 2.03017 16.5336 3.86389 18.4507C5.6976 20.3677 8.18465 21.4447 10.7779 21.4447C13.3712 21.4447 15.8582 20.3677 17.692 18.4507Z"
+                      stroke="#4E4E4E"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
-                  24.6k
+                </button>
+
+                <input
+                  type="text"
+                  class="srch_input"
+                  id="search"
+                  placeholder="Type a command or search"
+                  value=""
+                />
               </div>
-              <div class="block">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
-                      fill="none">
-                      <path
-                          d="M7.98749 3.19889H7.15679C7.0808 3.19889 7.01862 3.25919 7.01862 3.33288V7.94364C7.01862 7.98718 7.03935 8.02738 7.07561 8.0525L9.93041 10.074C9.99258 10.1175 10.0789 10.1058 10.1238 10.0455L10.6178 9.39235C10.6644 9.33038 10.6506 9.24664 10.5884 9.20477L8.12565 7.47804V3.33288C8.12565 3.25919 8.06348 3.19889 7.98749 3.19889ZM11.7835 4.45835L14.4915 5.09981C14.5779 5.1199 14.6625 5.05626 14.6625 4.97085L14.6763 2.26602C14.6763 2.15381 14.5433 2.09017 14.4535 2.16051L11.7317 4.2222C11.7111 4.23764 11.6955 4.25839 11.6865 4.28207C11.6776 4.30575 11.6757 4.3314 11.6811 4.35606C11.6865 4.38073 11.699 4.40342 11.7171 4.42151C11.7352 4.43961 11.7583 4.45238 11.7835 4.45835ZM14.6798 9.50121L13.7005 9.17462C13.6664 9.16328 13.629 9.16533 13.5964 9.18036C13.5638 9.19538 13.5386 9.22218 13.5261 9.25502C13.4933 9.34043 13.4587 9.42417 13.4225 9.50791C13.1151 10.213 12.6747 10.8478 12.1117 11.3921C11.5549 11.9337 10.8951 12.3654 10.1687 12.6633C9.41631 12.9717 8.60752 13.1301 7.79061 13.1289C6.96508 13.1289 6.16547 12.9731 5.41248 12.6633C4.68615 12.3654 4.02632 11.9337 3.46956 11.3921C2.90827 10.8478 2.46788 10.213 2.15874 9.50791C1.84235 8.77784 1.68027 7.99362 1.68207 7.2017C1.68207 6.40114 1.84269 5.62402 2.16219 4.8938C2.4696 4.18871 2.91 3.55395 3.47301 3.00964C4.02978 2.46804 4.68961 2.03633 5.41593 1.73846C6.16547 1.42862 6.96681 1.27286 7.79234 1.27286C8.61786 1.27286 9.41748 1.42862 10.1705 1.73846C10.8968 2.03633 11.5566 2.46804 12.1134 3.00964C12.2895 3.18215 12.4553 3.36135 12.6073 3.5506L13.6401 2.76679C12.2809 1.08193 10.1653 -0.00167287 7.78888 1.93866e-06C3.6509 0.00167675 0.328075 3.26086 0.369524 7.27539C0.410973 11.2196 3.71825 14.4034 7.79234 14.4034C10.996 14.4034 13.7247 12.4338 14.7644 9.67539C14.7903 9.60505 14.7523 9.52634 14.6798 9.50121Z"
-                          fill="#4B4B4B" />
-                  </svg>
-                  Sept 2024
-              </div>
-          </div>
-          <p class="primary_text">The Prestashop Buy From External Link Module offers a versatile solution for
-              enhancing your product pages within PrestaShop. With this module, you have the capability to
-              seamlessly integrate</p>
-          <a href="#" class="buy_link">
-              <div class="image_block">
-                  <img src="../assets/images/purchase_link.webp" alt="alt">
-              </div>
-              <span>Purchase from External Link</span>
-          </a>
-      </div>
-      <div class="prod_price_row">
-          <div class="price">
-              <span class="actual_price">€ 49</span>
-              <del>€ 99</del>
-          </div>
-          <a href="" class="prod_buy">Buy Now</a>
-      </div>
-  </li>
+            </div>
+            <ul class="search-suggestions" id="suggestions">
+              <!-- <span class="primary_text search-suggestion-title"
+                >Showing Results</span
+              > -->
+              <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                  <p class="price">€47</p>
+                  </div>
+                  
+                    <p class="pd_type">3.0.1</p>
+                </div>
+              </li>
+              <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                  <p class="price">€47</p>
+                  </div>
+                  
+                    <p class="pd_type">3.0.1</p>
+                </div>
+              </li>
+                <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                  <p class="price">€47</p>
+                  </div>
+                  
+                    <p class="pd_type">3.0.1</p>
+                </div>
+              </li>
+                <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                  <p class="price">€47</p>
+                  </div>
+                  
+                    <p class="pd_type">3.0.1</p>
+                </div>
+              </li>
+                <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                        <img src="/assets/images/search_prod.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                  <p class="price">€47</p>
+                  </div>
+                  
+                    <p class="pd_type">3.0.1</p>
+                </div>
+              </li>
+                <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                    <img src="/assets/images/search_prod.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                  <p class="price">€47</p>
+                  </div>
+                  
+                    <p class="pd_type">3.0.1</p>
+                </div>
+              </li>
             </ul>
           </div>
         </section>
+      </header>
 
-        <!-- Custom Module Section -->
-        <section class="main_container section_padding">
-          <div class="sec_top_row">
-            <div class="cnt">
-              <h2 class="section_title">Need a Custom Prestashop Module?</h2>
-              <p class="primary_text">
-                Solutions & modules 140+ Top Prestashop Modules
-              </p>
-            </div>
-            <div class="sec_cta">
-              <a href="" class="primary_cta" aria-label="Request a Quote">Request a Quote </a>
-            </div>
+      <!-- Main -->
+      <main>
+        <!-- BreadCrumb Section -->
+        <section class="bread_crumb_section">
+          <div class="main_container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a href="/" class="breadcrumb__link tertiary_text">
+                    <img src="/assets/images/home-2.svg" alt="Home" />
+                  </a>
+                </li>
+                <li class="breadcrumb__separator tertiary_text" aria-hidden="true">.</li>
+                <li class="breadcrumb__item">
+                  <a href="/modules" class="breadcrumb__link tertiary_text">Modules</a>
+                </li>
+                <li class="breadcrumb__separator tertiary_text" aria-hidden="true">.</li>
+                <li
+                  class="breadcrumb__item breadcrumb__item--active tertiary_text"
+                  aria-current="page"
+                >
+                  PrestaShop Pretty URL - Remove Id from URL and make Clean SEO
+                  Friendly URL
+                </li>
+              </ol>
+            </nav>
           </div>
-          <div class="feat_banner_container inner_sec_top">
-            <div class="feat_top_row">
-              <div class="left_col">
-                <div class="block">
-                  <h3 class="feat_block_title">
-                    PrestaShop Development Services
-                  </h3>
-                  <p class="primary_text">
-                    FME Modules give value to client’s satisfaction above
-                    profits We work...
-                  </p>
-                  <a href="" class="feat_cta">Explore More</a>
-                </div>
-                <div class="block image_block">
-                  <img
-                    src="../assets/images/prestShop service.png"
-                    alt="PrestaShop development service with professional developers at work."
+        </section>
+        
+        <section class="product_details_section">
+            <div class="main_container">
+                <div class="product_details">
+                <!-- Left Column (Gallery) -->
+                 <div class="product_gallery">
+                    <div class="gallery">
+                        123
+                    </div>
+                    <div class="guide_live_demo_buttons">
+                     <button class="user_guide_cta primary_cta">User Guide     <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M10.5693 19.0816L19.4317 10.2193M19.4317 10.2193L12.5633 9.9977M19.4317 10.2193L19.6532 17.0876"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
-                </div>
-              </div>
-              <div class="right_col">
-                <div class="block">
-                  <h3 class="feat_block_title">
-                    Custom Prestashop Development
-                  </h3>
-                  <p class="primary_text">
-                    FME Modules give value to client’s satisfaction above
-                    profits We work...
-                  </p>
-                  <a href="" class="feat_cta">Explore More</a>
-                </div>
-              </div>
-            </div>
-            <div class="feat_bottom_row">
-              <div class="left_col">
-                <div class="block">
-                  <h3 class="feat_block_title">
-                    Hire Prestashop Developer Freelance Experts
-                  </h3>
-                  <p class="primary_text">
-                    FME Modules proudly stands official PrestaShop partner,
-                    boasting more than a decade of unparalleled expertise...
-                  </p>
-                  <a href="" class="feat_cta">Explore More</a>
-                </div>
-                <div class="block image_block">
-                  <img src="../assets/images/hire_expert.png" alt="Experienced PrestaShop freelance developer available for hire." />
-                </div>
-              </div>
-              <div class="right_col">
-                <div class="block">
-                  <h3 class="feat_block_title">
-                    Prestashop Migration Services
-                  </h3>
-                  <ul>
-                    <li>PrestaShop database migration</li>
-                    <li>meticulous handling of all aspects,products</li>
-                    <li>Custom Modules</li>
-                  </ul>
-                  <a href="" class="feat_cta">Explore More</a>
-                </div>
-                <div class="block image_block">
-                  <img src="../assets/images/module_4.webp" alt="PrestaShop migration services with a focus on custom modules and product handling." />
-                </div>
-              </div>
-            </div>
-            <div class="feat_cta_row">
-              <p class="primary_text">
-                A premier Magento solutions provider, FME is a 360-degree
-                Magento development powerhouse.
-              </p>
-              <a href="" class="primary_cta"  aria-label="View All Services">View All Services</a>
-            </div>
-          </div>
-        </section>
-
-        <!-- Reviews Section -->
-        <section class="section_bg">
-          <div class="main_container section_padding">
-            <div class="review_section">
-              <div class="review_left_col">
-                <h2 class="section_title">What they are saying About Us</h2>
-                <p class="primary_text">
-                  FME Modules is the top-notch PrestaShop migration service provider....
-                </p>
-                <div class="section_cta">
-                  <a href="" class="primary_cta"  aria-label="View more">View more</a>
-                </div>
-                <p class="review_colored">Tell Us how we did?</p>
-              </div>
-              <div class="review_right_col">
-                <div class="review_carousel">
-                  <div class="review_card">
-                    <h3 class="review_title">
-                      What we appreciated most working with FME modules
-                    </h3>
-                    <p class="primary_text">
-                      “Before purchasing advance testimonials module I had spend
-                      some time to find the best from the market and surely I
-                      found one from FME Modules. The module is surely advance
-                      in features that available on other testimonials modules.
-                      “
-                    </p>
-                    <div class="review_rating">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                    </div>
-                    <div class="reviewer_info">
-                      <div class="image">
-                        <img
-                          src="../assets/images/review_1.png"
-                          alt="Review by Gabriel Carreras, CEO of the company"
-                        />
-                      </div>
-                      <div class="cnt">
-                        <h4 class="name">Gabriel Carreras</h4>
-                        <p class="post">/CEO of the company</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="review_card">
-                    <h3 class="review_title">
-                      I am so lucky I found FME modules.
-                    </h3>
-                    <p class="primary_text">
-                      “It was great working with FME team. A+ for their client
-                      dealing and A++ for the compatibility of Facebook comment
-                      and product questions modules.I really like FME products
-                      and their support is good. Great modules.“
-                    </p>
-                    <div class="review_rating">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                    </div>
-                    <div class="reviewer_info">
-                      <div class="image">
-                        <img
-                          src="../assets/images/review_2.png"
-                          alt="Review by another person"
-                        />
-                      </div>
-                      <div class="cnt">
-                        <h4 class="name">Allison Moon</h4>
-                        <p class="post">/CEO</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="review_card">
-                    <h3 class="review_title">
-                      What we appreciated most working with FME modules
-                    </h3>
-                    <p class="primary_text">
-                      “Before purchasing advance testimonials module I had spend
-                      some time to find the best from the market and surely I
-                      found one from FME Modules. The module is surely advance
-                      in features that available on other testimonials modules.
-                      “
-                    </p>
-                    <div class="review_rating">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="21"
-                        viewBox="0 0 22 21"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.9867 17.5869L16.3151 20.8096C17.2909 21.4002 18.4849 20.5271 18.2281 19.4229L16.8158 13.3627L21.5279 9.27973C22.3881 8.53504 21.9259 7.1227 20.796 7.03282L14.5946 6.5064L12.1679 0.779998C11.7314 -0.259999 10.242 -0.259999 9.80545 0.779998L7.37879 6.49356L1.17732 7.01998C0.0474515 7.10986 -0.41477 8.5222 0.445475 9.26689L5.15756 13.3498L3.74522 19.4101C3.48843 20.5143 4.6825 21.3873 5.6583 20.7967L10.9867 17.5869Z"
-                          fill="#FFAB02"
-                        />
-                      </svg>
-                    </div>
-                    <div class="reviewer_info">
-                      <div class="image">
-                        <img
-                          src="../assets/images/review_1.png"
-                          alt="Review by another person"
-                        />
-                      </div>
-                      <div class="cnt">
-                        <h4 class="name">Gabriel Carreras</h4>
-                        <p class="post">/CEO of the company</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Recent Blog Post Section -->
-        <section class="main_container section_padding">
-          <div class="sec_top_row">
-            <div class="cnt">
-              <h2 class="section_title">Recent Blog Posts</h2>
-            </div>
-            <div class="sec_cta">
-              <a href="" class="primary_cta"  aria-label="View All Blogs">View All Blogs </a>
-            </div>
-          </div>
-          <div class="home_blog_list grid_3 inner_sec_top">
-            <div class="blog_card">
-              <a href="" class="image_block">
-                <img src="../assets/images/blog_2.png" alt="Image for blog post on enhancing user experience with PrestaShop contact form"
-              /></a>
-              <div class="blog_cnt">
-                <a href="" class="blog_title">
-                  Enhancing User Experience How PrestaShop Contact Form
-                </a>
-                <div class="date">Sep 15, 2023</div>
-              </div>
-            </div>
-            <div class="blog_card">
-              <a href="" class="image_block">
-                <img src="../assets/images/blog_2.png" alt="Image for blog post on organizing PrestaShop product tabs"
-              /></a>
-              <div class="blog_cnt">
-                <a href="" class="blog_title"
-                  >Organize and Inform How PrestaShop Product Tabs</a
+                </svg></button>
+                         <button class="live_demo_cta primary_cta">Live demo    <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="currentColor"
                 >
-                <div class="date">Sep 15, 2023</div>
-              </div>
-            </div>
-            <div class="blog_card">
-              <a href="" class="image_block">
-                <img src="../assets/images/blog_2.png" alt="Image for blog post on creating urgency and driving conversions"
-              /></a>
-              <div class="blog_cnt">
-                <a href="" class="blog_title">
-                  Creating Urgency and Driving Conversions</a
+                  <path
+                    d="M10.5693 19.0816L19.4317 10.2193M19.4317 10.2193L12.5633 9.9977M19.4317 10.2193L19.6532 17.0876"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg></button>
+                    </div>
+                    <div class="product_badges">
+                        <img src="/assets/images/logos-cont.svg" alt="">
+                    </div>
+                 </div>
+                 <!-- Middle Column (Info) -->
+                  <div class="product_info">
+                    <div class="rating">
+                      <span>3.0.1</span>
+                    </div>
+                    <h1 class="primary_title">Prestashop Pretty URL- Remove Id from URL and make Clean SEO Friendly URL</h1>
+                    <div class="product_meta">
+                      <div class="reviews"><img src="/assets/images/stars.svg" alt=""> <span class="total_reviews">369 Reviews</span> <a href="#" class="add_review">Add Review</a></div>
+                      <span class="line">|</span>
+                      <div class="downloads"><span>1000+</span> Downloads</div>
+                      <span class="line">|</span>
+        <div class="trust_badge"><img src="/assets/images/trustpilot.svg" alt=""></div>
+        <span class="line">|</span>
+        <div class="verified"><img src="/assets/images/verified.svg" alt=""> verified</div>
+                    </div>
+                    <div class="product_short_desc secondary_text">Make your online store look super professional with neat URLs that are easy to read and optimized for search engines. The Prestashop Friendly URL Module by FME is as pretty as its name and a total game changer! Imagine your Prestashop store.</div>
+                    <div class="popularity_features">
+                      <h3 class="secondary_title title">It’s Popularity and Features</h3>
+                      <ol class="list">
+                        <li class="item">
+                      <div class="image">
+                          <img src="/assets/images/seo.svg" alt=""></div> SEO friendly URLs
+                        </li>
+                        <li  class="item">
+                        <div class="image">
+                          <img src="/assets/images/presta.svg" alt=""></div>    PrestaShop  v1.6.x - v1.7 - v8.x
+                        </li>
+                        <li  class="item">
+                          <div class="image">
+                          <img src="/assets/images/down.svg" alt=""></div>  623+ Downloads!
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="product_actions">
+  <a href="#" class="product_action__link">
+    <img src="/assets/images/ask-q.svg" alt="Ask a Question" />
+  <span>Ask a Question</span>
+  </a>
+  <a href="#" class="product_action__link">
+    <img src="/assets/images/live-demo.svg" alt="Book a live demo" />
+  <span> Book a live demo</span>
+  </a>
+</div>
+
+
+<!-- Features -->
+<div class="product_features">
+  <div class="product_feature__item">
+    <img src="/assets/images/support2.svg" alt="Life Time Support" />
+    <span>Life Time Support</span>
+  </div>
+  <div class="product_feature__item">
+    <img src="/assets/images/gauranty.svg" alt="Money Back Guarantee" />
+    <span>Money Back Guarantee</span>
+  </div>
+  <div class="product_feature__item">
+    <img src="/assets/images/time1.svg" alt="Life Time Updates" />
+    <span>Life Time Updates</span>
+  </div>
+</div>
+                  </div>
+                  <!-- Right Column (Buy Box) -->
+                   <div class="product_buy_box">
+                    <div class="price_box">
+                       <div class="head">
+                        <h2 class="secondary_title">Buy Now</h2>
+                       </div>
+                       <div class="price_box_inner">
+                       <div class="prices cc">
+                        <span class="original_price">€69.00</span>
+                        <span class="old_price">€79.00</span>
+                       </div>
+                       <div class="quanity cc">
+                        <span class="tertiary_text">Domain</span>
+                         <div>
+                            <button><img src="/assets/images/minus.svg" alt=""></button>
+                            <span>1</span>
+                            <button><img src="/assets/images/plus.svg" alt=""></button>
+                         </div>
+                       </div>
+                       <div class="installation">
+                        <span class="tertiary_text">Installation & Setup</span>
+                        <div>
+                        <input type="radio" id="option" name="inst_price"> <label for="option">+€35.00</label>
+                        </div>
+                       </div>
+                       <button class="primary_cta req_cust_cta">
+                        Request Customization <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="currentColor"
                 >
-                <div class="date">Sep 15, 2023</div>
-              </div>
+                  <path
+                    d="M10.5693 19.0816L19.4317 10.2193M19.4317 10.2193L12.5633 9.9977M19.4317 10.2193L19.6532 17.0876"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                       </button>
+                       </div>
+                    </div>
+                    <div class="version_box">
+                       <h2 class="secondary_title head">Latest Version</h2>
+                       <div class="compatibility">
+                        <span class="tertiary_text">Compatibility</span>
+                        <div class="tertiary_text">
+                            <span>Version 1.6.x or higher</span> | <span>Version 1.7 </span> | <span> Version 8.x or higher</span>
+                        </div>
+                       </div>
+                       <div class="release_date compatibility">
+                        <span class="tertiary_text">Release Date</span>
+                        <div class="tertiary_text">
+                            <span>Feb 06, 2011</span>
+                        </div>
+                       </div>
+                        <div class="last_update compatibility">
+                        <span class="tertiary_text">Last update</span>
+                        <div class="tertiary_text">
+                            <span>Oct 29, 2024</span>
+                        </div>
+                       </div>
+                       <div class="translated_into compatibility">
+                        <span class="tertiary_text">Translated into</span>
+                        <div class="tertiary_text">
+                            <img src="/assets/images/translated-flags.svg" alt="">
+                        </div>
+                       </div>
+                    </div>
+                   </div>
+                   </div>
             </div>
-          </div>
         </section>
 
       </main>
 
-    
+      <!-- Footer Container -->
+      <footer class="footer_container black_bg">
+        <div class="footer_inner_sec">
+          <div class="footer_block footer_logo_container_mobile">
+            <div class="footer_logo">
+              <img src="/assets/images/main-logo.svg" alt="" />
+            </div>
+          </div>
+          <!-- Footer First Row | Top Row -->
+          <div class="footer_top_row">
+            <div class="main_content">
+              <h3 class="main_text">Start Your Journey With Us</h3>
+              <a class="secondary_cta" href="#" aria-label="Request a Quote"
+                >Request a Quote
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M10.5693 19.0816L19.4317 10.2193M19.4317 10.2193L12.5633 9.9977M19.4317 10.2193L19.6532 17.0876"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="testimonials">
+              <div class="image">
+                <img src="/assets/images/clutch.svg" alt="cluch comp image" />
+              </div>
+              <div class="image">
+                <img
+                  src="/assets/images/trustpilot.png"
+                  alt="trustpilot comp image"
+                />
+              </div>
+              <div class="image">
+                <img
+                  src="/assets/images/design-rush.svg"
+                  alt="design rush comp image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Middle Row | Second Row -->
+          <div class="footer_middle_row">
+            <div class="footer_block footer_logo_container">
+              <div class="footer_logo">
+                <img src="/assets/images/main-logo.svg" alt="" />
+              </div>
+              <p class="footer_logo_text">
+                FME Modules is the top-notch PrestaShop migration service.
+              </p>
+            </div>
+            <div class="footer_block">
+              <h3 class="footer_title">Corporate</h3>
+              <ul class="footer_list">
+                <li class="footer_item">
+                  <a class="footer_text" href="#">Modules</a>
+                </li>
+                <li class="footer_item">
+                  <a class="footer_text" href="#">Portfolio</a>
+                </li>
+                <li class="footer_item">
+                  <a class="footer_text" href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_block">
+              <h3 class="footer_title">Knowledge Base</h3>
+              <ul class="footer_list">
+                <li class="footer_item">
+                  <a class="footer_text" href="#">Free Stuff</a>
+                </li>
+                <li class="footer_item">
+                  <a class="footer_text" href="#">Services</a>
+                </li>
+                <li class="footer_item">
+                  <a class="footer_text" href="#">Stuff</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_block">
+              <h3 class="footer_title">Legal</h3>
+              <ul class="footer_list">
+                <li class="footer_item">
+                  <a class="footer_text" href="#">Privacy Policy</a>
+                </li>
+                <li class="footer_item">
+                  <a class="footer_text" href="#">Terms & Conditions</a>
+                </li>
+                <li class="footer_item">
+                  <a class="footer_text" href="#">Customer Services</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_block">
+              <div class="foot_contact_details">
+                <h2 class="footer_title">Say Hello</h2>
+                <div class="footer_list footer_contact">
+                  <p class="foot_email footer_text">support@fmemodules.com</p>
+                  <p class="foot_phone">+(919) 335-6315</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Third Row | Bottom Row -->
+          <div class="footer_bottom">
+            <div class="copy_right">
+              <p class="primary_text">
+                © 2025 <a href="#">FME EModules.</a> All Rights Reserved.
+              </p>
+            </div>
+            <div class="payment_methods">
+              <img src="/assets/images/payment_card.webp" alt="payment_card" />
+            </div>
+
+            <ul class="social_icons">
+              <li class="social_item">
+                <a href="#"> <img src="/assets/images/fb.webp" alt="fb" /> </a>
+              </li>
+              <li class="social_item">
+                <a href="#">
+                  <img src="/assets/images/twitter.webp" alt="twitter" />
+                </a>
+              </li>
+              <li class="social_item">
+                <a href="#">
+                  <img src="/assets/images/linkedin.webp" alt="linkedin" />
+                </a>
+              </li>
+              <li class="social_item">
+                <a href="#">
+                  <img src="/assets/images/youtube.webp" alt="youtube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/pushbar.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
