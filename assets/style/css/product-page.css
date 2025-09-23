@@ -859,7 +859,9 @@ margin-bottom: 83px;
     border: 2px solid #fff;
 }
 
-
+.description_section.first_section .first_section_inner{
+    gap: 40px;
+}
    }
 
 
@@ -1063,6 +1065,10 @@ margin-bottom: 83px;
 .description_section.first_section  .info_box__cards .info_box__card {
     padding: 27px 32px 27px 32px;
     gap: 10px;
+}
+
+.description_section.first_section .first_section_inner{
+    gap: 30px;
 }
 
 }
@@ -1395,7 +1401,9 @@ width: 140px;
     padding: 18px 18px 18px 18px;
     gap: 7px;
 }
-
+.description_section.first_section .first_section_inner{
+    gap: 20px;
+}
 
 }
 
