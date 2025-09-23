@@ -26,29 +26,29 @@
 
 }
 
-.column_info {
+.product_detail_page .column_info {
     position: relative;
 }
 
-.column_info .product_description .product_actions {
+.product_detail_page .column_info .product_description .product_actions {
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
-.column_info .product_description .product_actions .product_action__link {
+.product_detail_page .column_info .product_description .product_actions .product_action__link {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 16px;
 }
 
-.column_info .product_description .product_actions .product_action__link span {
+.product_detail_page .column_info .product_description .product_actions .product_action__link span {
     text-decoration: underline;
     color: #6A6A6A;
 }
 
-.column_info .product_meta {
+.product_detail_page .column_info .product_meta {
     border-top: 1px solid rgba(0, 0, 0, 0.09);
     border-bottom: 1px solid rgba(0, 0, 0, 0.09);
     padding: 15px;
@@ -59,7 +59,7 @@
 
 }
 
-.column_info .product_meta .inner {
+.product_detail_page .column_info .product_meta .inner {
     display: flex;
     gap: 15px;
     overflow-x: auto;
@@ -68,7 +68,7 @@
     scrollbar-width: none;
 }
 
-.column_info .product_meta .inner>div {
+.product_detail_page .column_info .product_meta .inner>div {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -76,28 +76,28 @@
     padding-right: 10px;
 }
 
-.column_info .product_meta .line {
+.product_detail_page .column_info .product_meta .line {
     color: #DDDDDD;
 }
 
-.column_info .product_meta .total_reviews {
+.product_detail_page .column_info .product_meta .total_reviews {
     color: #242222;
     font-size: 16px;
 }
 
-.column_info .product_meta .add_review {
+.product_detail_page .column_info .product_meta .add_review {
     text-decoration: underline;
 }
 
-.column_info .product_meta .downloads {
+.product_detail_page .column_info .product_meta .downloads {
     color: rgba(66, 66, 66, 0.8);
 }
 
-.column_info .product_meta .downloads span {
+.product_detail_page .column_info .product_meta .downloads span {
     color: #000;
 }
 
-.column_info .product_meta .verified {
+.product_detail_page .column_info .product_meta .verified {
     color: rgba(66, 66, 66, 0.8);
 }
 
@@ -559,11 +559,11 @@ filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.08));
     border-bottom: 2px solid #000;
 }
 
- .core_capability_section .tab_section{
+ .tab_section{
 display: none;
 }
 
-  .core_capability_section .tab_section.active {
+ .tab_section.active {
   display: block; 
 }
 
