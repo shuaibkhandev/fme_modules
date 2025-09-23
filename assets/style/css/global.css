@@ -647,6 +647,11 @@ p {
     line-height: 22px;
     padding-top: 6px;
   }
+    .primary_text {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -708,6 +713,11 @@ p {
   .pagination_container {
     gap: 18px;
   }
+    .primary_text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
 
   .pagination_container .pagination_numbers {
     padding: 7px 25px;
