@@ -571,7 +571,9 @@ display: none;
 
 /* Core Capability Section Tabs  */
 /* Description Tab */
-.description_section .first_section .description_section .first_section_inner{
+/* Description Tab */
+
+.description_section .first_section  .first_section_inner{
 margin-top: 55px;
 display: flex;
 flex-direction: column;
@@ -1177,7 +1179,7 @@ margin-bottom: 83px;
     border: 2px solid #fff;
 }
 
-/* Description Tab */
+
 .description_section .first_section  .info_box__cards .info_box__card .info_box__head .title{
     font-size: 20px;
     line-height: 25px;
