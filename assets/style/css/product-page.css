@@ -1446,9 +1446,9 @@ font-size: 16px;
         text-align: center;
 }
 .description_section .sticky_product_header .product_price{
-    font-size: 18px;
-    line-height: 28px;
-    margin-right: 12px;
+    font-size: 15px;
+    line-height: 26px;
+    margin-right: 0px;
 }
 .description_section .sticky_product_header .header_actions{
     gap: 10px;

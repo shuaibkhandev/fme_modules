@@ -282,7 +282,7 @@ margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
+    padding-top: 25px;
 }
 
   .footer_container .footer_middle_row .footer_block .footer_title {
