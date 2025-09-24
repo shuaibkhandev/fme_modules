@@ -520,6 +520,10 @@
     background-color: var(--section-bg);
 }
 
+.core_capability_section .core_capability_header{
+    margin-bottom: 55px;
+}
+
 .core_capability_section .core_capability_header_para {
 padding-top: 47px;
 }
@@ -571,10 +575,8 @@ display: none;
 
 /* Core Capability Section Tabs  */
 /* Description Tab */
-/* Description Tab */
 
 .description_section .first_section  .first_section_inner{
-margin-top: 55px;
 display: flex;
 flex-direction: column;
 gap: 60px;
@@ -633,6 +635,7 @@ width: 100%;
   z-index: 999;
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
   padding: 12px 20px;
   margin-top: 66px;
   padding-bottom: 17px;
