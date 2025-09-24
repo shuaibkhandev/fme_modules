@@ -963,6 +963,124 @@ margin-bottom: 83px;
         margin-inline: 40px;
      }
 
+
+
+     /* Customer Revies */
+     
+
+.customer_reviews{ width: 100%; display: flex;margin: auto; gap: 60px; align-items: center; margin-top: 35px;}
+.total_rating  {
+    width: 532px;
+    height: 194px;
+    background: white;
+    border-radius: 16px;
+    justify-content: center;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
+.total_rating  .rating span{color: #3A3A3A; font-size: 48px; line-height: 53px; font-weight: 600;}
+.total_rating .total_reviews{text-align: center;}
+.total_rating .total_reviews span{font-size: 16px; line-height: 24px; color:#464646; padding-top: 10px;}
+
+.star_rating_summary .star-rating-summaryitem{display: flex;  align-items: center; gap: 15px; line-height: 20px;}
+
+.star_rating_summary .star-rating-summaryitem span{font-size: 16px; line-height: 24px; color: #464646;}
+
+
+.star-rating-summaryitem .star-rating-summary_filter{display: flex;align-items: center;}
+
+.star-rating-summaryitem  .star-rating-label{display: flex; align-items: center;gap: 3px;}
+
+.star-rating-label .star-rating-summary_filter-star {display: flex;}
+
+
+.star_rating_summary{
+    width: 544px;
+    display: flex
+;
+    flex-direction: column;
+    gap: 10px;
+}
+.star-rating-summary-progress{
+    flex: 1;
+    
+}
+.star-rating-summary-progress .progress-bar__container {    border-radius: 100px;height: 7px;    background-color: #E3E3E3;
+}
+
+.star-rating-summary-progress .progress-bar__filler { border-radius: 100px;height: 100%;min-width: 12px;}
+
+
+.customer_reviews_list {
+  max-width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.review_item {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+.review_name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.review_stars {
+  color: #ffab02;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.review_text {
+  font-size: 14px;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.review_meta {
+  font-size: 13px;
+  color: #666;
+}
+
+.review_meta span {
+  margin: 0 5px;
+}
+
+.review_date {
+  float: right;
+  color: #999;
+}
+
+.load_more_button {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 12px 0;
+  color: #069ce2;
+  border-top: 1px solid #e0e0e0;
+}
+
+
+ @media screen and (min-width:200px) and (max-width:1080px)  {
+    .customer_reviews { max-width: 100%; width: 100%; display: flex; margin: auto; gap: 20px; align-items: center; flex-wrap: wrap; justify-content: center; }
+ }
+
+ 
+ @media screen and (min-width:768px) and (max-width:1080px)  {
+ .customer_reviews { max-width: 958px; width: 100%; display: flex; margin: auto; gap: 20px; align-items: center; flex-wrap: wrap; justify-content: normal; }
+ }
+
+
    @media screen and (max-width:1600px) {
 /* Core Capability Section */
 
