@@ -626,7 +626,7 @@ width: 100%;
 
 
 .description_section .sticky_product_header {
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
