@@ -17,6 +17,245 @@
   <link rel="stylesheet" href="../assets/fonts/font.css" />
 </head>
 
+  <style>
+    .popup_overlay {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .popup_inner{
+      overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+                border-radius: 8px;
+    }
+
+    .popup_block {
+      width: 760px;
+      max-height: 780px;
+      overflow-y: auto;
+      position: relative;
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .popup_header{
+      margin-bottom: 12px;
+    }
+    .popup_header .title {
+      font-size: 35px;
+      line-height: 46px;
+      font-weight: 700;
+      margin-bottom: 19px;
+    }
+
+    .popup_header .sub_text {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .product_name {
+      font-weight: 600;
+      margin-top: 5px;
+      font-size: 19px;
+      color: #000;
+    }
+
+    .rating_box {
+      border: 1px dashed #ccc;
+      padding: 12px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: #454545;
+      font-size: 18px;
+    }
+
+    .checkbox_group {
+      display: flex;
+      justify-content: space-between;
+      border: 1px dashed #ccc;
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .checkbox_item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .checkbox_item span{
+      font-size: 18px;
+      font-weight: 600;
+      color: #1A2130;
+    }
+
+    .checkbox_item{
+      font-size: 16px;
+    }
+
+    .form_row {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .popup_input {
+      flex: 1;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .popup_textarea {
+      width: 100%;
+      resize: none;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      outline: none;
+      min-height: 120px;
+    }
+
+    .recaptcha_box {
+      margin-top: 10px;
+    }
+
+    .primary_btn {
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 14px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .primary_btn:hover {
+      background: #333;
+    }
+
+    .popup_close_btn {
+      background-color: #111;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-size: 18px;
+    }
+
+    @media screen and (max-width:992px) {
+      .popup_inner{
+        width: 75%;
+      }
+      .popup_block {
+    gap: 15px;
+    padding: 32px;
+        height: 680px;
+        width: auto;
+}
+      .popup_header .title{
+        font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 12px;
+      }
+      .popup_header .sub_text {
+    font-size: 16px;
+}
+.product_name {
+    font-size: 17px;
+}
+.rating_box {
+    padding: 10px;
+    gap: 14px;
+    font-size: 16px;
+}
+.checkbox_item span {
+    font-size: 16px;}
+
+.checkbox_item{
+  font-size: 15px;
+}
+
+    }
+
+
+        @media screen and (max-width:767px) {
+      .popup_inner{
+        width: 95%;
+      }
+      .popup_block {
+        gap: 10px;
+        padding: 18px;
+        height: 620px;
+        width: auto;
+}
+      .popup_header .title{
+ font-size: 22px;
+        line-height: 34px;
+        margin-bottom: 8px;
+      }
+      .popup_header .sub_text {
+    font-size: 15px;
+}
+.product_name {
+    font-size: 16px;
+    margin-top: 0;
+}
+.rating_box {
+    padding: 8px;
+    gap: 10px;
+    font-size: 15px;
+}
+.checkbox_item span {
+    font-size: 15px;}
+
+.checkbox_item{
+  font-size: 14px;
+}
+.popup_input{
+  font-size: 14px;
+  padding: 10px;
+}
+.checkbox_group, .popup_header{
+  margin-bottom: 6px;
+  gap: 20px;
+}
+.form_row{
+  flex-direction: column;
+}
+
+    }
+  </style>
+
 <body>
 
 
@@ -895,13 +1134,13 @@
                         </div>
                         <div class="star-rating-summary-progress">
                             <div class="progress-bar ">
-                                <div class="progress-bar__container" style="background-color: rgb(220, 220, 222);">
+                                <div class="progress-bar__container" style="background-color: #fff;">
                                     <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
                                     </div>
                                 </div>
                           </div>
                         </div>
-                <div class="star-rating-summary-percentage"><span>56%</span></div>
+                <div class="star-rating-summary-percentage"><span>47</span></div>
             </div>
             <div class="star-rating-summaryitem">
                 <div class="star-rating-summary_filter">
@@ -913,13 +1152,13 @@
                     </div>
                     <div class="star-rating-summary-progress">
                         <div class="progress-bar ">
-                            <div class="progress-bar__container" style="background-color: rgb(220, 220, 222);">
+                            <div class="progress-bar__container" style="background-color: #fff;">
                                 <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
                                 </div>
                             </div>
                       </div>
                     </div>
-            <div class="star-rating-summary-percentage"><span>56%</span></div>
+            <div class="star-rating-summary-percentage"><span>12</span></div>
            </div>
             <div class="star-rating-summaryitem">
                     <div class="star-rating-summary_filter">
@@ -931,13 +1170,13 @@
                         </div>
                         <div class="star-rating-summary-progress">
                             <div class="progress-bar ">
-                                <div class="progress-bar__container" style="background-color: rgb(220, 220, 222);">
+                                <div class="progress-bar__container" style="background-color: #fff;">
                                     <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
                                     </div>
                                 </div>
                         </div>
                         </div>
-                <div class="star-rating-summary-percentage"><span>56%</span></div>
+                <div class="star-rating-summary-percentage"><span>18</span></div>
             </div>
             <div class="star-rating-summaryitem">
                     <div class="star-rating-summary_filter">
@@ -949,13 +1188,13 @@
                         </div>
                         <div class="star-rating-summary-progress">
                             <div class="progress-bar ">
-                                <div class="progress-bar__container" style="background-color: rgb(220, 220, 222);">
+                                <div class="progress-bar__container" style="background-color: #fff;">
                                     <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
                                     </div>
                                 </div>
                         </div>
                         </div>
-                <div class="star-rating-summary-percentage"><span>56%</span></div>
+                <div class="star-rating-summary-percentage"><span>71</span></div>
             </div>
             <div class="star-rating-summaryitem">
                 <div class="star-rating-summary_filter">
@@ -967,23 +1206,23 @@
                     </div>
                     <div class="star-rating-summary-progress">
                         <div class="progress-bar ">
-                            <div class="progress-bar__container" style="background-color: rgb(220, 220, 222);">
+                            <div class="progress-bar__container" style="background-color: #fff;">
                                 <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
                                 </div>
                             </div>
                     </div>
                     </div>
-            <div class="star-rating-summary-percentage"><span>56%</span></div>
+            <div class="star-rating-summary-percentage"><span>56</span></div>
             </div>
           </div>
           <div class="total_rating">
             <div class="rating"><span>4.5</span></div>
             <div class="rating_stars">
-                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="15" height="15" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
-                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="15" height="15" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
-                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="15" height="15" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
-                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="15" height="15" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
-                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="15" height="15" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
+                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="27" height="26" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
+                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="27" height="26" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
+                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="27" height="26" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
+                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="27" height="26" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
+                <svg class="wccom-star wccom-ratings__star wccom-star__1" width="27" height="26" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
             </div>
             <div class="total_reviews"><span>20 Reviews</span></div>
           </div>
@@ -991,41 +1230,53 @@
        </div>
        <!-- Customer Individual Reviews -->
 <div class="customer_reviews_list">
-  <div class="review_item">
-    <div class="review_name">anonymous a.</div>
-    <div class="review_stars">★★★★★</div>
-    <div class="review_text">—</div>
-    <div class="review_meta">
-      Helpful? <span>0</span> 👍 <span>0</span> 👎
-      <span class="review_date">Mar 9, 2024</span>
-    </div>
-  </div>
-
-  <div class="review_item">
-    <div class="review_name">Valentino D.</div>
-    <div class="review_stars">★★★★★</div>
-    <div class="review_text">
-      Great Module and the support service is awesome! I bought 3 times this module for my customers and the installing service and customer service was very great!
-    </div>
-    <div class="review_meta">
-      Helpful? <span>0</span> 👍 <span>0</span> 👎
-      <span class="review_date">Jan 8, 2023</span>
-    </div>
-  </div>
-
+ 
   <div class="review_item">
     <div class="review_name">Jorge E</div>
-    <div class="review_stars">★★★★★</div>
+    <div class="review_mid">
+    <div class="review_stars"><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg></div>
     <div class="review_text">
       El soporte que ofrecen es muy bueno. Responden rápido y ofreciendo soluciones válidas. Estoy muy satisfecho con su funcionamiento.
     </div>
     <div class="review_meta">
-      Helpful? <span>0</span> 👍 <span>0</span> 👎
-      <span class="review_date">Jul 5, 2020</span>
+      Helpful? <span>0</span> <img src="/assets/images/like.svg" alt=""> <span>0</span> <img src="/assets/images/dislike.svg" alt="">
+    </div>
+  </div>
+    <span class="review_date">Jul 5, 2020</span>
+  </div>
+
+
+  <div class="review_item">
+    <div class="review_name">Jorge E</div>
+    <div class="review_mid">
+    <div class="review_stars"><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg></div>
+    <div class="review_text">
+      El soporte que ofrecen es muy bueno. Responden rápido y ofreciendo soluciones válidas. Estoy muy satisfecho con su funcionamiento.
+    </div>
+    <div class="review_meta">
+  Helpful? <span>0</span> <img src="/assets/images/like.svg" alt=""> <span>0</span> <img src="/assets/images/dislike.svg" alt="">
+    </div>
+  </div>
+    <span class="review_date">Jul 5, 2020</span>
+  </div>
+
+  <div class="review_item">
+    <div class="review_name">Jorge E</div>
+  <div class="review_mid">
+    <div class="review_stars"><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg><svg class="wccom-star star-rating-summaryicon wccom-star__1" width="17" height="17" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg></div>
+    <div class="review_text">
+      El soporte que ofrecen es muy bueno. Responden rápido y ofreciendo soluciones válidas. Estoy muy satisfecho con su funcionamiento.
+    </div>
+    <div class="review_meta">
+       Helpful? <span>0</span> <img src="/assets/images/like.svg" alt=""> <span>0</span> <img src="/assets/images/dislike.svg" alt="">
     </div>
   </div>
 
-  <div class="load_more_button">Load More</div>
+    <span class="review_date">Jul 5, 2020</span>
+
+  </div>
+
+  <button class="load_more_button">Load More</button>
 </div>
 
             </div>
@@ -1497,9 +1748,68 @@
 
 
 
-  
+     <div class="popup_overlay" id="popupOverlay" >
+      <div class="popup_inner">
+    <div class="popup_block">
+      <!-- Header -->
+      <div class="popup_header">
+        <h2 class="title">Add a Review</h2>
+        <p class="sub_text">You are reviewing:</p>
+        <p class="product_name">Pretty URL - Remove Id from URL and make Clean SEO Friendly URL</p>
+      </div>
+
+      <!-- Rating -->
+      <div class="rating_box">
+        <span>Overall Rating:</span>
+        <span class="stars">     <svg class="wccom-star star-rating-summaryicon wccom-star__1" width="19" height="19" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>  <svg class="wccom-star star-rating-summaryicon wccom-star__1" width="19" height="19" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>  <svg class="wccom-star star-rating-summaryicon wccom-star__1" width="19" height="19" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>  <svg class="wccom-star star-rating-summaryicon wccom-star__1" width="19" height="19" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>  <svg class="wccom-star star-rating-summaryicon wccom-star__1" width="19" height="19" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg></span>
+      </div>
+
+      <!-- Questions -->
+      <div class="checkbox_group">
+        <div class="checkbox_item">
+          <span>Was it easy to use?</span>
+          <label><input type="checkbox"> Yes</label>
+          <label><input type="checkbox"> No</label>
+        </div>
+        <div class="checkbox_item">
+          <span>Good Support?</span>
+          <label><input type="checkbox"> Yes</label>
+          <label><input type="checkbox"> No</label>
+        </div>
+        <div class="checkbox_item">
+          <span>Did it work well?</span>
+          <label><input type="checkbox"> Yes</label>
+          <label><input type="checkbox"> No</label>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="form_row">
+        <input type="text" placeholder="Nick Name*" class="popup_input" required>
+        <input type="text" placeholder="Summary of Review*" class="popup_input" required>
+      </div>
+
+      <textarea placeholder="Add Review*" class="popup_textarea" required></textarea>
+
+      <!-- Recaptcha -->
+      <div class="recaptcha_box">
+        <input type="checkbox" id="robot" required>
+        <label for="robot">I'm not a robot</label>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="primary_btn">Add a Review →</button>
+
+      <!-- Close -->
+      <button class="popup_close_btn" type="button" id="popupCloseBtn">&times;</button>
+    </div>
+    </div>
+  </div>
+
 
     </main>
+
+
 
     <!-- Footer Section -->
     <footer class="footer_container black_bg">
@@ -1633,6 +1943,7 @@
     </footer>
   </section>
 
+ 
   <script src="../assets/js/jquery.min.js"></script>
   <script src="../assets/js/jquery-1.11.0.min.js"></script>
   <script src="../assets/js/slick.min.js"></script>
@@ -1644,7 +1955,7 @@
       const sections = document.querySelectorAll(".tab_section");
 
       // Show first section by default
-      sections[0].classList.add("active");
+      sections[1].classList.add("active");
 
       tabs.forEach((tab, index) => {
         tab.addEventListener("click", () => {
@@ -1696,6 +2007,13 @@
       variableWidth: true
     });
 
+  </script>
+
+   <script>
+    const popupCloseBtn = document.getElementById("popupCloseBtn");
+    popupCloseBtn.addEventListener("click", function () {
+      document.getElementById("popupOverlay").style.display = "none";
+    });
   </script>
 </body>
 
