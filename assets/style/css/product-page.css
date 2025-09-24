@@ -1303,7 +1303,7 @@ margin-bottom: 83px;
     line-height: 27px;
 }
 
-.description_section .first_section  .info_box__cards .info_box__card {
+.core_capability_section .description_section .first_section  .info_box__cards .info_box__card  {
     padding: 27px 32px 27px 32px;
     gap: 10px;
 }
@@ -1576,7 +1576,7 @@ min-width: 180px;
 .description_section .first_section .info_box__cards{
     gap: 15px;
 }
-.description_section .first_section  .info_box__cards .info_box__card {
+.core_capability_section .description_section .first_section  .info_box__cards .info_box__card  {
     padding: 27px 32px 27px 32px;
     gap: 10px;
 }
@@ -1884,7 +1884,7 @@ min-width: 140px;
 .description_section .first_section .info_box__cards{
     gap: 15px;
 }
-.description_section .first_section  .info_box__cards .info_box__card {
+.core_capability_section .description_section .first_section  .info_box__cards .info_box__card {
     padding: 18px 18px 18px 18px;
     gap: 7px;
 }
