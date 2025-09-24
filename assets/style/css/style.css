@@ -624,7 +624,6 @@
 }
 
 .faq_section .faq_inner .faq_listing .faq_item {
-  background-color: var(--secondary-color);
   margin-bottom: 30px;
 }
 
@@ -665,7 +664,6 @@
 }
 
 .faq_section .panel {
-  background-color: var(--secondary-color);
   max-height: 0;
   overflow: hidden;
   margin: 0 28px;
