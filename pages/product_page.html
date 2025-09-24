@@ -138,22 +138,10 @@
     }
 
     .primary_btn {
-      background: #111;
-      color: #fff;
-      border: none;
-      border-radius: 25px;
-      padding: 14px 20px;
-      font-size: 15px;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
+    align-self: flex-start;
     }
 
-    .primary_btn:hover {
-      background: #333;
-    }
+
 
     .popup_close_btn {
       background-color: #111;
@@ -251,6 +239,15 @@
 }
 .form_row{
   flex-direction: column;
+}
+
+
+.popup_close_btn {
+    right: 15px;
+    top: 15px;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
 }
 
     }
@@ -1102,7 +1099,7 @@
                  Reviews & Ratings
                 </h2>
               </div>
-              <button class="primary_cta">
+              <button class="primary_cta" onclick="openReviewModal()">
                 Leave a Review
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1748,7 +1745,7 @@
 
 
 
-     <div class="popup_overlay" id="popupOverlay" >
+     <div id="reviewModal" class="popup_overlay" style="display: none;" >
       <div class="popup_inner">
     <div class="popup_block">
       <!-- Header -->
@@ -1798,7 +1795,7 @@
       </div>
 
       <!-- Submit -->
-      <button type="submit" class="primary_btn">Add a Review →</button>
+      <button type="submit" class="primary_cta primary_btn">Add a Review →</button>
 
       <!-- Close -->
       <button class="popup_close_btn" type="button" id="popupCloseBtn">&times;</button>
@@ -2010,10 +2007,15 @@
   </script>
 
    <script>
-    const popupCloseBtn = document.getElementById("popupCloseBtn");
+      function openReviewModal(){
+       document.getElementById('reviewModal').style.display = 'flex';
+    }
+     const popupCloseBtn = document.getElementById("popupCloseBtn");
     popupCloseBtn.addEventListener("click", function () {
-      document.getElementById("popupOverlay").style.display = "none";
+      document.getElementById("reviewModal").style.display = "none";
     });
+  
+   
   </script>
 </body>
 

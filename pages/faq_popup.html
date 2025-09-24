@@ -79,22 +79,10 @@
     }
 
     .primary_btn {
-      background: #111;
-      color: #fff;
-      border: none;
-      border-radius: 25px;
-      padding: 14px;
-      font-size: 15px;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
+     align-self: flex-start;
     }
 
-    .primary_btn:hover {
-      background: #333;
-    }
+
 
     .popup_close_btn {
       background-color: #111;
@@ -118,6 +106,13 @@
         width: 90%;
         padding: 20px;
       }
+      .popup_close_btn {
+    right: 15px;
+    top: 15px;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+}
     }
   </style>
 </head>
@@ -138,7 +133,7 @@
           <label for="robot">I'm not a robot</label>
         </div>
 
-        <button type="submit" class="primary_cta">Ask a Question →</button>
+        <button type="submit" class="primary_cta primary_btn">Ask a Question →</button>
       </form>
       <button class="popup_close_btn" type="button" id="popupCloseBtn">&times;</button>
     </div>

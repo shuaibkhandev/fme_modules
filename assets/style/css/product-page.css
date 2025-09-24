@@ -554,7 +554,7 @@ filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.08));
     border-radius: 8px;
     position: relative;
     border: 2px solid #fff;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .core_capability_section .core_capability_header .tabs_container .tabs_list .tab_btn.active{
     background-color: #E9E9E9;
@@ -659,7 +659,7 @@ width: 100%;
   max-width: 577px;
 }
 
-.core_capability_section.description_section .sticky_product_header .header_actions {
+.core_capability_section .description_section .sticky_product_header .header_actions {
   display: flex;
   align-items: center;
   gap: 23px;
