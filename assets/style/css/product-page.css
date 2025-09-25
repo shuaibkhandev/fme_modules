@@ -607,6 +607,7 @@ gap: 60px;
     color: #000;
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 5px;
     
 }
 .description_section .first_section  .info_box__cards .info_box__card .info_box__head p {
@@ -636,6 +637,7 @@ width: 100%;
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     border-top: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.17);
   padding: 12px 20px;
   margin-top: 66px;
   padding-bottom: 17px;
