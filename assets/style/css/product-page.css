@@ -2184,10 +2184,11 @@ form textarea {
     }
 
     .core_capability_section .change_log_section .faq_inner .faq_listing .faq_item .accordion {
-        font-size: 16px;
+        font-size: 15px;
         display: flex;
         flex-direction: column;
-        line-height: 22px;
+        line-height: 21px;
+        padding: 10px 14px;
     }
 
     .core_capability_section .change_log_section .faq_inner .faq_listing .faq_item .accordion span {
