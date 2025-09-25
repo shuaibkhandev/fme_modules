@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../assets/style/css/footer.css" />
   <link rel="stylesheet" href="../assets/style/css/style.css" />
   <link rel="stylesheet" href="../assets/style/css/product-page.css" />
-      <link rel="stylesheet" href="/assets/style/css/product-card.css" />
+  <link rel="stylesheet" href="../assets/style/css/product-card.css" />
   <link rel="stylesheet" href="../assets/fonts/font.css" />
     <script src="./assets/js/footer.js" defer></script>
 </head>
@@ -31,14 +31,14 @@
       align-items: center;
       z-index: 9999;
     }
-    .popup_inner{
+      .popup_overlay  .popup_inner{
       overflow: hidden;
             background-color: #fff;
             box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
                 border-radius: 8px;
     }
 
-    .popup_block {
+     .popup_overlay   .popup_block {
       width: 760px;
       max-height: 780px;
       overflow-y: auto;
@@ -49,29 +49,29 @@
       gap: 20px;
     }
 
-    .popup_header{
+      .popup_overlay  .popup_header{
       margin-bottom: 12px;
     }
-    .popup_header .title {
+      .popup_overlay  .popup_header .title {
       font-size: 35px;
       line-height: 46px;
       font-weight: 700;
       margin-bottom: 19px;
     }
 
-    .popup_header .sub_text {
+      .popup_overlay  .popup_header .sub_text {
       font-size: 18px;
       color: #555;
     }
 
-    .product_name {
+      .popup_overlay  .product_name {
       font-weight: 600;
       margin-top: 5px;
       font-size: 19px;
       color: #000;
     }
 
-    .rating_box {
+     .popup_overlay   .rating_box {
       border: 1px dashed #ccc;
       padding: 12px;
       border-radius: 6px;
@@ -82,7 +82,7 @@
       font-size: 18px;
     }
 
-    .checkbox_group {
+      .popup_overlay  .checkbox_group {
       display: flex;
       justify-content: space-between;
       border: 1px dashed #ccc;
@@ -92,29 +92,29 @@
       flex-wrap: wrap;
     }
 
-    .checkbox_item {
+     .popup_overlay   .checkbox_item {
       display: flex;
       flex-direction: column;
       gap: 5px;
     }
 
-    .checkbox_item span{
+      .popup_overlay  .checkbox_item span{
       font-size: 18px;
       font-weight: 600;
       color: #1A2130;
     }
 
-    .checkbox_item{
+     .popup_overlay   .checkbox_item{
       font-size: 16px;
     }
 
-    .form_row {
+      .popup_overlay  .form_row {
       display: flex;
       gap: 10px;
       width: 100%;
     }
 
-    .popup_input {
+       .popup_overlay .popup_input {
       flex: 1;
       padding: 14px;
       border: 1px solid #ccc;
@@ -123,7 +123,7 @@
       outline: none;
     }
 
-    .popup_textarea {
+       .popup_overlay .popup_textarea {
       width: 100%;
       resize: none;
       padding: 14px;
@@ -134,17 +134,17 @@
       min-height: 120px;
     }
 
-    .recaptcha_box {
+      .popup_overlay  .recaptcha_box {
       margin-top: 10px;
     }
 
-    .primary_btn {
+      .popup_overlay  .primary_btn {
     align-self: flex-start;
     }
 
 
 
-    .popup_close_btn {
+      .popup_overlay  .popup_close_btn {
       background-color: #111;
       position: absolute;
       right: 15px;
@@ -162,35 +162,35 @@
     }
 
     @media screen and (max-width:992px) {
-      .popup_inner{
+       .popup_overlay   .popup_inner{
         width: 75%;
       }
-      .popup_block {
+         .popup_overlay .popup_block {
     gap: 15px;
     padding: 32px;
         height: 680px;
         width: auto;
 }
-      .popup_header .title{
+      .popup_overlay    .popup_header .title{
         font-size: 28px;
     line-height: 40px;
     margin-bottom: 12px;
       }
-      .popup_header .sub_text {
+         .popup_overlay .popup_header .sub_text {
     font-size: 16px;
 }
-.product_name {
+    .popup_overlay .product_name {
     font-size: 17px;
 }
-.rating_box {
+    .popup_overlay .rating_box {
     padding: 10px;
     gap: 14px;
     font-size: 16px;
 }
-.checkbox_item span {
+    .popup_overlay .checkbox_item span {
     font-size: 16px;}
 
-.checkbox_item{
+    .popup_overlay .checkbox_item{
   font-size: 15px;
 }
 
@@ -198,52 +198,52 @@
 
 
         @media screen and (max-width:767px) {
-      .popup_inner{
+         .popup_overlay .popup_inner{
         width: 95%;
       }
-      .popup_block {
+         .popup_overlay .popup_block {
         gap: 10px;
         padding: 18px;
         height: 620px;
         width: auto;
 }
-      .popup_header .title{
+         .popup_overlay .popup_header .title{
  font-size: 22px;
         line-height: 34px;
         margin-bottom: 8px;
       }
-      .popup_header .sub_text {
+        .popup_overlay  .popup_header .sub_text {
     font-size: 15px;
 }
-.product_name {
+    .popup_overlay .product_name {
     font-size: 16px;
     margin-top: 0;
 }
-.rating_box {
+    .popup_overlay  .rating_box {
     padding: 8px;
     gap: 10px;
     font-size: 15px;
 }
-.checkbox_item span {
+    .popup_overlay .checkbox_item span {
     font-size: 15px;}
 
-.checkbox_item{
+    .popup_overlay .checkbox_item{
   font-size: 14px;
 }
-.popup_input{
+    .popup_overlay .popup_input{
   font-size: 14px;
   padding: 10px;
 }
-.checkbox_group, .popup_header{
+    .popup_overlay .checkbox_group, .popup_header{
   margin-bottom: 6px;
   gap: 20px;
 }
-.form_row{
+    .popup_overlay .form_row{
   flex-direction: column;
 }
 
 
-.popup_close_btn {
+    .popup_overlay .popup_close_btn {
     right: 15px;
     top: 15px;
     width: 24px;
@@ -902,11 +902,10 @@
      <div class="sec_top_row">
             <div class="cnt">
               <h2 class="section_title prod_listing_title">
-                prestashop best sellers module
+               Core Features of Prestashop Module
               </h2>
               <p class="primary_text prod_listing_text">
-                Boost sales by showcasing your top-selling products with the
-                PrestaShop Best Seller module.
+                Discover powerful tools and flexible options designed to enhance your PrestaShop store’s functionality and user experience.
               </p>
             </div>
 
@@ -1133,17 +1132,17 @@
                         <div class="star-rating-summary-progress">
                             <div class="progress-bar ">
                                 <div class="progress-bar__container" style="background-color: #fff;">
-                                    <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
+                                    <div class="progress-bar__filler" style="background-color: #000; width: 58%;">
                                     </div>
                                 </div>
                           </div>
                         </div>
-                <div class="star-rating-summary-percentage"><span>47</span></div>
+                <div class="star-rating-summary-percentage"><span>58</span></div>
             </div>
             <div class="star-rating-summaryitem">
                 <div class="star-rating-summary_filter">
                     <label class="star-rating-label">
-                        <span class="star-rating-summary_number" aria-hidden="true">5</span>
+                        <span class="star-rating-summary_number" aria-hidden="true">4</span>
                         <span class="star-rating-summary_filter-star" aria-hidden="true">
                         <svg class="wccom-star star-rating-summaryicon wccom-star__1" width="13" height="13" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg></span>
                     </label>
@@ -1151,17 +1150,17 @@
                     <div class="star-rating-summary-progress">
                         <div class="progress-bar ">
                             <div class="progress-bar__container" style="background-color: #fff;">
-                                <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
+                                <div class="progress-bar__filler" style="background-color: #000; width: 46%;">
                                 </div>
                             </div>
                       </div>
                     </div>
-            <div class="star-rating-summary-percentage"><span>12</span></div>
+            <div class="star-rating-summary-percentage"><span>46</span></div>
            </div>
             <div class="star-rating-summaryitem">
                     <div class="star-rating-summary_filter">
                         <label class="star-rating-label">
-                            <span class="star-rating-summary_number" aria-hidden="true">5</span>
+                            <span class="star-rating-summary_number" aria-hidden="true">3</span>
                             <span class="star-rating-summary_filter-star" aria-hidden="true">
                             <svg class="wccom-star star-rating-summaryicon wccom-star__1" width="13" height="13" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg></span>
                         </label>
@@ -1169,7 +1168,7 @@
                         <div class="star-rating-summary-progress">
                             <div class="progress-bar ">
                                 <div class="progress-bar__container" style="background-color: #fff;">
-                                    <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
+                                    <div class="progress-bar__filler" style="background-color: #000; width: 18%;">
                                     </div>
                                 </div>
                         </div>
@@ -1179,7 +1178,7 @@
             <div class="star-rating-summaryitem">
                     <div class="star-rating-summary_filter">
                         <label class="star-rating-label">
-                            <span class="star-rating-summary_number" aria-hidden="true">5</span>
+                            <span class="star-rating-summary_number" aria-hidden="true">2</span>
                             <span class="star-rating-summary_filter-star" aria-hidden="true">
                             <svg class="wccom-star star-rating-summaryicon wccom-star__1" width="13" height="13" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg></span>
                         </label>
@@ -1187,17 +1186,17 @@
                         <div class="star-rating-summary-progress">
                             <div class="progress-bar ">
                                 <div class="progress-bar__container" style="background-color: #fff;">
-                                    <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
+                                    <div class="progress-bar__filler" style="background-color: #000; width: 12%;">
                                     </div>
                                 </div>
                         </div>
                         </div>
-                <div class="star-rating-summary-percentage"><span>71</span></div>
+                <div class="star-rating-summary-percentage"><span>12</span></div>
             </div>
             <div class="star-rating-summaryitem">
                 <div class="star-rating-summary_filter">
                     <label class="star-rating-label">
-                        <span class="star-rating-summary_number" aria-hidden="true">5</span>
+                        <span class="star-rating-summary_number" aria-hidden="true">1</span>
                         <span class="star-rating-summary_filter-star" aria-hidden="true">
                         <svg class="wccom-star star-rating-summaryicon wccom-star__1" width="13" height="13" viewBox="0 0 24 24" role="img" pointer-events="all"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg></span>
                     </label>
@@ -1205,12 +1204,12 @@
                     <div class="star-rating-summary-progress">
                         <div class="progress-bar ">
                             <div class="progress-bar__container" style="background-color: #fff;">
-                                <div class="progress-bar__filler" style="background-color: #000; width: 56%;">
+                                <div class="progress-bar__filler" style="background-color: #000; width: 10%;">
                                 </div>
                             </div>
                     </div>
                     </div>
-            <div class="star-rating-summary-percentage"><span>56</span></div>
+            <div class="star-rating-summary-percentage"><span>10</span></div>
             </div>
           </div>
           <div class="total_rating">
@@ -1222,7 +1221,7 @@
                 <svg class="wccom-star wccom-ratings__star wccom-star__1" width="27" height="26" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
                 <svg class="wccom-star wccom-ratings__star wccom-star__1" width="27" height="26" viewBox="0 0 24 24" role="img" pointer-events="all" aria-label="Rate product 1 star" tabindex="-1"><path d="M11.6175 18.3126L17.4016 21.2832C17.9771 21.5788 18.6432 21.091 18.5352 20.4531L17.5256 14.4916L22.2421 9.44552C22.6687 8.98913 22.4178 8.24151 21.8023 8.13483L15.5158 7.04526L12.305 1.24251C12.006 0.702085 11.2291 0.702085 10.93 1.24251L7.71933 7.04526L1.43282 8.13483C0.817277 8.24151 0.566397 8.98913 0.992984 9.44552L5.70949 14.4916L4.69988 20.4531C4.59184 21.091 5.25798 21.5788 5.83352 21.2832L11.6175 18.3126Z" fill="#FFAB02"></path></svg>
             </div>
-            <div class="total_reviews"><span>20 Reviews</span></div>
+            <div class="total_reviews"><span>Total 768 Reviews</span></div>
           </div>
           
        </div>
@@ -1237,7 +1236,7 @@
       El soporte que ofrecen es muy bueno. Responden rápido y ofreciendo soluciones válidas. Estoy muy satisfecho con su funcionamiento.
     </div>
     <div class="review_meta">
-      Helpful? <span>0</span> <img src="/assets/images/like.svg" alt=""> <span>0</span> <img src="/assets/images/dislike.svg" alt="">
+      Helpful? <div style="margin-right: 5px;"> <img src="/assets/images/like.svg" alt=""> <span>0</span> </div> <div> <img src="/assets/images/dislike.svg" alt=""> <span>0</span> </div>
     </div>
   </div>
     <span class="review_date">Jul 5, 2020</span>
@@ -1251,8 +1250,8 @@
     <div class="review_text">
       El soporte que ofrecen es muy bueno. Responden rápido y ofreciendo soluciones válidas. Estoy muy satisfecho con su funcionamiento.
     </div>
-    <div class="review_meta">
-  Helpful? <span>0</span> <img src="/assets/images/like.svg" alt=""> <span>0</span> <img src="/assets/images/dislike.svg" alt="">
+      <div class="review_meta">
+      Helpful? <div style="margin-right: 5px;"> <img src="/assets/images/like.svg" alt=""> <span>0</span> </div> <div> <img src="/assets/images/dislike.svg" alt=""> <span>0</span> </div>
     </div>
   </div>
     <span class="review_date">Jul 5, 2020</span>
@@ -1265,8 +1264,8 @@
     <div class="review_text">
       El soporte que ofrecen es muy bueno. Responden rápido y ofreciendo soluciones válidas. Estoy muy satisfecho con su funcionamiento.
     </div>
-    <div class="review_meta">
-       Helpful? <span>0</span> <img src="/assets/images/like.svg" alt=""> <span>0</span> <img src="/assets/images/dislike.svg" alt="">
+      <div class="review_meta">
+      Helpful? <div style="margin-right: 5px;"> <img src="/assets/images/like.svg" alt=""> <span>0</span> </div> <div> <img src="/assets/images/dislike.svg" alt=""> <span>0</span> </div>
     </div>
   </div>
 
@@ -1402,13 +1401,20 @@
       </div>
       <div class="form_container">
         <form>
+          <div class="form_row">
           <input type="text" placeholder="First Name*" required>
           <input type="text" placeholder="Phone No*" required>
+          </div>
+          <div class="form_row">
           <input type="text" class="" placeholder="Company Name*" required>
           <input type="text" class="" placeholder="Module Name*" required>
+          </div>
+          <div class="form_row">
           <input type="email" class="full-width" placeholder="Email Address*" required>
+          </div>
+          <div class="form_row">
           <textarea placeholder="Message*" required></textarea>
-
+</div>
           <div class="form_footer">
             <!-- <div class="captcha">
             </div> -->
@@ -1940,6 +1946,7 @@
       </div>
     </footer>
   </section>
+
 
  
   <script src="../assets/js/jquery.min.js"></script>

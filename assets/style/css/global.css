@@ -346,6 +346,10 @@ p {
   justify-content: space-between;
 }
 
+.sec_top_row  > .cnt >  h2{
+  margin-bottom: 5px;
+}
+
 
 
 .grid_3 {
