@@ -1502,6 +1502,7 @@ form textarea {
         width: 50%;
     }
 
+
     .product_detail_page .content-wrapper .column_info .image_with_title {
         gap: 12px;
         padding-bottom: 12px;
@@ -1879,7 +1880,9 @@ form textarea {
     .product_detail_page .content-wrapper .column_info {
         width: 100%;
     }
-
+.product_detail_page .column_info .product_description .product_actions{
+    gap: 15px;
+}
     .product_detail_page .content-wrapper .column_image .action-buttons .action-btn {
         font-size: 16px;
         line-height: 30px;
