@@ -1303,6 +1303,7 @@ form textarea {
 @media (min-width: 1025px) and (max-width: 1280px) {
     .product_detail_page .content-wrapper {
         flex-wrap: wrap;
+         margin-block: 35px 50px;
     }
 
     .product_detail_page .content-wrapper .prouct_data {
@@ -1396,6 +1397,10 @@ form textarea {
         border: 2px solid #fff;
     }
 
+          .core_capability_section .core_capability_header{
+        margin-bottom: 45px;
+    }
+
     /* Description Tab */
     .core_capability_section .description_section .first_section .info_box__cards .info_box__card .info_box__head .title {
         font-size: 22px;
@@ -1481,6 +1486,7 @@ form textarea {
     .product_detail_page .content-wrapper {
         flex-direction: column;
         gap: 30px;
+         margin-block: 35px 40px;
     }
 
     .product_detail_page .content-wrapper .prouct_data {
@@ -1538,6 +1544,9 @@ form textarea {
         font-size: 15px;
         gap: 10px;
         border: 2px solid #fff;
+    }
+        .core_capability_section .core_capability_header{
+        margin-bottom: 40px;
     }
 
 
@@ -1681,6 +1690,10 @@ form textarea {
         overflow-x: scroll;
         white-space: nowrap;
         scrollbar-width: thin;
+    }
+
+        .core_capability_section .core_capability_header{
+        margin-bottom: 30px;
     }
 
     .core_capability_section .core_capability_header .tabs_container .tabs_list .tab_btn {
@@ -1854,6 +1867,7 @@ form textarea {
     .product_detail_page .content-wrapper {
         flex-direction: column;
         gap: 15px;
+        margin-block: 35px 20px;
     }
 
     .product_detail_page .content-wrapper .prouct_data {
@@ -1985,6 +1999,7 @@ form textarea {
         width: 32px;
         height: 32px;
     }
+    
 
     .column_info .product_meta .inner>div {
         font-size: 14px;
@@ -2016,6 +2031,9 @@ form textarea {
 
 
     /* Core Capability Section */
+    .core_capability_section .core_capability_header{
+        margin-bottom: 25px;
+    }
     .core_capability_section .core_capability_header .tabs_container .tabs_list .tab_btn {
         padding: 12px 22px;
         font-size: 14px;
@@ -2196,6 +2214,12 @@ form textarea {
         margin-left: 0;
 
     }
+    .faq_section .faq_inner .faq_listing .faq_item{
+        margin-bottom: 10px;
+    }
+        .core_capability_section .change_log_section .faq_inner {
+        gap: 10px;
+        }
 
     /* Customers Review */
     .core_capability_section .star_rating_summary {
