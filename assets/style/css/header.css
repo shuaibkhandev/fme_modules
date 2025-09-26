@@ -837,6 +837,12 @@ color: #000;
 .search_suggest_list .search_suggest_link >  a{
 width: 65px;
 }
+.header_container .header .search_field_head .search_outer .dialog_block.search .close_search_btn > img{
+  width: 12px;
+}
+.header_container .header .search_field_head .search_outer .dialog_block.search .srch_input{
+  font-size: 15px;
+}
 }
 
 
