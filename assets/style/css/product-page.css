@@ -954,7 +954,9 @@ form textarea {
 .core_capability_section .change_log_section .panel .panel_inner {
     margin-inline: 40px;
 }
-
+       .core_capability_section  .faq_section .faq_header .primary_text{
+        max-width: 100%;
+       }
 
 
 /* Customer Revies Tab */
@@ -2252,6 +2254,8 @@ form textarea {
         line-height: 21px;
         padding: 10px 14px;
     }
+
+
 
     .core_capability_section .change_log_section .faq_inner .faq_listing .faq_item .accordion span {
         font-size: 12px;
