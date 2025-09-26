@@ -814,6 +814,28 @@ color: #000;
   .header_container .header .search_field_head .search-suggestions .search-suggestion-title{
     margin-bottom: 15px;
   }
+    .header_container .header .search_field_head .search-suggestions .search_suggest_list:nth-child(odd), .header_container .header .search_field_head .search-suggestions .search_suggest_list:nth-child(even){
+    padding: 0;
+    padding-bottom: 5px;
+  }
+
+.header_container .header .search_field_head .search-suggestions .search_suggest_list .search_suggest_link .search_pd_name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+.header_container .header .search_field_head .search-suggestions .search_suggest_list .search_suggest_link .price{
+    font-size: 15px;
+  }
+  .search_field_head .search-suggestions .search_suggest_list .search_suggest_link {
+    gap: 8px;
+}
+
+.header_container .header .search_field_head .search-suggestions .search_suggest_list .search_suggest_link .pd_type{
+  font-size: 10px;
+}
+.search_suggest_list .search_suggest_link >  a{
+width: 65px;
+}
 }
 
 
@@ -821,4 +843,8 @@ color: #000;
   .header_container .header_top_list .currency_list span, .header_container .header_top_list .language_list span{
     display: none;
   }
+  .search_suggest_list .search_suggest_link >  a{
+width: 55px;
+}
+
 }
