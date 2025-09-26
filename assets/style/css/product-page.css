@@ -1457,6 +1457,21 @@ form textarea {
         line-height: 46px;
     }
 
+    .core_capability_section .features .feature_title{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .core_capability_section .features .feature_description {
+    font-size: 17px;
+    line-height: 26px;
+}
+.core_capability_section .features .feature_card{
+    gap: 15px;
+}
+.core_capability_section .features .feature_card {
+    padding: 31px 40px 31px 20px;
+}
+
     /*  customization Tab */
     .core_capability_section .tab_section.customization_section .left_text {
         width: 390px;
@@ -1639,6 +1654,21 @@ form textarea {
     .core_capability_section .description_section .core_features_section .core_feature_list li {
         margin-bottom: 25px;
     }
+
+        .core_capability_section .features .feature_title{
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .core_capability_section .features .feature_description {
+    font-size: 16px;
+    line-height: 25px;
+}
+.core_capability_section .features .feature_card{
+    gap: 15px;
+}
+.core_capability_section .features .feature_card {
+    padding: 29px 38px 29px 18px;
+}
 
     /* Sell Module section */
     .sell_module_section .sell_module_inner {
@@ -2120,7 +2150,7 @@ form textarea {
         scrollbar-width: thin;
     }
 
-    .description_section .core_features_section .tab_btn1 {
+    .core_capability_section .description_section .core_features_section .tab_btn1 {
         min-width: 180px;
         padding: 10px 12px;
         font-size: 14px;
@@ -2128,11 +2158,7 @@ form textarea {
         text-align: center;
     }
 
-    .core_capability_section .description_section .core_features_section .tab_section1 .content .title {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
+  
     .core_capability_section .description_section .core_features_section .core_feature_list {
         padding-right: 0px;
     }
@@ -2158,6 +2184,20 @@ form textarea {
     .core_capability_section .description_section .core_features_section .tabs_content1 {
         padding: 18px 26px;
     }
+            .core_capability_section .features .feature_title{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .core_capability_section .features .feature_description {
+    font-size: 15px;
+    line-height: 23px;
+}
+.core_capability_section .features .feature_card{
+    gap: 15px;
+}
+.core_capability_section .features .feature_card {
+    padding: 26px 18px 26px 18px;
+}
 
     /* Sell Module section */
     .sell_module_section .sell_module_inner {
