@@ -821,13 +821,14 @@ color: #000;
 
 .header_container .header .search_field_head .search-suggestions .search_suggest_list .search_suggest_link .search_pd_name {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 17px;
   }
 .header_container .header .search_field_head .search-suggestions .search_suggest_list .search_suggest_link .price{
     font-size: 15px;
   }
-  .search_field_head .search-suggestions .search_suggest_list .search_suggest_link {
+.header_container .header .search_field_head .search-suggestions .search_suggest_list .search_suggest_link {
     gap: 8px;
+    align-items: start;
 }
 
 .header_container .header .search_field_head .search-suggestions .search_suggest_list .search_suggest_link .pd_type{
