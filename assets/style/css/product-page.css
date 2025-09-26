@@ -922,6 +922,8 @@ form textarea {
     color: #000;
 }
 
+
+
 .core_capability_section .change_log_section .faq_inner .faq_listing .faq_item .accordion span {
     font-size: 15px;
     color: rgba(65, 65, 65, 0.68);
@@ -937,7 +939,9 @@ form textarea {
 .core_capability_section .change_log_section .faq_inner .faq_header {
     width: 520px;
 }
-
+    .core_capability_section .change_log_section .faq_header .primary_text {
+        max-width: 100%;
+    }
 .core_capability_section .change_log_section .faq_inner .faq_listing {
     flex: 1;
 }
@@ -953,10 +957,39 @@ form textarea {
 
 .core_capability_section .change_log_section .panel .panel_inner {
     margin-inline: 40px;
+    margin-block: 20px 25px;
 }
-       .core_capability_section  .faq_section .faq_header .primary_text{
-        max-width: 100%;
+
+       .core_capability_section .change_log_section .panel .panel_inner h4{
+        font-size: 16px;
+        line-height: 27px;
+        color: #434343;
+        font-weight: 600;
+        padding-bottom: 20px;
        }
+.core_capability_section .change_log_section .panel .panel_inner ul{
+    padding-left: 20px;
+}
+         .core_capability_section .change_log_section .panel .panel_inner ul li{
+            padding-bottom: 15px;
+            font-size: 14px;
+            color: #626161;
+            font-weight: 400;
+            position: relative;
+         }
+
+         .core_capability_section .change_log_section .panel .panel_inner ul li::before{
+            position: absolute;
+            content: "";
+            background-image: url("/assets/images/circle.svg");
+            background-repeat: no-repeat;
+            left: -20px;
+            top: 1px;
+            width: 20px;
+            height: 20px;
+         }
+
+       
 
 
 /* Customer Revies Tab */
@@ -1832,11 +1865,11 @@ form textarea {
     /* Change Log Section (TAB)  */
 
     .core_capability_section .change_log_section .faq_inner .faq_header {
-        width: 100%;
+        width: 70%;
     }
 
     .core_capability_section .change_log_section .faq_header .primary_text {
-        max-width: 800px;
+        max-width: 100%;
     }
 
     .core_capability_section .change_log_section .faq_inner .faq_listing {
@@ -1844,7 +1877,7 @@ form textarea {
     }
 
     .core_capability_section .change_log_section .faq_inner {
-        gap: 40px;
+        gap: 20px;
     }
 
     .core_capability_section .change_log_section .accordion {
