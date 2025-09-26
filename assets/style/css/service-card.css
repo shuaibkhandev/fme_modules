@@ -1,0 +1,70 @@
+
+.service_card{
+    border: 1px solid #E6E3EA;
+    background-color: #FDFDFD;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+
+
+    .wrapper{
+    padding: 52px 38px;
+
+    .badge{
+      font-size: 14px;
+      color: #000;
+      line-height: 20px;
+      font-weight: 400;
+      margin-bottom: 20px;
+            text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      img{
+        margin-right: 5px;
+      }
+    }
+    .title{
+      color: #000;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 20px;
+
+    }
+
+    .categories{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .category{
+            background-color: #F8F6F6;
+            border-radius: 4px;
+            padding: 5px 12px;
+            color: #050406;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
+    &:hover{
+        background-color: #000;
+        .badge{
+            color: #fff;
+        }
+        .title{
+            color: #fff;
+        }
+        .text{
+            color: #A0A0A0;
+        }
+        .categories{
+               .category{
+            background-color: #5C5C5C;
+            color: #fff;
+        }
+        }
+     
+    }
+
+}
+
