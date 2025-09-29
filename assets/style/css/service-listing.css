@@ -147,10 +147,10 @@
             gap: 30px;
         }
     }
-}
 
 
-/* Customer Needs */
+
+    /* Customer Needs */
 .customer_needs { background: var(--section-bg) }
 .customer_needs .top_part { display: flex; align-items: center; gap: 150px; padding-bottom: 100px;}
 .customer_needs .steps { display: flex; gap: 20px;}
@@ -158,6 +158,7 @@
 .customer_needs .icon, .customer_needs .text, .customer_needs .numbering {padding: 36px 42px 0 42px; } 
 .customer_needs .text { padding: 30px 42px; border-bottom: 1px solid #c7c7c7; font-size: 23px; font-weight: 500; line-height: 28px; color: #4f4f4f; }
 .customer_needs .numbering { font-size: 18px; padding: 30px 35px; font-weight: 700; line-height: 21px; color: #000; }
+
 
 
 /* PrestaShop Solutions */
@@ -171,6 +172,7 @@
 .prestshop_solutions .bottom_part .profile { display: flex; align-items: center; gap: 20px; }
 .prestshop_solutions .bottom_part .name { font-size: 19px; line-height: 34px; font-weight: 700; margin-bottom: 3px; }
 .prestshop_solutions .bottom_part .designation { color: #838383; font-size: 15px; font-weight: 600; line-height: 19px; }
+
 
 
 /* Top Brands */
@@ -187,6 +189,7 @@
 .top_brands .bottom_part .logo-row:nth-child(1), .top_brands .bottom_part .logo-row:nth-child(3) { display: grid; grid-template-columns: repeat(3, 1fr); gap: 70px; align-items: center; }
 .top_brands .bottom_part .logo-row:nth-child(2) { display: grid; grid-template-columns: repeat(2, 1fr); gap: 70px; align-items: center; margin: 0 50px; }
 
+
 /* Choose Us */
 .choose_us { background-color: var(--section-bg); }
 .choose_us .heading { padding-bottom: 60px; }
@@ -194,3 +197,414 @@
 .choose_us .feature_card { background: #ffffff; padding: 30px; border-radius: 10px; display: flex; gap: 20px; align-items: flex-start; }
 .choose_us .feature-title { font-size: 22px; font-weight: 600; line-height: 30px; padding-bottom: 10px; }
 .choose_us .feature-description { color: #545454; }
+}
+
+
+
+
+
+@media screen and (max-width:1280px) {
+    .service_listing_page{
+         /* Banner Section */
+    .banner {
+        min-height: 980px;
+        .banner_inner {
+            min-height: 980px;
+
+            .banner_block {
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                }
+
+                .banner_title {
+                    font-size: 54px;
+                    line-height: 68px;
+                    margin-bottom: 8px;
+                }
+
+                .banner_sub_title {
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 46px;
+                    margin-top: 8px;
+                }
+
+                .banner_text {
+                    font-size: 18px;
+                    line-height: 32px;
+                    max-width: 680px;
+                    margin-bottom: 12px;
+                }
+
+            }
+
+            .banner_bottom_block {
+                margin-top: auto;
+                margin-bottom: 80px;
+
+                .experts {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    margin: auto;
+                    max-width: 680px;
+                    gap: 30px;
+
+                    .content {
+                        p {
+                            margin-top: 10px;
+                        }
+
+                        .expert_badge {
+                            background-color: #353535;
+                            color: var(--secondary-color);
+                            font-size: 13px;
+                            display: inline-block;
+                            padding: 5px 8px;
+                            border-radius: 2px;
+
+                            .expert_stars {
+                                display: inline-block;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .service_listing_page{
+         /* Banner Section */
+    .banner {
+        min-height: 960px;
+        .banner_inner {
+            min-height: 960px;
+
+            .banner_block {
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                }
+
+                .banner_title {
+                    font-size: 52px;
+                    line-height: 63px;
+                    margin-bottom: 7px;
+                }
+
+                .banner_sub_title {
+                    font-size: 28px;
+                    line-height: 43px;
+                    margin-top: 7px;
+                }
+
+                .banner_text {
+                    font-size: 17px;
+                    line-height: 30px;
+                    max-width: 670px;
+                    margin-bottom: 11px;
+                }
+
+            }
+
+            .banner_bottom_block {
+                margin-top: auto;
+                margin-bottom: 80px;
+
+                .experts {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    margin: auto;
+                    max-width: 680px;
+                    gap: 30px;
+
+                    .content {
+                        p {
+                            margin-top: 10px;
+                        }
+
+                        .expert_badge {
+                            background-color: #353535;
+                            color: var(--secondary-color);
+                            font-size: 13px;
+                            display: inline-block;
+                            padding: 5px 8px;
+                            border-radius: 2px;
+
+                            .expert_stars {
+                                display: inline-block;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    }
+}
+
+@media screen and (max-width:992px) {
+    .service_listing_page{
+         /* Banner Section */
+    .banner {
+        min-height: 880px;
+        .banner_inner {
+            min-height: 880px;
+
+            .banner_block {
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                }
+
+                .banner_title {
+                    font-size: 42px;
+                    line-height: 53px;
+                    margin-bottom: 6px;
+                }
+
+                .banner_sub_title {
+                    font-size: 20px;
+                    line-height: 32px;
+                    margin-top: 6px;
+                }
+
+                .banner_text {
+                    font-size: 16px;
+                    line-height: 28px;
+                    max-width: 650px;
+                    margin-bottom: 10px;
+                }
+
+            }
+
+            .banner_bottom_block {
+                margin-top: auto;
+                margin-bottom: 80px;
+
+                .experts {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    margin: auto;
+                    max-width: 680px;
+                    gap: 30px;
+
+                    .content {
+                        p {
+                            margin-top: 10px;
+                        }
+
+                        .expert_badge {
+                            background-color: #353535;
+                            color: var(--secondary-color);
+                            font-size: 13px;
+                            display: inline-block;
+                            padding: 5px 8px;
+                            border-radius: 2px;
+
+                            .expert_stars {
+                                display: inline-block;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    }
+}
+
+@media screen and (max-width:767px) {
+    .service_listing_page{
+         /* Banner Section */
+    .banner {
+        min-height: 780px;
+        .banner_inner {
+            min-height: 780px;
+
+            .banner_block {
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                }
+
+                .banner_title {
+                    font-size: 34px;
+                    line-height: 44px;
+                    margin-bottom: 5px;
+                }
+
+                .banner_sub_title {
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-top: 5px;
+                }
+
+                .banner_text {
+                    font-size: 15px;
+                    line-height: 26px;
+                    max-width: 620px;
+                    margin-bottom: 8px;
+                }
+
+            }
+
+            .banner_bottom_block {
+                margin-top: auto;
+                margin-bottom: 60px;
+
+                .experts {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    flex-direction: column;
+                    margin: auto;
+                    max-width: 680px;
+                    gap: 30px;
+
+                    .content {
+                        p {
+                            margin-top: 10px;
+                        }
+
+                        .expert_badge {
+                            background-color: #353535;
+                            color: var(--secondary-color);
+                            font-size: 13px;
+                            display: inline-block;
+                            padding: 5px 8px;
+                            border-radius: 2px;
+
+                            .expert_stars {
+                                display: inline-block;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+    .service_listing_page{
+         /* Banner Section */
+    .banner {
+        min-height: 720px;
+        .banner_inner {
+            min-height: 720px;
+
+            .banner_block {
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2px;
+                }
+
+                .banner_title {
+                    font-size: 18px;
+                    line-height: 27px;
+                    margin-bottom: 5px;
+                }
+
+                .banner_sub_title {
+                    font-size: 14px;
+                    line-height: 25px;
+                    margin-top: 5px;
+                }
+
+                .banner_text {
+                    font-size: 14px;
+                    line-height: 22px;
+                    max-width: 380px;
+                    margin-bottom: 5px;
+                }
+
+            }
+
+            .banner_bottom_block {
+                margin-top: auto;
+                margin-bottom: 60px;
+
+                .experts {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    flex-direction: column;
+                    margin: auto;
+                    max-width: 680px;
+                    gap: 30px;
+
+                    .content {
+                        p {
+                            margin-top: 10px;
+                        }
+
+                        .expert_badge {
+                            background-color: #353535;
+                            color: var(--secondary-color);
+                            font-size: 13px;
+                            display: inline-block;
+                            padding: 5px 8px;
+                            border-radius: 2px;
+
+                            .expert_stars {
+                                display: inline-block;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
