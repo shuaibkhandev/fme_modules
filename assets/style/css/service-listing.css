@@ -96,7 +96,6 @@
 
     /* Excellence Section */
     .excellence_section {
-                    background-color: var(--section-bg);
         .sec_top_row {
             display: flex;
             justify-content: center;
@@ -107,8 +106,8 @@
         }
 
         .excellence_list {
-            display: flex;
-            justify-content: space-between;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
 
             .excellence {
                 border-right: 1px solid rgba(106, 86, 80, 0.2);
@@ -200,6 +199,42 @@
 }
 
 
+@media screen and (max-width:1400px) {
+    .service_listing_page{
+         /* Banner Section */
+    .banner {
+        min-height: 1000px;
+        .banner_inner {
+            min-height: 1000px;
+
+            .banner_block {
+
+                .banner_title {
+                    font-size: 60px;
+                    line-height: 78px;
+                    margin-bottom: 10px;
+                }
+
+                .banner_sub_title {
+                    font-size: 36px;
+                    line-height: 52px;
+                    margin-top: 10px;
+                }
+
+                .banner_text {
+                    font-size: 19px;
+                    line-height: 34px;
+                    max-width: 700px;
+                    margin-bottom: 14px;
+                }
+
+            }
+
+        }
+    }
+
+    }
+}
 
 
 
@@ -243,38 +278,33 @@
 
             }
 
-            .banner_bottom_block {
-                margin-top: auto;
-                margin-bottom: 80px;
+        }
+    }
 
-                .experts {
-                    display: flex;
-                    align-items: center;
-                    justify-items: center;
-                    margin: auto;
-                    max-width: 680px;
-                    gap: 30px;
+        /* Excellence Section */
+    .excellence_section {
+  
 
-                    .content {
-                        p {
-                            margin-top: 10px;
-                        }
+        .excellence_list {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          row-gap: 30px;
 
-                        .expert_badge {
-                            background-color: #353535;
-                            color: var(--secondary-color);
-                            font-size: 13px;
-                            display: inline-block;
-                            padding: 5px 8px;
-                            border-radius: 2px;
+            .excellence {
+                height: auto;
 
-                            .expert_stars {
-                                display: inline-block;
-                                margin-left: 3px;
-                            }
-                        }
-                    }
+                &:last-child {
+                    border-right: 0;
                 }
+                  &:nth-last-child(2) {
+                    border-right: 0;
+                }
+
+                .count {
+                    font-size: 34px;
+                    line-height: 43px;
+                }
+
             }
         }
     }
@@ -322,39 +352,6 @@
 
             }
 
-            .banner_bottom_block {
-                margin-top: auto;
-                margin-bottom: 80px;
-
-                .experts {
-                    display: flex;
-                    align-items: center;
-                    justify-items: center;
-                    margin: auto;
-                    max-width: 680px;
-                    gap: 30px;
-
-                    .content {
-                        p {
-                            margin-top: 10px;
-                        }
-
-                        .expert_badge {
-                            background-color: #353535;
-                            color: var(--secondary-color);
-                            font-size: 13px;
-                            display: inline-block;
-                            padding: 5px 8px;
-                            border-radius: 2px;
-
-                            .expert_stars {
-                                display: inline-block;
-                                margin-left: 3px;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 
@@ -436,6 +433,35 @@
         }
     }
 
+            /* Excellence Section */
+    .excellence_section {
+
+        .excellence_list {
+          grid-template-columns: repeat(2, 1fr);
+          row-gap: 25px;
+
+            .excellence {
+                gap: 5px;
+                height: auto;
+
+                &:last-child {
+                    border-right: 0;
+                }
+                  &:nth-last-child(2) {
+                  border-right: 1px solid rgba(106, 86, 80, 0.2);
+                }
+                    &:nth-child(2) {
+                    border-right: 0;
+                }
+
+                .count {
+                    font-size: 32px;
+                    line-height: 41px;
+                }
+
+            }
+        }
+    }
     }
 }
 
@@ -448,7 +474,7 @@
             min-height: 780px;
 
             .banner_block {
-
+margin-bottom: -40px;
                 .content {
                     display: flex;
                     flex-direction: column;
@@ -489,9 +515,10 @@
                     flex-direction: column;
                     margin: auto;
                     max-width: 680px;
-                    gap: 30px;
+                    gap: 15px;
 
                     .content {
+                        text-align: center;
                         p {
                             margin-top: 10px;
                         }
@@ -511,6 +538,22 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+       .excellence_section {
+
+        .excellence_list {
+          row-gap: 20px;
+
+            .excellence {
+
+                .count {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+
             }
         }
     }
@@ -540,7 +583,7 @@ margin-bottom: -70px;
                 .banner_title {
                    font-size: 26px;
         line-height: 34px;
-                    margin-bottom: 5px;
+                    margin-bottom: 15px;
                 }
 
                 .banner_sub_title {
@@ -550,17 +593,14 @@ margin-bottom: -70px;
                 }
 
                 .banner_text {
-                    font-size: 14px;
-                    line-height: 22px;
-                    max-width: 380px;
-                    margin-bottom: 5px;
+                    display: none;
                 }
 
             }
 
             .banner_bottom_block {
                 margin-top: auto;
-                margin-bottom: 60px;
+                margin-bottom: 30px;
 
                 .experts {
                     display: flex;
@@ -569,9 +609,10 @@ margin-bottom: -70px;
                     flex-direction: column;
                     margin: auto;
                     max-width: 680px;
-                    gap: 30px;
+                    gap: 10px;
 
                     .content {
+                        text-align: center;
                         p {
                             margin-top: 10px;
                         }
@@ -591,6 +632,40 @@ margin-bottom: -70px;
                         }
                     }
                 }
+            }
+        }
+    }
+
+                /* Excellence Section */
+    .excellence_section {
+
+        .excellence_list {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          row-gap: 20px;
+
+            .excellence {
+                border-right: 0;
+
+                gap: 5px;
+                height: auto;
+
+                &:last-child {
+                    border-right: 0;
+                }
+                  &:nth-last-child(2) {
+                  border-right: 0;
+                }
+                    &:nth-child(2) {
+                    border-right: 0;
+                }
+                
+
+                .count {
+                    font-size: 26px;
+                    line-height: 34px;
+                }
+
             }
         }
     }
