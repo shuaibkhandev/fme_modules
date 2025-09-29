@@ -528,7 +528,7 @@
         .banner_inner {
            min-height: 730px;
             .banner_block {
-margin-bottom: -25px;
+margin-bottom: -70px;
                 .content {
                     display: flex;
                     flex-direction: column;
