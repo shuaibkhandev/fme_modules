@@ -134,21 +134,20 @@
 
 
 
-    /* Customer Needs */
-.customer_needs { background: var(--section-bg) }
+/* Customer Needs */
 .customer_needs .top_part { display: flex; align-items: center; gap: 150px; padding-bottom: 100px;}
-.customer_needs .steps { display: flex; gap: 20px;}
-.customer_needs .step { flex: 1; border: 0.45px solid rgba(250, 249, 249, 0.5); background-color: #ffffff; border-radius: 7px; }
-.customer_needs .icon, .customer_needs .text, .customer_needs .numbering {padding: 36px 42px 0 42px; } 
-.customer_needs .text { padding: 30px 42px; border-bottom: 1px solid #c7c7c7; font-size: 23px; font-weight: 500; line-height: 28px; color: #4f4f4f; }
+.customer_needs .main_heading { flex: .5; }
+.customer_needs .sub_text { flex: .5; font-size: 20px; }
+.customer_needs .steps { display: grid; grid-template-columns: repeat(5, 1fr); grid-gap: 40px; }
+.customer_needs .step { border: 0.45px solid rgba(250, 249, 249, 0.5); background-color: #ffffff; border-radius: 7px; max-width: 260px; }
+.customer_needs .icon, .customer_needs .text, .customer_needs .numbering { padding: 30px 35px 0 35px; } 
+.customer_needs .text { padding: 30px 35px; border-bottom: 1px solid #c7c7c7; font-size: 23px; font-weight: 500; line-height: 28px; color: #4f4f4f; }
 .customer_needs .numbering { font-size: 18px; padding: 30px 35px; font-weight: 700; line-height: 21px; color: #000; }
 
 
 
 /* PrestaShop Solutions */
-.prestshop_solutions {  }
-
-.prestshop_solutions .bottom_part { display: flex; gap: 20px; }
+.prestshop_solutions .bottom_part { padding-top: 75px; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; }
 .prestshop_solutions .bottom_part .card { background: #F9F9F9; border-radius: 10px; padding: 50px 46px; box-shadow: 0 0.97px 2.91px 0.73px rgba(0, 0, 0, 0.1); border: 0.73px solid rgba(250, 249, 249, 1); }
 .prestshop_solutions .bottom_part .company { color: #000; font-weight: 800;}
 .prestshop_solutions .bottom_part .title { font-size: 22px; line-height: 33px; font-weight: 600; font-weight: 500; padding-bottom: 40px;}
@@ -159,9 +158,9 @@
 
 
 
-/* Top Brands */
 
-.top_brands .bottom_part { display: flex; justify-content: space-between; align-items: center; }
+/* Top Brands */
+.top_brands .bottom_part { display: flex; justify-content: space-between; align-items: center; padding-top: 60px; }
 .top_brands .bottom_part .video-container { box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.1); flex: 1; position: relative; min-height: 500px; overflow: hidden; cursor: pointer; }
 .top_brands .bottom_part .poster { position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer; border-radius: 12px; overflow: hidden; }
 .top_brands .bottom_part .poster img { width: 100%; object-fit: cover; }
@@ -174,10 +173,11 @@
 .top_brands .bottom_part .logo-row:nth-child(2) { display: grid; grid-template-columns: repeat(2, 1fr); gap: 70px; align-items: center; margin: 0 50px; }
 
 
+
+
 /* Choose Us */
-.choose_us { background-color: var(--section-bg); }
 .choose_us .heading { padding-bottom: 60px; }
-.choose_us .features_grid { display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 30px; column-gap: 20px; }
+.choose_us .features_grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .choose_us .feature_card { background: #ffffff; padding: 30px; border-radius: 10px; display: flex; gap: 20px; align-items: flex-start; }
 .choose_us .feature-title { font-size: 22px; font-weight: 600; line-height: 30px; padding-bottom: 10px; }
 .choose_us .feature-description { color: #545454; }
@@ -205,6 +205,28 @@
     max-width: 700px;
     margin-bottom: 14px;
   }
+
+  
+    /* PrestaShop Solutions */
+    .prestshop_solutions .bottom_part { padding-top: 60px; }
+    .prestshop_solutions .bottom_part .card { padding: 40px; }
+    .prestshop_solutions .bottom_part .title { font-size: 18px; line-height: 26px; padding-bottom: 30px; }
+    .prestshop_solutions .bottom_part .description { font-size: 16px; }
+
+        /* Top Brands */
+    .top_brands .top_part .heading { max-width: 410px; }
+    .top_brands .top_part .sub_text { font-size: 16px; line-height: 25px; }
+    .top_brands .bottom_part { padding-top: 55px; }
+    .top_brands .bottom_part .video-container { min-height: 400px; }
+    .top_brands .bottom_part .logo-grid { padding: 45px 80px; gap: 65px; }
+    .top_brands .bottom_part .logo-row:nth-child(1), .top_brands .bottom_part .logo-row:nth-child(3) { gap: 60px; }
+    .top_brands .bottom_part .logo-row:nth-child(2) { gap: 65px; }
+
+        /* Choose Us */
+    .choose_us .heading { padding-bottom: 50px; }
+    .choose_us .feature-title { font-size: 20px; line-height: 28px; }
+    .choose_us .feature-description { font-size: 16px; line-height: 25px; }
+
 }
 
 @media screen and (max-width:1280px) {
@@ -257,6 +279,39 @@
     font-size: 34px;
     line-height: 43px;
   }
+
+      /* Customer Needs */
+    .customer_needs .top_part { gap: 100px; padding-bottom: 65px; }
+    .customer_needs .sub_text { font-size: 18px; }
+    .customer_needs .steps { grid-template-columns: repeat(4, 1fr); grid-gap: 30px; }
+    .customer_needs .step { max-width: 100%; }
+    .customer_needs .icon, .customer_needs .text, .customer_needs .numbering { padding: 20px 25px; }
+    .customer_needs .text { font-size: 18px; line-height: 22px; }
+    .customer_needs .numbering { font-size: 18px; line-height: 21px; }
+
+        /* PrestShop Solutions */
+    .prestshop_solutions .bottom_part .card { padding: 25px; }
+    .prestshop_solutions .bottom_part .title { font-size: 16px; line-height: 22px; padding-bottom: 20px; }
+    .prestshop_solutions .bottom_part .description { font-size: 15px; line-height: 21px; padding-bottom: 20px; }
+    .prestshop_solutions .bottom_part .name { font-size: 17px; line-height: 26px; }
+    .prestshop_solutions .bottom_part .designation { font-size: 15px; line-height: 21px; }
+    .prestshop_solutions .bottom_part .profile { gap: 15px; }
+
+    
+    /* Top Brands */
+    .top_brands .top_part .sub_text { font-size: 15px; line-height: 24px; }
+    .top_brands .bottom_part { padding-top: 45px; }
+    .top_brands .bottom_part .video-container { min-height: 380px; }
+    .top_brands .bottom_part .logo-grid { padding: 40px 70px; gap: 55px; }
+    .top_brands .bottom_part .logo-row:nth-child(1), .top_brands .bottom_part .logo-row:nth-child(3) { gap: 50px; }
+    .top_brands .bottom_part .logo-row:nth-child(2) { gap: 55px; margin: 0 40px; }
+
+        /* Choose Us */
+    .choose_us .heading { padding-bottom: 40px; }
+    .choose_us .features_grid { gap: 25px; }
+    .choose_us .feature_card { padding: 25px; gap: 15px; }
+    .choose_us .feature-title { font-size: 18px; line-height: 24px; padding-bottom: 7px; }
+    .choose_us .feature-description { font-size: 15px; line-height: 22px; }
 }
 
 @media screen and (max-width:1024px) {
@@ -289,6 +344,39 @@
     max-width: 670px;
     margin-bottom: 11px;
   }
+      /* Customer Needs */
+    .customer_needs .top_part { gap: 35px; padding-bottom: 50px; flex-direction: column; align-items: flex-start; }
+    .customer_needs .sub_text { font-size: 16px; }
+    .customer_needs .steps { grid-template-columns: repeat(3, 1fr); grid-gap: 25px; }
+    .customer_needs .icon, .customer_needs .text, .customer_needs .numbering { padding: 18px 24px 0 24px; }
+    .customer_needs .text { padding: 18px 24px; font-size: 16px; line-height: 20px; }
+    .customer_needs .numbering { font-size: 16px; padding: 18px 24px; line-height: 16px; }
+
+       /* PrestShhop Solutons */
+    .prestshop_solutions .bottom_part { grid-template-columns: repeat(2, 1fr); padding-top: 40px; grid-gap: 20px; }
+    .prestshop_solutions .bottom_part .card { padding: 20px; }
+    .prestshop_solutions .bottom_part .title { font-size: 16px; line-height: 22px; padding-bottom: 20px; }
+    .prestshop_solutions .bottom_part .description { font-size: 15px; line-height: 20px; padding-bottom: 20px; }
+    .prestshop_solutions .bottom_part .profile { gap: 12px; }
+    .prestshop_solutions .bottom_part .name { font-size: 15px; line-height: 22px; }
+    .prestshop_solutions .bottom_part .designation { font-size: 14px; line-height: 20px; }
+
+        /* Top Brands */
+    .top_brands .top_part { flex-direction: column; align-items: flex-start; }
+    .top_brands .top_part .heading { padding-bottom: 15px; }
+    .top_brands .top_part .sub_text { font-size: 15px; line-height: 24px; }
+    .top_brands .bottom_part { padding-top: 40px; }
+    .top_brands .bottom_part .video-container { min-height: 270px; }
+    .top_brands .bottom_part .logo-grid { padding: 30px 55px; gap: 40px; }
+    .top_brands .bottom_part .logo-row:nth-child(1), .top_brands .bottom_part .logo-row:nth-child(3) { gap: 40px; }
+    .top_brands .bottom_part .logo-row:nth-child(2) { gap: 45px; margin: 0 30px; }
+
+        /* Choose Us */
+    .choose_us .heading { padding-bottom: 30px; }
+    .choose_us .features_grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .choose_us .feature_card { padding: 20px; gap: 15px; }
+    .choose_us .feature-title { font-size: 17px; line-height: 26px; padding-bottom: 7px; }
+    .choose_us .feature-description { font-size: 15px; line-height: 22px; }
 }
 
 @media screen and (max-width:992px) {
@@ -444,6 +532,42 @@
     font-size: 30px;
     line-height: 38px;
   }
+      /* Customer Needs */
+    .customer_needs .top_part { flex-direction: column; gap: 30px; padding-bottom: 30px; text-align: center; }
+    .customer_needs .main_heading { flex: none; }
+    .customer_needs .sub_text { flex: none; font-size: 16px; }
+    .customer_needs .steps { grid-template-columns: repeat(2, 1fr); grid-gap: 10px; }
+    .customer_needs .step { max-width: 100%; }
+    .customer_needs .icon, .customer_needs .text, .customer_needs .numbering { padding: 15px 20px 0 20px; }
+    .customer_needs .text { padding: 15px 20px; font-size: 16px; line-height: 24px; }
+    .customer_needs .numbering { font-size: 15px; padding: 15px 20px; line-height: 15px; }
+
+
+      /* PrestShop Solution */
+    .prestshop_solutions .bottom_part { grid-template-columns: repeat(2, 1fr); padding-top: 20px; grid-gap: 20px; }
+    .prestshop_solutions .bottom_part .card { padding: 15px; }
+    .prestshop_solutions .bottom_part .title { font-size: 15px; line-height: 20px; padding-bottom: 15px; }
+    .prestshop_solutions .bottom_part .description { font-size: 15px; line-height: 20px; padding-bottom: 15px; }
+    .prestshop_solutions .bottom_part .profile { gap: 10px; }
+    .prestshop_solutions .bottom_part .name { font-size: 15px; line-height: 20px; margin-bottom: 2px; }
+    .prestshop_solutions .bottom_part .designation { font-size: 14px; line-height: 20px; }
+
+        /* Top Brands */
+    .top_brands .top_part { flex-direction: column; text-align: center; }
+    .top_brands .top_part .heading { padding-bottom: 10px; }
+    .top_brands .top_part .sub_text { font-size: 14px; line-height: 24px; }
+    .top_brands .bottom_part { padding-top: 20px; flex-direction: column; }
+    .top_brands .bottom_part .video-container { min-height: 290px; width: 100%; }
+    .top_brands .bottom_part .logo-grid { padding: 40px 20px 0; gap: 30px; }
+    .top_brands .bottom_part .logo-row:nth-child(1), .top_brands .bottom_part .logo-row:nth-child(3) { gap: 30px; }
+    .top_brands .bottom_part .logo-row:nth-child(2) { gap: 35px; margin: 0 20px; }
+
+        /* Choose Us */
+    .choose_us .heading { padding-bottom: 20px; }
+    .choose_us .features_grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .choose_us .feature_card { padding: 15px; gap: 10px; flex-direction: column; }
+    .choose_us .feature-title { font-size: 16px; line-height: 24px; padding-bottom: 5px; }
+    .choose_us .feature-description { font-size: 14px; line-height: 20px; }
 }
 
 @media screen and (max-width:576px) {
@@ -531,4 +655,14 @@
     font-size: 26px;
     line-height: 34px;
   }
+
+        /* Customer Needs */
+    .customer_needs .steps { grid-template-columns: repeat(1, 1fr); grid-gap: 20px; }
+
+
+      /* PrestaShop Solutions */
+    .prestshop_solutions .bottom_part { grid-template-columns: repeat(1, 1fr); }
+
+        /* Choose Us */
+    .choose_us .features_grid { grid-template-columns: repeat(1, 1fr); }
 }
