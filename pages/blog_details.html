@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blogs Page</title>
+  <title>Blog Details Page</title>
   <link rel="stylesheet" media="all" href="../assets/style/css/slick-theme.css" />
   <link rel="stylesheet" media="all" href="../assets/style/css/slick.min.css" />
   <link rel="stylesheet" href="../assets/style/css/pushbar.css" />
   <link rel="stylesheet" href="../assets/style/css/global.css" />
   <link rel="stylesheet" href="../assets/style/css/header.css" />
   <link rel="stylesheet" href="../assets/style/css/footer.css" />
-  <link rel="stylesheet" href="../assets/style/css/blog.css" />
+  <link rel="stylesheet" href="../assets/style/css/blog_details.css" />
   <link rel="stylesheet" href="/assets/style/css/service-card.css">
   <link rel="stylesheet" href="/assets/style/css/style.css">
       <link
@@ -22,60 +22,8 @@
     <script src="./assets/js/footer.js" defer></script>
 </head>
 <style>
-    .pagination_wrapper{
-        max-width: 380px;
-        margin: auto;
-                margin-top: 100px;
-    }
-    .pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  padding: 16px;
-  border-radius: 8px;
-}
 
-.page-button,
-.nav-button {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #D9D9D9;
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
 
-.page-button:hover,
-.nav-button:hover {
-  background-color: #F5F5F5;
-  color: #000000;
-}
-
-.page-button.active {
-  background-color: #F5F5F5;
-  color: #000000;
-}
-
-.dots {
-  padding: 0 8px;
-  font-size: 16px;
-  color: #999999;
-}
-
-@media screen and (max-width: 575px){
-  .pagination{
-    padding: 0;
-    gap: 10px;
-  }
-  .dots{
-    padding: 0;
-  }
-}
 </style>
 
 <body>
@@ -368,215 +316,119 @@
             </li>
             <li aria-hidden="true" class="separator">.</li>
             <li class="page_name" aria-current="page">Blog</li>
+             <li aria-hidden="true" class="separator">.</li>
+            <li class="page_name" aria-current="page">Fme Module For A Smarter Store</li>
         </ol>
     </nav>
         <div class="content">
         <h1 class="banner_title">Discover Insights &innovation’</h1>
-        <div class="banner_text primary_text">Get expert tips, guides, and trends to optimize your PrestaShop store and boost eCommerce success.</div>
-          <div class="search">
-                  <div class="banner_search_iner">
-                    <input
-                      type="text"
-                      name="search"
-                      id=""
-                      placeholder="What are you looking for?"
-                    />
-                    <button class="search_cta" aria-label="Submit search">
-                      <img src="/assets/images/search.svg" alt="search icon" />
-                    </button>
-                  </div>
-                </div>
+           <nav class="blog_info bread_crumb" aria-label="Breadcrumb">
+        <ol class="order_list">
+            <li>
+                By Humza Ahmed Barlas
+            </li>
+            <li aria-hidden="true" class="separator">.</li>
+            <li class="page_name" aria-current="page">Updated on: 28 Jan, 2025</li>
+             <li aria-hidden="true" class="separator">.</li>
+            <li class="social_links" aria-current="page">Share this blog: <div class="links">
+                <a href="/"><img src="/assets/images/twitter.webp" alt=""></a>
+                <a href="/"><img src="/assets/images/linkedin.webp" alt=""></a>
+                <a href="/"><img src="/assets/images/twitter.webp" alt=""></a>
+            </div></li>
+        </ol>
+    </nav>
         </div>
     </div>
 </div>
 </section>
 
-<section class="blogs_section">
-<div class="main_container section_padding">
-     <div class="sec_top_row">
-              <div class="cnt">
-                <h2 class="section_title prod_listing_title">
-                  Latest News & Trends
-                </h2>
-                <p class="primary_text prod_listing_text">
-                  Stay informed with the latest trends, features, and updates shaping the eCommerce world  industry news, and essential PrestaShop insights.
-                </p>
-              </div>
 
+<section class="blog_details_section">
+    <div class="main_container section_padding">
+        <div class="blog_details">
+        <div class="sidebar">
+            <h3 class="title">Table of Content</h3>
+             <ul class="side_bar_list">
+                                    <li><a href="#!" class="side_bar_item active_side_item secondary_text" onclick="goToByScroll('accept_terms')"> Introduction to FME Custom Module</a></li>
+                                    <li><a href="#!" class="side_bar_item secondary_text" onclick="goToByScroll('change_terms')"> Why Store Optimization Matters</a></li>
+                                    <li><a href="#!" class="side_bar_item secondary_text" onclick="goToByScroll('course_subs')">Top Modules to Streamline Your Store</a></li>
+                                    <li><a href="#!" class="side_bar_item secondary_text" onclick="goToByScroll('content_policy')">How FME Modules Improve Workflow</a></li>
+                                    <li><a href="#!" class="side_bar_item secondary_text" onclick="goToByScroll('your_rights')">Real Use Cases & Success Stories</a></li>
+                                    <li><a href="#!" class="side_bar_item secondary_text" onclick="goToByScroll('legal_terms')">Conclusion</a></li>
+                                </ul>
+                                <div class="ads">
+                                    <img src="/assets/images/ad1.png" alt="">
+                                    <img src="/assets/images/ad2.png" alt="">
+                                </div>
+        </div>
+        <div class="content_block">
+            <div class="blog_image">
+                <img src="/assets/images/blog_detail1.png" alt="">
             </div>
-          <div class="categories-wrapper">
-  <div class="swiper categories-swiper">
-    <div class="swiper-wrapper categories">
-      <div class="swiper-slide category active">
-        <strong>All Modules</strong><span>115</span>
-      </div>
-      <div class="swiper-slide category"><strong>Catalog</strong><span>57</span></div>
-      <div class="swiper-slide category"><strong>Revenue Drivers</strong><span>25</span></div>
-      <div class="swiper-slide category"><strong>Content Management</strong><span>21</span></div>
-      <div class="swiper-slide category"><strong>Checkout</strong><span>13</span></div>
-      <div class="swiper-slide category"><strong>Prices & Promotions</strong><span>12</span></div>
-      <div class="swiper-slide category"><strong>SEO</strong><span>12</span></div>
-      <div class="swiper-slide category"><strong>Media</strong><span>06</span></div>
-      <div class="swiper-slide category"><strong>Advertising & Marketing</strong><span>05</span></div>
-      <div class="swiper-slide category"><strong>Administration Tools</strong><span>16</span></div>
-      <div class="swiper-slide category"><strong>B2B Modules</strong><span>09</span></div>
+            <div class="top_blog_cont">
+            <p class="text blog_text primary_text">Running a successful online store involves much more than just listing products. It requires a seamless user experience, optimized backend workflows, and tools that empower store owners to stay competitive. </p>
+            <p class="text blog_text primary_text">Running a successful online store involves much more than just listing products. It requires a seamless user experience, optimized backend workflows, and tools that empower store owners to stay competitive. </p>
+            <p class="text blog_text primary_text">Running a successful online store involves much more than just listing products. It requires a seamless user experience, optimized backend workflows, and tools that empower store owners to stay competitive. </p>
+            <p class="text blog_text primary_text">Running a successful online store involves much more than just listing products. It requires a seamless user experience, optimized backend workflows, and tools that empower store owners to stay competitive. </p>
+            </div>
+            <div class="blog_cont" id="accept_terms">
+                   <h4 class=" title primary_title">Introduction to FME Custom Module</h4>
+                                <p class="primary_text text">
+                                    Success in eCommerce today goes far beyond simply listing products. It demands a smooth, engaging user experience, streamlined backend processes, and tools that keep your store agile and competitive. As online shopping behaviors evolve and customer expectations rise, store owners need robust, scalable solutions that are easy to implement and deliver real results.
+                                </p>
+                                <p class="primary_text text">
+                                   At FME Modules, we specialize in addressing these needs for PrestaShop store owners. Our custom modules are designed to simplify complex tasks, enhance performance, and improve the overall functionality of your store. Whether it's boosting SEO, optimizing checkout, or adding dynamic product features, our solutions are built to make your store more efficient and customer-friendly. No matter the size or stage of your business, FME's powerful tools are tailored to support your long-term growth and success.
+                                </p>
+            </div>
+                 <div class="blog_cont" id="change_terms">
+                   <h4 class=" title primary_title">Why Store Optimization Matters</h4>
+                                <p class="primary_text text">
+                                    Success in eCommerce today goes far beyond simply listing products. It demands a smooth, engaging user experience, streamlined backend processes, and tools that keep your store agile and competitive. As online shopping behaviors evolve and customer expectations rise, store owners need robust, scalable solutions that are easy to implement and deliver real results.
+                                </p>
+                                <p class="primary_text text">
+                                   At FME Modules, we specialize in addressing these needs for PrestaShop store owners. Our custom modules are designed to simplify complex tasks, enhance performance, and improve the overall functionality of your store. Whether it's boosting SEO, optimizing checkout, or adding dynamic product features, our solutions are built to make your store more efficient and customer-friendly. No matter the size or stage of your business, FME's powerful tools are tailored to support your long-term growth and success.
+                                </p>
+            </div>
+                 <div class="blog_cont" id="course_subs">
+                   <h4 class=" title primary_title">Top Modules to Streamline Your Store</h4>
+                                <p class="primary_text text">
+                                    Success in eCommerce today goes far beyond simply listing products. It demands a smooth, engaging user experience, streamlined backend processes, and tools that keep your store agile and competitive. As online shopping behaviors evolve and customer expectations rise, store owners need robust, scalable solutions that are easy to implement and deliver real results.
+                                </p>
+                                <p class="primary_text text">
+                                   At FME Modules, we specialize in addressing these needs for PrestaShop store owners. Our custom modules are designed to simplify complex tasks, enhance performance, and improve the overall functionality of your store. Whether it's boosting SEO, optimizing checkout, or adding dynamic product features, our solutions are built to make your store more efficient and customer-friendly. No matter the size or stage of your business, FME's powerful tools are tailored to support your long-term growth and success.
+                                </p>
+            </div>
+                 <div class="blog_cont" id="content_policy">
+                   <h4 class=" title primary_title">How FME Modules Improve Workflow</h4>
+                                <p class="primary_text text">
+                                    Success in eCommerce today goes far beyond simply listing products. It demands a smooth, engaging user experience, streamlined backend processes, and tools that keep your store agile and competitive. As online shopping behaviors evolve and customer expectations rise, store owners need robust, scalable solutions that are easy to implement and deliver real results.
+                                </p>
+                                <p class="primary_text text">
+                                   At FME Modules, we specialize in addressing these needs for PrestaShop store owners. Our custom modules are designed to simplify complex tasks, enhance performance, and improve the overall functionality of your store. Whether it's boosting SEO, optimizing checkout, or adding dynamic product features, our solutions are built to make your store more efficient and customer-friendly. No matter the size or stage of your business, FME's powerful tools are tailored to support your long-term growth and success.
+                                </p>
+            </div>
+                 <div class="blog_cont" id="your_rights">
+                   <h4 class=" title primary_title">Real Use Cases & Success Stories</h4>
+                                <p class="primary_text text">
+                                    Success in eCommerce today goes far beyond simply listing products. It demands a smooth, engaging user experience, streamlined backend processes, and tools that keep your store agile and competitive. As online shopping behaviors evolve and customer expectations rise, store owners need robust, scalable solutions that are easy to implement and deliver real results.
+                                </p>
+                                <p class="primary_text text">
+                                   At FME Modules, we specialize in addressing these needs for PrestaShop store owners. Our custom modules are designed to simplify complex tasks, enhance performance, and improve the overall functionality of your store. Whether it's boosting SEO, optimizing checkout, or adding dynamic product features, our solutions are built to make your store more efficient and customer-friendly. No matter the size or stage of your business, FME's powerful tools are tailored to support your long-term growth and success.
+                                </p>
+            </div>
+                 <div class="blog_cont" id="legal_terms">
+                   <h4 class=" title primary_title">Conclusion</h4>
+                                <p class="primary_text text">
+                                    Success in eCommerce today goes far beyond simply listing products. It demands a smooth, engaging user experience, streamlined backend processes, and tools that keep your store agile and competitive. As online shopping behaviors evolve and customer expectations rise, store owners need robust, scalable solutions that are easy to implement and deliver real results.
+                                </p>
+                                <p class="primary_text text">
+                                   At FME Modules, we specialize in addressing these needs for PrestaShop store owners. Our custom modules are designed to simplify complex tasks, enhance performance, and improve the overall functionality of your store. Whether it's boosting SEO, optimizing checkout, or adding dynamic product features, our solutions are built to make your store more efficient and customer-friendly. No matter the size or stage of your business, FME's powerful tools are tailored to support your long-term growth and success.
+                                </p>
+            </div>
+        </div>
+        </div>
     </div>
-
-    <!-- Navigation Arrows -->
-    <!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
-  </div>
-</div>
-          <div class="blogs inner_sec_top">
-              <div class="blog">
-                <img src="/assets/images/blog.svg" alt="" />
-                <div class="content">
-                  <h3 class="primary_title">Safe PrestaShop Migration</h3>
-                  <p class="tertiary_text">
-                    Developed a mindful mobile experience for a growing wellness
-                    brand.
-                  </p>
-                  <div class="types">
-                    <div class="type">UI/UX DESIGN</div>
-                    <div class="type">WEB DEVELOPMENT</div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog">
-                <img src="/assets/images/blog3.svg" alt="" />
-                <div class="content">
-                  <h3 class="primary_title">
-                    Is Your PrestaShop Mobile-Ready?
-                  </h3>
-                  <p class="tertiary_text">
-                    Developed a mindful mobile experience for a growing wellness
-                    brand.
-                  </p>
-                  <div class="types">
-                    <div class="type">UI/UX DESIGN</div>
-                    <div class="type">WEB DEVELOPMENT</div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog">
-                <img src="/assets/images/blog2.svg" alt="" />
-                <div class="content">
-                  <h3 class="primary_title">E-commerce Seller Struggles</h3>
-                  <p class="tertiary_text">
-                    Developed a mindful mobile experience for a growing wellness
-                    brand.
-                  </p>
-                  <div class="types">
-                    <div class="type">UI/UX DESIGN</div>
-                    <div class="type">WEB DEVELOPMENT</div>
-                  </div>
-                </div>
-              </div>
-                 <div class="blog">
-                <img src="/assets/images/blog.svg" alt="" />
-                <div class="content">
-                  <h3 class="primary_title">Safe PrestaShop Migration</h3>
-                  <p class="tertiary_text">
-                    Developed a mindful mobile experience for a growing wellness
-                    brand.
-                  </p>
-                  <div class="types">
-                    <div class="type">UI/UX DESIGN</div>
-                    <div class="type">WEB DEVELOPMENT</div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog">
-                <img src="/assets/images/blog3.svg" alt="" />
-                <div class="content">
-                  <h3 class="primary_title">
-                    Is Your PrestaShop Mobile-Ready?
-                  </h3>
-                  <p class="tertiary_text">
-                    Developed a mindful mobile experience for a growing wellness
-                    brand.
-                  </p>
-                  <div class="types">
-                    <div class="type">UI/UX DESIGN</div>
-                    <div class="type">WEB DEVELOPMENT</div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog">
-                <img src="/assets/images/blog2.svg" alt="" />
-                <div class="content">
-                  <h3 class="primary_title">E-commerce Seller Struggles</h3>
-                  <p class="tertiary_text">
-                    Developed a mindful mobile experience for a growing wellness
-                    brand.
-                  </p>
-                  <div class="types">
-                    <div class="type">UI/UX DESIGN</div>
-                    <div class="type">WEB DEVELOPMENT</div>
-                  </div>
-                </div>
-              </div>
-                 <div class="blog">
-                <img src="/assets/images/blog.svg" alt="" />
-                <div class="content">
-                  <h3 class="primary_title">Safe PrestaShop Migration</h3>
-                  <p class="tertiary_text">
-                    Developed a mindful mobile experience for a growing wellness
-                    brand.
-                  </p>
-                  <div class="types">
-                    <div class="type">UI/UX DESIGN</div>
-                    <div class="type">WEB DEVELOPMENT</div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog">
-                <img src="/assets/images/blog3.svg" alt="" />
-                <div class="content">
-                  <h3 class="primary_title">
-                    Is Your PrestaShop Mobile-Ready?
-                  </h3>
-                  <p class="tertiary_text">
-                    Developed a mindful mobile experience for a growing wellness
-                    brand.
-                  </p>
-                  <div class="types">
-                    <div class="type">UI/UX DESIGN</div>
-                    <div class="type">WEB DEVELOPMENT</div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog">
-                <img src="/assets/images/blog2.svg" alt="" />
-                <div class="content">
-                  <h3 class="primary_title">E-commerce Seller Struggles</h3>
-                  <p class="tertiary_text">
-                    Developed a mindful mobile experience for a growing wellness
-                    brand.
-                  </p>
-                  <div class="types">
-                    <div class="type">UI/UX DESIGN</div>
-                    <div class="type">WEB DEVELOPMENT</div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-            <div class="pagination_wrapper">
-                          <div class="pagination">
-  <button class="nav-button ">&lt;</button>
-  <button class="page-button active">1</button>
-  <button class="page-button">2</button>
-  <button class="page-button">3</button>
-  <span class="dots">...</span>
-  <button class="page-button">10</button>
-  <button class="nav-button">&gt;</button>
-</div>
-</div>
-</div>
 </section>
-
 
     </main>
 
@@ -722,30 +574,18 @@
     <script src="/assets/js/pushbar.js"></script>
     <script src="/assets/js/main.js"></script>
 
-     <script>
-  const catSwiper = new Swiper(".categories-swiper", {
-    slidesPerView: "auto",
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    on: {
-      reachBeginning: function () {
-        document.querySelector(".swiper-button-prev").style.display = "none";
-      },
-      reachEnd: function () {
-        document.querySelector(".swiper-button-next").style.display = "none";
-      },
-      fromEdge: function () {
-        // Show arrows again if not at edges
-        document.querySelector(".swiper-button-prev").style.display = "block";
-        document.querySelector(".swiper-button-next").style.display = "block";
-      }
-    }
-  });
-</script>
 
+<script>
+    // CMS Pages
+
+function goToByScroll(id){
+    jQuery('html,body').animate({scrollTop:jQuery("#"+id).offset().top-80},1000);
+}
+
+jQuery('.side_bar_item ').click(function(){
+    jQuery(this).addClass('active_side_item').parent().siblings().children().removeClass('active_side_item')
+})
+</script>
 </body>
 
 </html>

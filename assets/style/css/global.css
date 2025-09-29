@@ -395,7 +395,9 @@ p {
   color: #ffffff;
   align-self: baseline;
 }
-
+.bread_crumb .order_list li {
+  font-size: 16px;
+}
 .bread_crumb .order_list .page_name{
   color: var(--secondary-text-color);
 }
@@ -808,7 +810,9 @@ p {
 .header_container.no_absolute{
   padding-bottom: 0px;
 }
-
+.bread_crumb .order_list li {
+  font-size: 14px;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -842,5 +846,12 @@ p {
     height: 22px;
     font-size: 12px;
   }
+
+  .bread_crumb .order_list li {
+  font-size: 12px;
+}
+.bread_crumb .order_list{
+  gap: 10px;
+}
 
 }
