@@ -158,6 +158,8 @@
    }   
    .service_card .badge{
     margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
    }
    .service_card .categories{
     margin-top: 20px;
