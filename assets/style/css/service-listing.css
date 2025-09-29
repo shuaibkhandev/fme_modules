@@ -1,151 +1,136 @@
-/* Service Listing Pag */
-.service_listing_page {
+/* Service Listing Page */
+.service_listing_page .banner {
+  min-height: 1020px;
+  width: 100%;
+  background-image: linear-gradient(to right, #010D0C, #2F0325);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    /* Banner Section */
-    .banner {
-        min-height: 1020px;
-        width: 100%;
-        background-image: linear-gradient(to right, #010D0C, #2F0325);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.service_listing_page .banner .banner_inner {
+  min-height: 1020px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-        .banner_inner {
-            min-height: 1020px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+.service_listing_page .banner .banner_inner .banner_block {
+  margin-top: auto;
+}
 
-            .banner_block {
-                margin-top: auto;
+.service_listing_page .banner .banner_inner .banner_block .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 
-                .content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 5px;
-                }
+.service_listing_page .banner .banner_inner .banner_block .banner_title {
+  font-size: 70px;
+  line-height: 88px;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
 
-                .banner_title {
-                    font-size: 70px;
-                    line-height: 88px;
-                    text-align: center;
-                    font-weight: 800;
-                    text-transform: uppercase;
-                    color: #ffffff;
-                    margin-bottom: 10px;
-                }
+.service_listing_page .banner .banner_inner .banner_block .banner_sub_title {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: center;
+  margin-top: 10px;
+}
 
-                .banner_sub_title {
-                    color: #ffffff;
-                    font-size: 40px;
-                    font-weight: 500;
-                    line-height: 54px;
-                    text-align: center;
-                    margin-top: 10px;
-                }
+.service_listing_page .banner .banner_inner .banner_block .banner_text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 36px;
+  max-width: 710px;
+  margin: auto;
+  margin-bottom: 15px;
+}
 
-                .banner_text {
-                    text-align: center;
-                    font-size: 20px;
-                    line-height: 36px;
-                    max-width: 710px;
-                    margin: auto;
-                    margin-bottom: 15px;
-                }
+.service_listing_page .banner .banner_inner .banner_bottom_block {
+  margin-top: auto;
+  margin-bottom: 80px;
+}
 
-            }
+.service_listing_page .banner .banner_inner .banner_bottom_block .experts {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  max-width: 680px;
+  gap: 30px;
+}
 
-            .banner_bottom_block {
-                margin-top: auto;
-                margin-bottom: 80px;
+.service_listing_page .banner .banner_inner .banner_bottom_block .experts .content p {
+  margin-top: 10px;
+}
 
-                .experts {
-                    display: flex;
-                    align-items: center;
-                    justify-items: center;
-                    margin: auto;
-                    max-width: 680px;
-                    gap: 30px;
+.service_listing_page .banner .banner_inner .banner_bottom_block .experts .content .expert_badge {
+  background-color: #353535;
+  color: var(--secondary-color);
+  font-size: 13px;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 2px;
+}
 
-                    .content {
-                        p {
-                            margin-top: 10px;
-                        }
+.service_listing_page .banner .banner_inner .banner_bottom_block .experts .content .expert_badge .expert_stars {
+  display: inline-block;
+  margin-left: 3px;
+}
 
-                        .expert_badge {
-                            background-color: #353535;
-                            color: var(--secondary-color);
-                            font-size: 13px;
-                            display: inline-block;
-                            padding: 5px 8px;
-                            border-radius: 2px;
+/* Excellence Section */
+.service_listing_page .excellence_section .sec_top_row {
+  display: flex;
+  justify-content: center;
+}
 
-                            .expert_stars {
-                                display: inline-block;
-                                margin-left: 3px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+.service_listing_page .excellence_section .sec_top_row .cnt {
+  text-align: center;
+}
 
-    /* Excellence Section */
-    .excellence_section {
-        .sec_top_row {
-            display: flex;
-            justify-content: center;
+.service_listing_page .excellence_section .excellence_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
-            .cnt {
-                text-align: center;
-            }
-        }
+.service_listing_page .excellence_section .excellence_list .excellence {
+  border-right: 1px solid rgba(106, 86, 80, 0.2);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  height: 120px;
+}
 
-        .excellence_list {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
+.service_listing_page .excellence_section .excellence_list .excellence:last-child {
+  border-right: 0;
+}
 
-            .excellence {
-                border-right: 1px solid rgba(106, 86, 80, 0.2);
-                display: flex;
-                flex: 1;
-                flex-direction: column;
-                justify-content: end;
-                gap: 10px;
-                height: 120px;
+.service_listing_page .excellence_section .excellence_list .excellence .count {
+  text-align: center;
+  display: block;
+  font-size: 36px;
+  color: #000;
+  line-height: 45px;
+  font-weight: 600;
+}
 
-                &:last-child {
-                    border-right: 0;
-                }
+.service_listing_page .excellence_section .excellence_list .excellence .text {
+  text-align: center;
+}
 
-                .count {
-                    text-align: center;
-                    display: block;
-                    font-size: 36px;
-                    color: #000;
-                    line-height: 45px;
-                    font-weight: 600;
-                }
 
-                .text {
-                    text-align: center;
-                }
-            }
-        }
-    }
-
-    /* Service Liting Section */
-    .service_listing_section{
-        .service_listing{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-    }
 
 
 
@@ -196,489 +181,354 @@
 .choose_us .feature_card { background: #ffffff; padding: 30px; border-radius: 10px; display: flex; gap: 20px; align-items: flex-start; }
 .choose_us .feature-title { font-size: 22px; font-weight: 600; line-height: 30px; padding-bottom: 10px; }
 .choose_us .feature-description { color: #545454; }
-}
-
 
 @media screen and (max-width:1400px) {
-    .service_listing_page{
-         /* Banner Section */
-    .banner {
-        min-height: 1000px;
-        .banner_inner {
-            min-height: 1000px;
-
-            .banner_block {
-
-                .banner_title {
-                    font-size: 60px;
-                    line-height: 78px;
-                    margin-bottom: 10px;
-                }
-
-                .banner_sub_title {
-                    font-size: 36px;
-                    line-height: 52px;
-                    margin-top: 10px;
-                }
-
-                .banner_text {
-                    font-size: 19px;
-                    line-height: 34px;
-                    max-width: 700px;
-                    margin-bottom: 14px;
-                }
-
-            }
-
-        }
-    }
-
-    }
+  .service_listing_page .banner {
+    min-height: 1000px;
+  }
+  .service_listing_page .banner .banner_inner {
+    min-height: 1000px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_title {
+    font-size: 60px;
+    line-height: 78px;
+    margin-bottom: 10px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_sub_title {
+    font-size: 36px;
+    line-height: 52px;
+    margin-top: 10px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_text {
+    font-size: 19px;
+    line-height: 34px;
+    max-width: 700px;
+    margin-bottom: 14px;
+  }
 }
-
-
 
 @media screen and (max-width:1280px) {
-    .service_listing_page{
-         /* Banner Section */
-    .banner {
-        min-height: 980px;
-        .banner_inner {
-            min-height: 980px;
+  .service_listing_page .banner {
+    min-height: 980px;
+  }
+  .service_listing_page .banner .banner_inner {
+    min-height: 980px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_title {
+    font-size: 54px;
+    line-height: 68px;
+    margin-bottom: 8px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_sub_title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 46px;
+    margin-top: 8px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_text {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 680px;
+    margin-bottom: 12px;
+  }
 
-            .banner_block {
-
-                .content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 5px;
-                }
-
-                .banner_title {
-                    font-size: 54px;
-                    line-height: 68px;
-                    margin-bottom: 8px;
-                }
-
-                .banner_sub_title {
-                    font-size: 30px;
-                    font-weight: 500;
-                    line-height: 46px;
-                    margin-top: 8px;
-                }
-
-                .banner_text {
-                    font-size: 18px;
-                    line-height: 32px;
-                    max-width: 680px;
-                    margin-bottom: 12px;
-                }
-
-            }
-
-        }
-    }
-
-        /* Excellence Section */
-    .excellence_section {
-  
-
-        .excellence_list {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          row-gap: 30px;
-
-            .excellence {
-                height: auto;
-
-                &:last-child {
-                    border-right: 0;
-                }
-                  &:nth-last-child(2) {
-                    border-right: 0;
-                }
-
-                .count {
-                    font-size: 34px;
-                    line-height: 43px;
-                }
-
-            }
-        }
-    }
-
-    }
+  .service_listing_page .excellence_section .excellence_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence {
+    height: auto;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence:last-child {
+    border-right: 0;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence:nth-last-child(2) {
+    border-right: 0;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence .count {
+    font-size: 34px;
+    line-height: 43px;
+  }
 }
 
-
 @media screen and (max-width:1024px) {
-    .service_listing_page{
-         /* Banner Section */
-    .banner {
-        min-height: 960px;
-        .banner_inner {
-            min-height: 960px;
-
-            .banner_block {
-
-                .content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 5px;
-                }
-
-                .banner_title {
-                    font-size: 52px;
-                    line-height: 63px;
-                    margin-bottom: 7px;
-                }
-
-                .banner_sub_title {
-                    font-size: 28px;
-                    line-height: 43px;
-                    margin-top: 7px;
-                }
-
-                .banner_text {
-                    font-size: 17px;
-                    line-height: 30px;
-                    max-width: 670px;
-                    margin-bottom: 11px;
-                }
-
-            }
-
-        }
-    }
-
-    }
+  .service_listing_page .banner {
+    min-height: 960px;
+  }
+  .service_listing_page .banner .banner_inner {
+    min-height: 960px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_title {
+    font-size: 52px;
+    line-height: 63px;
+    margin-bottom: 7px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_sub_title {
+    font-size: 28px;
+    line-height: 43px;
+    margin-top: 7px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_text {
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 670px;
+    margin-bottom: 11px;
+  }
 }
 
 @media screen and (max-width:992px) {
-    .service_listing_page{
-         /* Banner Section */
-    .banner {
-        min-height: 880px;
-        .banner_inner {
-            min-height: 880px;
+  .service_listing_page .banner {
+    min-height: 880px;
+  }
+  .service_listing_page .banner .banner_inner {
+    min-height: 880px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_title {
+    font-size: 42px;
+    line-height: 53px;
+    margin-bottom: 6px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_sub_title {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 6px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_text {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 650px;
+    margin-bottom: 10px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block {
+    margin-top: auto;
+    margin-bottom: 80px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    max-width: 680px;
+    gap: 30px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content p {
+    margin-top: 10px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content .expert_badge {
+    background-color: #353535;
+    color: var(--secondary-color);
+    font-size: 13px;
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 2px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content .expert_badge .expert_stars {
+    display: inline-block;
+    margin-left: 3px;
+  }
 
-            .banner_block {
-
-                .content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 5px;
-                }
-
-                .banner_title {
-                    font-size: 42px;
-                    line-height: 53px;
-                    margin-bottom: 6px;
-                }
-
-                .banner_sub_title {
-                    font-size: 20px;
-                    line-height: 32px;
-                    margin-top: 6px;
-                }
-
-                .banner_text {
-                    font-size: 16px;
-                    line-height: 28px;
-                    max-width: 650px;
-                    margin-bottom: 10px;
-                }
-
-            }
-
-            .banner_bottom_block {
-                margin-top: auto;
-                margin-bottom: 80px;
-
-                .experts {
-                    display: flex;
-                    align-items: center;
-                    justify-items: center;
-                    margin: auto;
-                    max-width: 680px;
-                    gap: 30px;
-
-                    .content {
-                        p {
-                            margin-top: 10px;
-                        }
-
-                        .expert_badge {
-                            background-color: #353535;
-                            color: var(--secondary-color);
-                            font-size: 13px;
-                            display: inline-block;
-                            padding: 5px 8px;
-                            border-radius: 2px;
-
-                            .expert_stars {
-                                display: inline-block;
-                                margin-left: 3px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-            /* Excellence Section */
-    .excellence_section {
-
-        .excellence_list {
-          grid-template-columns: repeat(2, 1fr);
-          row-gap: 25px;
-
-            .excellence {
-                gap: 5px;
-                height: auto;
-
-                &:last-child {
-                    border-right: 0;
-                }
-                  &:nth-last-child(2) {
-                  border-right: 1px solid rgba(106, 86, 80, 0.2);
-                }
-                    &:nth-child(2) {
-                    border-right: 0;
-                }
-
-                .count {
-                    font-size: 32px;
-                    line-height: 41px;
-                }
-
-            }
-        }
-    }
-    }
+  .service_listing_page .excellence_section .excellence_list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence {
+    gap: 5px;
+    height: auto;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence:last-child {
+    border-right: 0;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence:nth-last-child(2) {
+    border-right: 1px solid rgba(106, 86, 80, 0.2);
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence:nth-child(2) {
+    border-right: 0;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence .count {
+    font-size: 32px;
+    line-height: 41px;
+  }
 }
 
 @media screen and (max-width:767px) {
-    .service_listing_page{
-         /* Banner Section */
-    .banner {
-        min-height: 780px;
-        .banner_inner {
-            min-height: 780px;
+  .service_listing_page .banner {
+    min-height: 780px;
+  }
+  .service_listing_page .banner .banner_inner {
+    min-height: 780px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block {
+    margin-bottom: -40px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_title {
+    font-size: 34px;
+    line-height: 44px;
+    margin-bottom: 5px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_sub_title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 5px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_text {
+    font-size: 15px;
+    line-height: 26px;
+    max-width: 620px;
+    margin-bottom: 8px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block {
+    margin-top: auto;
+    margin-bottom: 60px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 680px;
+    gap: 15px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content {
+    text-align: center;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content p {
+    margin-top: 10px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content .expert_badge {
+    background-color: #353535;
+    color: var(--secondary-color);
+    font-size: 13px;
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 2px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content .expert_badge .expert_stars {
+    display: inline-block;
+    margin-left: 3px;
+  }
 
-            .banner_block {
-margin-bottom: -40px;
-                .content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 5px;
-                }
-
-                .banner_title {
-                    font-size: 34px;
-                    line-height: 44px;
-                    margin-bottom: 5px;
-                }
-
-                .banner_sub_title {
-                    font-size: 18px;
-                    line-height: 28px;
-                    margin-top: 5px;
-                }
-
-                .banner_text {
-                    font-size: 15px;
-                    line-height: 26px;
-                    max-width: 620px;
-                    margin-bottom: 8px;
-                }
-
-            }
-
-            .banner_bottom_block {
-                margin-top: auto;
-                margin-bottom: 60px;
-
-                .experts {
-                    display: flex;
-                    align-items: center;
-                    justify-items: center;
-                    flex-direction: column;
-                    margin: auto;
-                    max-width: 680px;
-                    gap: 15px;
-
-                    .content {
-                        text-align: center;
-                        p {
-                            margin-top: 10px;
-                        }
-
-                        .expert_badge {
-                            background-color: #353535;
-                            color: var(--secondary-color);
-                            font-size: 13px;
-                            display: inline-block;
-                            padding: 5px 8px;
-                            border-radius: 2px;
-
-                            .expert_stars {
-                                display: inline-block;
-                                margin-left: 3px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-       .excellence_section {
-
-        .excellence_list {
-          row-gap: 20px;
-
-            .excellence {
-
-                .count {
-                    font-size: 30px;
-                    line-height: 38px;
-                }
-
-            }
-        }
-    }
-
-    }
+  .service_listing_page .excellence_section .excellence_list {
+    row-gap: 20px;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence .count {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
-
-
 
 @media screen and (max-width:576px) {
-    .service_listing_page{
-         /* Banner Section */
-    .banner {
-        min-height: 730px;
-        .banner_inner {
-           min-height: 730px;
-            .banner_block {
-margin-bottom: -70px;
-                .content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 2px;
-                }
+  .service_listing_page .banner {
+    min-height: 730px;
+  }
+  .service_listing_page .banner .banner_inner {
+    min-height: 730px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block {
+    margin-bottom: -70px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_title {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_sub_title {
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 5px;
+  }
+  .service_listing_page .banner .banner_inner .banner_block .banner_text {
+    display: none;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block {
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 680px;
+    gap: 10px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content {
+    text-align: center;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content p {
+    margin-top: 10px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content .expert_badge {
+    background-color: #353535;
+    color: var(--secondary-color);
+    font-size: 13px;
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 2px;
+  }
+  .service_listing_page .banner .banner_inner .banner_bottom_block .experts .content .expert_badge .expert_stars {
+    display: inline-block;
+    margin-left: 3px;
+  }
 
-                .banner_title {
-                   font-size: 26px;
-        line-height: 34px;
-                    margin-bottom: 15px;
-                }
-
-                .banner_sub_title {
-                   font-size: 17px;
-        line-height: 26px;
-                    margin-top: 5px;
-                }
-
-                .banner_text {
-                    display: none;
-                }
-
-            }
-
-            .banner_bottom_block {
-                margin-top: auto;
-                margin-bottom: 30px;
-
-                .experts {
-                    display: flex;
-                    align-items: center;
-                    justify-items: center;
-                    flex-direction: column;
-                    margin: auto;
-                    max-width: 680px;
-                    gap: 10px;
-
-                    .content {
-                        text-align: center;
-                        p {
-                            margin-top: 10px;
-                        }
-
-                        .expert_badge {
-                            background-color: #353535;
-                            color: var(--secondary-color);
-                            font-size: 13px;
-                            display: inline-block;
-                            padding: 5px 8px;
-                            border-radius: 2px;
-
-                            .expert_stars {
-                                display: inline-block;
-                                margin-left: 3px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-                /* Excellence Section */
-    .excellence_section {
-
-        .excellence_list {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          row-gap: 20px;
-
-            .excellence {
-                border-right: 0;
-
-                gap: 5px;
-                height: auto;
-
-                &:last-child {
-                    border-right: 0;
-                }
-                  &:nth-last-child(2) {
-                  border-right: 0;
-                }
-                    &:nth-child(2) {
-                    border-right: 0;
-                }
-                
-
-                .count {
-                    font-size: 26px;
-                    line-height: 34px;
-                }
-
-            }
-        }
-    }
-
-    }
+  .service_listing_page .excellence_section .excellence_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence {
+    border-right: 0;
+    gap: 5px;
+    height: auto;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence:last-child {
+    border-right: 0;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence:nth-last-child(2) {
+    border-right: 0;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence:nth-child(2) {
+    border-right: 0;
+  }
+  .service_listing_page .excellence_section .excellence_list .excellence .count {
+    font-size: 26px;
+    line-height: 34px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
