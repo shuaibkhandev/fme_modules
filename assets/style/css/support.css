@@ -71,6 +71,12 @@
 .support_page .support_types .type .content > p{
     margin-bottom: 23px;
 }
+
+
+/* Faq Section */
+.support_page .faq_section .section_padding{
+   padding-top: 0;
+}
 @media screen and (max-width:1600px) {
 .customer_review_card .review_content {
     padding: 35px 46px 0;
