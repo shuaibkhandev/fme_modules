@@ -41,7 +41,7 @@
 width: 495px;
 }
 
-.req_quote_page .req_a_quote_section .info > title{
+.req_quote_page .req_a_quote_section .info > .title{
     margin-bottom: 18px;
 }
 .req_quote_page .req_a_quote_section .info > .text{
@@ -55,7 +55,6 @@ width: 495px;
 .req_quote_page .req_a_quote_section .info .info_list{
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .req_quote_page .req_a_quote_section .info .info_list .info_item{
@@ -175,6 +174,7 @@ flex: 1;
   text-align: center;
   background-color: #F9F9F9;
   border-radius: 8px;
+  height: 130px;
 }
 .req_quote_page .upload_box .text{
     font-size: 16px;
@@ -302,6 +302,9 @@ gap: 10px;}
     padding-block: 4px 8px;
     gap: 10px;
 }
+.req_quote_page .req_a_quote_section .info > .title{
+    margin-bottom: 15px;
+}
 }
 @media screen and (max-width: 992px) {
         /* Banner */
@@ -397,7 +400,9 @@ gap: 10px;}
         font-size: 13px;
     }
 
-
+.req_quote_page .req_a_quote_section .info > .title{
+    margin-bottom: 10px;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -447,5 +452,8 @@ gap: 10px;}
     }
     .req_quote_page .req_a_quote_section .info .info_list .info_item .info_{
         gap: 5px;
+    }
+    .req_quote_page .upload_box {
+        height: auto;
     }
 }
