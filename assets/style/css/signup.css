@@ -1,0 +1,197 @@
+
+    /* ---------- Layout ---------- */
+    .auth_page {
+     width: 100%;
+    min-height: 100vh;
+    }
+
+    .auth_page  .auth_page_inner{
+        min-height: 100vh;
+        padding-block: 53px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .auth_page  .auth_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 65px;
+    }
+
+
+
+    .auth_page .auth_header  .link_create {
+      font-size: 19px;
+      line-height: 25px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+
+     .auth_page .auth_header  .link_create > a{
+        text-decoration: underline;
+     }
+
+    
+    /* ---------- Main ---------- */
+
+    .auth_page  .auth_main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100% - 65px);
+    }
+
+    /* ---------- Card ---------- */
+
+   .auth_page   .auth_card {
+      max-width: 600px;
+      width: 100%;
+      margin: auto;
+    }
+
+   .auth_page   .auth_card   .auth_title {
+      font-size: 54px;
+      line-height: 68px;
+      font-weight: 700;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+   .auth_page   .auth_card    .form_control {
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 15px;
+      margin-bottom: 20px;
+      outline: none;
+      transition: border 0.2s;
+    }
+   
+
+     .auth_page   .auth_card  .form_control:focus {
+      border-color: #000;
+    }
+    .auth_page   .auth_card   .form_control:focus::placeholder{
+        color: #000;
+    }
+
+     .auth_page   .auth_card  .password_field {
+      position: relative;
+    }
+
+      .auth_page   .auth_card .toggle_password {
+      position: absolute;
+      right: 12px;
+      top: 15px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+   .auth_page  .auth_card   .newsletter_optin {
+  margin: 3px 0 30px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+ .auth_page  .auth_card .newsletter_optin input[type="radio"] {
+  accent-color: #111; 
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* ----------------------------------------
+   🔁 Responsive Breakpoints
+---------------------------------------- */
+
+/* 1280px and below */
+@media (max-width: 1280px) {
+
+}
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .auth_page   .auth_card   .auth_title {
+    font-size: 48px;
+    line-height: 64px;}
+
+    .auth_page .auth_header  .link_create{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+  .auth_page   .auth_card   .auth_title {
+    font-size: 42px;
+    line-height: 58px;
+    margin-bottom: 35px;
+}
+
+
+}
+
+/* 767px and below (Tablet + Large Phones) */
+@media (max-width: 767px) {
+ .auth_page   .auth_card   .auth_title {
+    font-size: 34px;
+    line-height: 46px;
+    margin-bottom: 25px;
+}
+
+  .auth_page  .auth_header  .link_create{
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+       .auth_page  .auth_card   .newsletter_optin {
+  margin: 3px 0 25px;
+  font-size: 13px;
+  line-height: 21px;
+  gap: 7px;
+}
+}
+
+/* 576px and below (Phones) */
+@media (max-width: 576px) {
+   .auth_page    .auth_header {
+        flex-direction: column;
+    }
+ .auth_page   .auth_card  .auth_title {
+    font-size: 25px;
+    line-height: 38px;
+    margin-bottom: 25px;
+}
+
+    .auth_page  .auth_header  .link_create{
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .auth_page  .auth_card  .form_control{
+        padding: 16px;
+        margin-bottom: 15px;
+    }
+
+       .auth_page  .auth_card   .newsletter_optin {
+  margin: 3px 0 20px;
+  font-size: 12px;
+  line-height: 19px;
+  gap: 5px;
+}
+
+}
