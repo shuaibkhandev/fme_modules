@@ -1,0 +1,135 @@
+/******* Empty Card Page *******/
+.empty_card_page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/******* Empty Card Page >> Header *******/
+.empty_card_page .header {
+    padding-block: 53px 60px;
+}
+
+
+/******* Empty Card Page >> Empty Card Section *******/
+
+.empty_card_page .empty_card_section {
+    border-bottom: 1px solid rgba(109, 192, 52, 0.3);
+    padding-bottom: 87px;
+
+}
+
+.empty_card_page .empty_card_section .empty_card_inner {
+    max-width: 592px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty_card_page .empty_card_section .empty_card_icon {
+    text-align: center;
+}
+
+.empty_card_page .empty_card_section .empty_card_title {
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 700;
+    letter-spacing: .9px;
+    text-align: center;
+    margin-block: 23px 15px;
+}
+
+.empty_card_page .empty_card_section .empty_card_text {
+    text-align: center;
+}
+
+.empty_card_page .empty_card_section .back_to_home_cta {
+    margin-top: 26px;
+    align-self: center;
+}
+
+/******* Empty Card Page >> Empty Card Section ******/
+
+
+.empty_card_page .suggestion_section .title {
+    font-weight: 600;
+    margin-bottom: 0 !important;
+}
+
+
+
+/* ----------------------------------------
+   🔁 Responsive Breakpoints
+---------------------------------------- */
+
+/* 1280px and below */
+@media (max-width: 1280px) {
+
+    /******* Empty Card Page >> Empty Card Section *******/
+    .empty_card_page .empty_card_section .empty_card_title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+
+    /******* Empty Card Page >> Empty Card Section *******/
+    .empty_card_page .empty_card_section .empty_card_title {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+ 
+
+}
+
+/* 767px and below */
+@media (max-width: 767px) {
+
+    /******* Empty Card Page >> Header *******/
+.empty_card_page .header {
+    padding-block: 38px 50px;
+}
+
+    /******* Empty Card Page >> Empty Card Section *******/
+    .empty_card_page .empty_card_section {
+    padding-bottom: 52px;
+}
+    .empty_card_page .empty_card_section .empty_card_title {
+        font-size: 34px;
+        line-height: 42px;
+        margin-block: 20px 12px;
+    }
+
+    .empty_card_page .empty_card_section .back_to_home_cta {
+        margin-top: 23px;
+    }
+
+
+}
+
+/* 767px and below */
+@media (max-width: 767px) {
+/******* Empty Card Page >> Header *******/
+        .empty_card_page .header {
+        padding-block: 28px 38px;
+    }
+
+    /******* Empty Card Page >> Empty Card Section *******/
+    .empty_card_page .empty_card_section .empty_card_title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-block: 12px 8px;
+    }
+
+    .empty_card_page .empty_card_section .back_to_home_cta {
+        margin-top: 10px;
+    }
+
+}
