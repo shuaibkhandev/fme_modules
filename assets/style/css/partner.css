@@ -1,0 +1,379 @@
+/* Banner Section */
+.partner_page .banner{
+    min-height: 578px;
+    width: 100%;
+    background-image: linear-gradient(to right, #00190B,#242424);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner_page .banner .banner_block{
+    max-width: 1026px;
+    margin-top: 50px;
+}
+.partner_page .banner .content{
+    margin-top: 20px;
+}
+
+.partner_page .banner .content .banner_title{
+        font-size: 54px;
+        line-height: 72px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.partner_page .banner .content .banner_text{
+    text-align: center;
+    max-width: 775px;
+    font-size: 20px;
+    line-height: 34px;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.partner_page .partnership_section .partnership{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.partner_page .partnership_section .partnership .content_section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.partner_page .partnership_section .partnership .content_section .content:first-child{
+    position: relative;
+}
+
+.partner_page .partnership_section .partnership .content_section .content:first-child::before{
+height: 100%;
+width: 3px;
+position: absolute;
+content: "";
+background-color: #000;
+left: -25px;
+top: 3px;
+}
+
+
+.partner_page .benefits_sectoin .main_container{
+    max-width: 1270px;
+}
+
+.partner_page .benefits_sectoin .sec_top_row .cnt{
+    margin: auto;
+    text-align: center;
+}
+.partner_page .benefits_sectoin .sec_top_row .cnt h2{
+    margin-bottom: 28px;
+}
+.partner_page .benefits_sectoin .sec_top_row .cnt p span{
+    color: #000;
+}
+
+.partner_page .benefits_sectoin .benefits{
+    display: flex;
+    gap: 155px;
+}
+
+.partner_page .benefits_sectoin .benefits .content_section{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: start;
+  flex: 1;
+}
+
+.partner_page .benefits_sectoin .benefits .content_section .our_work{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+
+/* plans section */
+.plans_section .sec_top_row .cnt{
+margin: auto;
+text-align: center;
+}
+
+.plans_section .sec_top_row .cnt p{
+    max-width: 824px;
+}
+
+.plans_section .plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.plans_section .plans .plan {
+max-width: 508px;
+  border-radius: 16px;
+  width: 100%;
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  transition: all .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.plans_section .plans .plan:hover{
+  background-color: #111;
+}
+.plans_section .plans .plan:hover .plan_head .plan-title, .plans_section .plans .plan:hover .plan_head .price .currency, .plans_section .plans .plan:hover .plan_head .price .amount, .plans_section .plans .plan:hover .plan_body .includes h3, .plans_section .plans .plan:hover .plan_body .features li strong{
+    color: #fff;
+}
+
+.plans_section .plans .plan:hover .plan_head .plan-description, .plans_section .plans .plan:hover .plan_head .price .frequency, .plans_section .plans .plan:hover .plan_body .features li{
+    color:rgba(255, 255, 255, 0.6)
+}
+
+ .plans_section .plans .plan:hover hr{
+     border-top: 1px solid rgba(255, 255, 255, 0.6);
+ }
+  .plans_section .plans .plan:hover .plan_bottom .primary_cta{
+  background-color: #fff;
+  color: #000;
+  }
+
+   .plans_section .plans .plan .plan_head{
+    padding: 32px 60px 0px 36px;
+   }
+.plans_section .plans .plan .plan_head .badge {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  background-color: #fbe9c1;
+  color: #111;
+  padding: 6px 14px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.plans_section .plans .plan .plan_head .plan-title {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 13px;
+  color: #000;
+}
+
+
+
+.plans_section .plans .plan .plan_head .plan-description {
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 14px;
+  color: var(--text-color);
+}
+
+
+
+.plans_section .plans .plan .plan_head .price {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: start;
+
+}
+
+.plans_section .plans .plan .plan_head .price .currency {
+  font-size: 24px;
+  font-weight: 500;
+  vertical-align: top;
+  align-self: self-end;
+}
+.plans_section .plans .plan .plan_head .price .amount{
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.plans_section .plans .plan .plan_head .price .frequency {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 400;
+    align-self: self-end;
+}
+
+.plans_section .plans .plan hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 18px 0px 20px 0;
+}
+
+.plans_section .plans .plan .plan_body{
+  padding: 10px 36px 30px 36px;
+  flex: 1;
+}
+.plans_section .plans .plan .plan_body .includes{
+    max-width: 341px;
+}
+.plans_section .plans .plan .plan_body .includes h3 {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 14px;
+   
+}
+
+
+.plans_section .plans .plan .plan_body .features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plans_section .plans .plan .plan_body .features li {
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 15px;
+  line-height: 23px;
+  display: flex;
+  align-items: start;
+  gap: 17px;
+  color: var(--text-color);
+}
+
+.plans_section .plans .plan .plan_bottom{
+  padding: 0px 36px 30px 36px;
+}
+
+@media screen and (max-width:1600px) {
+
+
+}
+
+@media screen and (max-width:1400px) {
+
+
+}
+@media screen and (max-width:1280px) {
+    /* Banner */
+   .partner_page  .banner{
+        min-height: 560px;
+    }
+   .partner_page  .banner .content{
+        margin-top: 15px;
+    }
+   .partner_page  .banner .content .banner_title{
+        font-size: 48px;
+        line-height: 60px;
+    }
+  .partner_page   .banner .content .banner_text {
+        max-width: 560px;
+        margin-top: 10px;
+        font-size: 18px;
+    line-height: 30px;
+    }
+
+.customer_review_card .review_content {
+    padding: 25px 28px 0;
+}
+.customer_review_card .review_title{
+    font-size: 20px;
+    line-height: 32px;
+}
+.customer_review_card .review_desc{
+    padding: 14px 0px;
+}
+
+
+.partner_page .partnership_section .partnership{
+  gap: 60px;
+  align-items: flex-start;
+}
+.partner_page .partnership_section .partnership .content_section{
+  gap: 30px;
+}
+  
+}
+
+
+@media screen and (max-width: 992px) {
+        /* Banner */
+  .partner_page   .banner{
+        min-height: 540px;
+    }
+  .partner_page   .banner .content{
+        margin-top: 12px;
+    }
+   .partner_page  .banner .content .banner_title{
+        font-size: 38px;
+        line-height: 52px;
+    }
+   .partner_page  .banner .content .banner_text {
+        max-width: 520px;
+        margin-top: 8px;
+        font-size: 17px;
+    line-height: 28px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+        /* Banner */
+   .partner_page  .banner{
+        min-height: 520px;
+    }
+  .partner_page   .banner .content{
+        margin-top: 10px;
+    }
+  .partner_page   .banner .content .banner_title{
+        font-size: 28px;
+        line-height: 48px;
+    }
+   .partner_page  .banner .content .banner_text {
+        max-width: 420px;
+        margin-top: 7px;
+        font-size: 15px;
+    line-height: 26px;
+    }
+
+
+    .partner_page .partnership_section .partnership{
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+    .partner_page .partnership_section .partnership .content_section{
+      gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+        /* Banner */
+  .partner_page   .banner{
+        min-height: 340px;
+    }
+   .partner_page  .banner .banner_block{
+        margin-top: 50px;
+    }
+   .partner_page  .banner .content{
+        margin-top: 5px;
+    }
+  .partner_page   .banner .content .banner_title{
+        font-size: 22px;
+        line-height: 34px;
+    }
+  .partner_page   .banner .content .banner_text {
+        display: none;
+        max-width: 380px;
+        margin-top: 7px;
+        font-size: 16px;
+    line-height: 22px;
+    }
+
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/style/css/global.css">
+  <title>Company Registration Form</title>
+  <style>
+
+    .popup_overlay {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup_block {
+      width: 600px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+      position: relative;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+    }
+
+    .popup_header .title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+
+    .checkbox_group {
+      display: flex;
+      justify-content: space-between;
+      border: 1px dashed #ccc;
+      border-radius: 6px;
+      padding: 12px;
+      flex-wrap: wrap;
+    }
+
+    .checkbox_item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 14px;
+    }
+
+    .form_row {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .popup_input {
+      flex: 1;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      outline: none;
+    }
+
+ 
+
+    .popup_close_btn {
+      background-color: #111;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-size: 18px;
+    }
+
+    .primary_cta{
+        align-self: self-start;
+    }
+    @media screen and (max-width: 600px) {
+      .popup_block {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .form_row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="popup_overlay" id="popupOverlay">
+    <div class="popup_block">
+      <!-- Header -->
+      <div class="popup_header">
+        <h2 class="title">Company Registration Form</h2>
+      </div>
+
+
+      <!-- Inputs -->
+      <div class="form_row">
+        <input type="text" placeholder="First Name*" class="popup_input" required>
+        <input type="text" placeholder="Last Name*" class="popup_input" required>
+      </div>
+        <div class="form_row">
+        <input type="text" placeholder="Email*" class="popup_input" required>
+        <input type="text" placeholder="Password*" class="popup_input" required>
+      </div>
+        <div class="form_row">
+        <input type="text" placeholder="Website URL*" class="popup_input" required>
+      </div>
+        <div class="form_row">
+        <input type="text" placeholder="Phone Number*" class="popup_input" required>
+        <input type="text" placeholder="Company Name*" class="popup_input" required>
+      </div>
+              <div class="form_row">
+        <select name="plan" id="plan" class="popup_input">
+            <option value="premium">Premium</option>
+            <option value="Basic">Basic</option>
+            <option value="standard">Standard</option>
+        </select>
+          <select name="company_size" id="companySize" class="popup_input">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+        </select>
+      </div>
+
+              <div class="form_row">
+       <!-- Recaptcha -->
+      <div class="recaptcha_box">
+        <input type="checkbox" id="robot" required>
+        <label for="robot">I'm not a robot</label>
+      </div>
+      </div>
+
+
+
+
+      <!-- Submit -->
+      <button type="submit" class="primary_cta">Add a Review →</button>
+
+      <!-- Close -->
+      <button class="popup_close_btn" type="button" id="popupCloseBtn">&times;</button>
+    </div>
+  </div>
+
+  <script>
+    const popupCloseBtn = document.getElementById("popupCloseBtn");
+    popupCloseBtn.addEventListener("click", function () {
+      document.getElementById("popupOverlay").style.display = "none";
+    });
+  </script>
+</body>
+
+</html>
