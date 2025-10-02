@@ -309,6 +309,57 @@ max-width: 508px;
   gap: 90px;
 }
   
+
+.plans_section .plans .plan .plan_head {
+    padding: 28px 42px 0px 28px;
+}
+.plans_section .plans .plan .plan_body{
+  padding: 10px 28px 28px 28px;
+}
+.plans_section .plans .plan .plan_bottom {
+    padding: 0px 28px 28px 28px;
+}
+.plans_section .plans .plan .plan_head .plan-title{
+      font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 10px;
+}
+.plans_section .plans .plan .plan_head .price .amount {
+    font-size: 30px;
+    line-height: 38px;
+  
+  }
+  .plans_section .plans .plan .plan_head .price .currency {
+    font-size: 22px;
+  }
+  .plans_section .plans .plan .plan_head .price .frequency {
+    font-size: 13px;
+}
+.plans_section .plans .plan hr {
+    margin: 14px 0px 16px 0;
+}
+.plans_section .plans .plan .plan_body .includes h3 {
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+.plans_section .plans .plan .plan_body .features li{
+  margin-bottom: 12px;
+}
+}
+
+@media screen and (max-width:1024px) {
+  .plans_section .plans {
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+}
+    .plans_section .plans .plan .plan_head .plan-title {
+        font-size: 30px;
+        line-height: 44px;
+        margin-bottom: 8px;
+    }
 }
 
 
@@ -337,7 +388,11 @@ max-width: 508px;
         .partner_page .benefits_sectoin .benefits .content_section .our_work {
 margin-bottom: 5px;
         }
-
+    .plans_section .plans .plan .plan_head .plan-title {
+        font-size: 28px;
+        line-height: 42px;
+        margin-bottom: 8px;
+    }
 
 }
 
@@ -380,6 +435,34 @@ margin-bottom: 5px;
       margin: auto;
     }
 
+      .plans_section .plans {
+
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 20px;
+    row-gap: 30px;
+}
+.plans_section .plans .plan .plan_head .plan-description{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.plans_section .plans .plan .plan_head .price .amount {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .plans_section .plans .plan hr {
+        margin: 10px 0px 12px 0;
+    }
+    .plans_section .plans .plan .plan_head .badge {
+    font-size: 10px;
+    }
+        .plans_section .plans .plan .plan_body .features li {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 21px;
+        }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -405,4 +488,44 @@ margin-bottom: 5px;
     line-height: 22px;
     }
 
+    .plans_section .plans {
+    row-gap: 20px;
+    }
+        .plans_section .plans .plan .plan_body {
+        padding: 8px 12px 18px 12px;
+    }
+        .plans_section .plans .plan .plan_head {
+        padding: 20px 12px 0px 12px;
+    }
+        .plans_section .plans .plan .plan_bottom {
+        padding: 0px 12px 12px 12px;
+    }
+        .plans_section .plans .plan hr {
+        margin: 2px 0px 6px 0;
+    }
+    .plans_section .plans .plan .plan_body .features li {
+        margin-bottom: 8px;
+        font-size: 13px;
+        line-height: 21px;
+    }
+        .plans_section .plans .plan .plan_head .plan-description {
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 8px;
+    }
+    .plans_section .plans .plan .plan_head .plan-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 4px;
+    }
+        .plans_section .plans .plan .plan_head .price .amount {
+        font-size: 20px;
+        line-height: 32px;
+    }
+        .plans_section .plans .plan .plan_head .price .currency {
+        font-size: 16px;
+    }
+        .plans_section .plans .plan .plan_head .price .frequency {
+        font-size: 12px;
+    }
 }
