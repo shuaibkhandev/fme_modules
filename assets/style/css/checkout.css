@@ -36,13 +36,13 @@
   .progress_indicator
   .step_circle.step_circle_active
   .step_indicator {
-  background: var(--primary_color);
+  background: var(--primary-color);
 }
 .checkout_form .progress_indicator .step_circle .step_indicator {
   position: relative;
   width: 25px;
   height: 25px;
-  border: 1px solid var(--primary_color);
+  border: 1px solid var(--primary-color);
   background-color: #fff;
   border-radius: 25px;
   display: flex;
@@ -56,7 +56,7 @@
   content: "";
   height: 1px;
   width: 185px;
-  background-color: var(--primary_color);
+  background-color: var(--primary-color);
   display: block;
   position: absolute;
   top: 11px;
@@ -70,7 +70,7 @@
   .progress_steps_item:nth-child(1)
   .step_indicator {
   background-color: white;
-  border: 7px solid var(--primary_color);
+  border: 7px solid var(--primary-color);
 }
 .checkout_form
   .progress_indicator
@@ -89,7 +89,7 @@
   margin-top: 30px;
 }
 .checkout_form .checkout_block .checkout_block_inner .block_header {
-  background-color: #eff6ee;
+  background-color: var(--section-bg);
   border-radius: 5px;
   padding: 15px 20px;
   box-sizing: border-box;
@@ -129,6 +129,15 @@
   font-weight: 500;
   line-height: 21px;
 }
+    .checkout_form
+    .checkout_block
+    .checkout_block_inner
+    .block_header
+    .account_login
+    .login_link{
+      text-decoration: underline;
+      color: var(--primary-color);
+    }
 .checkout_form
   .checkout_block
   .checkout_block_inner
@@ -186,10 +195,10 @@
   transition: 0.3s ease-in-out;
 }
 .checkout_form .form_field input:focus {
-  border: 1px solid var(--primary_color);
+  border: 1px solid var(--primary-color);
 }
 .checkout_form .form_field input:focus::placeholder {
-  color: var(--primary_color);
+  color: var(--primary-color);
 }
 .checkout_form .form_check {
   display: block;
@@ -229,7 +238,7 @@
   top: 3px;
   width: 4px;
   height: 12px;
-  border: solid var(--primary_color);
+  border: solid var(--primary-color);
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -285,7 +294,7 @@
   width: 100%;
 }
 .checkout_form .cart_products .product_item .product_info .product_details {
-  max-width: 260px;
+  max-width: 320px;
 }
 .checkout_form .cart_products .product_item .product_info .product_details h3 {
   font-size: 17px;
@@ -315,7 +324,7 @@
   cursor: pointer;
 }
 .checkout_form .quantity_value {
-  padding: 0 12px;
+  padding: 6px 12px 0;
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
@@ -338,7 +347,7 @@
   flex-direction: column;
   gap: 15px;
   padding: 10px 35px;
-  border: 1px solid #6dc034;
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
   list-style: none;
 }
@@ -417,13 +426,15 @@
   display: flex;
   gap: 2px;
   align-items: center;
-  color: var(--primary_color);
+  color: var(--primary-color);
 }
 .checkout_form .order_button {
   margin-top: 25px;
 }
 .checkout_form .order_button .btn_complete_order {
   width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 @media (min-width: 1281px) and (max-width: 1480px) {
@@ -446,6 +457,7 @@
     font-size: 16px;
     line-height: 20px;
   }
+
   .checkout_form .progress_indicator .progress_steps_item span {
     font-size: 15px;
   }
@@ -1023,7 +1035,7 @@
     content: "";
     height: 1px;
     width: 100px;
-    background-color: var(--primary_color);
+    background-color: var(--primary-color);
     display: block;
     position: absolute;
     top: 8px;
@@ -1033,7 +1045,7 @@
     .progress_indicator
     .progress_steps_item:nth-child(1)
     .step_indicator {
-    border: 5px solid var(--primary_color);
+    border: 5px solid var(--primary-color);
   }
   .checkout_form
     .progress_indicator

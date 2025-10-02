@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="../assets/style/css/pushbar.css" />
+  <link rel="stylesheet" href="../assets/style/css/global.css" />
+  <link rel="stylesheet" href="../assets/style/css/header.css" />
+  <link rel="stylesheet" href="../assets/style/css/footer.css" />
+  <link rel="stylesheet" href="../assets/style/css/style.css" />
+  <link rel="stylesheet" href="../assets/style/css/checkout.css" />
+  <link rel="stylesheet" media="all" href="../assets/style/css/slick.min.css" />
+  <link rel="stylesheet" media="all" href="../assets/style/css/slick-theme.css" />
+  <link rel="stylesheet" href="../assets/fonts/font.css" />
+</head>
+
+<body>
+
+  <section class="page_wrapper checkout_page">
+    <!-- Main -->
+    <main class="checkout_container">
+      <!-- Checkout Section -->
+      <section class="checkout_section">
+        <!-- Form -->
+        <form class="checkout_form" method="POST">
+
+          <!-- LEFT SIDE BLOCK -->
+          <div class="checkout_block checkout_left">
+            <div class="checkout_inner">
+              <div class="checkout_header">
+                <div class="brand_logo">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="../assets/images/logo.webp" />
+                    <source media="(max-width:767px)" srcset="https://www.fmeaddons.com/images/resp-logo.webp" />
+                    <img class="logo_image" src="../assets/images/logo.webp" alt="brand logo" />
+                  </picture>
+                </div>
+
+                <ul class="progress_indicator">
+                  <li class="progress_steps_item">
+                    <div class="step_circle step_circle_active">
+                      <span class="step_indicator"></span>
+                    </div>
+                    <span class="step_label">Choose Module</span>
+                  </li>
+                  <li class="progress_steps_item">
+                    <div class="step_circle step_circle_active">
+                      <span class="step_indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                          stroke="white" class="w-4 h-4">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <span class="step_label"> Cart / Checkout</span>
+                  </li>
+                  <li class="progress_steps_item">
+                    <div class="step_circle">
+                      <span class="step_indicator"></span>
+                    </div>
+                    <span class="step_label">Download</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Billing Information -->
+              <div class="checkout_block_inner billing_info">
+
+                <div class="block_header">
+                  <h1 class="block_title"><img src="../assets/images/account.png" aria-hidden="true" class="">
+                    <span>Your
+                      Detail</span></h1>
+                  <div class="account_login">
+                    <p class="login_text">
+                      <span class="has_account">Have an account?</span>
+                      <a class="login_link" id="account_login">Login</a> or with
+                    </p>
+                    <div class="social_login">
+                      <button class="social_login_btn" aria-label="Login with Google">
+                        <img src="../assets/images/google.png" alt="Google Logo">
+                      </button>
+                      <button class="social_login_btn" aria-label="Login with Facebook">
+                        <img src="../assets/images/facebook.png" alt="Facebook Logo">
+                      </button>
+                      <button class="social_login_btn" aria-label="Login with Twitter">
+                        <img src="../assets/images/Twitter or X.png" alt="Twitter Logo">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form_group">
+                  <div class="form_field">                  
+                  <div class="first_name_field half">
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name *" class="form_input">
+                  </div>
+                  <div class="last_name_field half">
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name *" class="form_input">
+                  </div>
+                  </div>
+                  <div class="form_field">
+                    <div class="email_field full">
+                      <input type="email" name="email" id="email" placeholder="Email Address *" class="form_input">
+                    </div>
+                  </div>
+                  <div class="form_field">
+                    <div class="form_check subscribe_news_tutorials_check full">
+                      <label>
+                        Please send me plugin news & tutorials
+                        <input type="checkbox" name="subscribeNewsTutorials" class="form_input">
+                        <span class="check_mark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form_field">
+                    <div class="form_field password_field half">
+                      <input type="text" name="password" id="password" placeholder="Password *" class="form_input">
+                    </div>
+                    <div class="form_field confirm_password_field half">
+                      <input type="text" name="confirmPassword" id="confirmPassword" placeholder="Re Enter Password *"
+                        class="form_input">
+                    </div>
+                  </div>
+                  <div class="form_field">
+                    <div class="form_check set_invoice_address_check full">
+                      <label>
+                        I want to set address for my invoice.
+                        <input type="checkbox" id="setInvoiceAddress" name="setInvoiceAddress" class="form_input">
+                        <span class="check_mark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- payment Methods -->
+              <div class="checkout_block_inner payment_methods">
+                <div class="block_header">
+                  <h1 class="block_title"><img src="../assets/images/account.png" aria-hidden="true" class=""> <span>
+                      Payment
+                      Methods </span></h1>
+                </div>
+                <div class="form_group">
+                  <div class="form_check payment_method_stipe_check full">
+                    <label>
+                      <img src="../assets/images/stripe.png" alt="Stripe Icon">
+                      Pay with Stripe
+                      <input type="checkbox" id="payment_method_stripe" name="payment_method_stripe" class="form_input">
+                      <span class="check_mark" style="margin-top: 15px;"></span>
+                    </label>
+                  </div>
+                  <div class="form_check payment_method_paypal_check full">
+                    <label>
+                      <img src="../assets/images/PayPal.png" alt="Paypal Icon">
+                      Pay with PayPal | It's simple, easy and more secure
+                      <input type="checkbox" id="payment_method_paypal" name="payment_method_paypal" class="form_input">
+                      <span class="check_mark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE BLOCK -->
+          <div class="checkout_block checkout_right section_bg">
+            <div class="checkout_block_inner">
+              <!-- this checkout header just for mobile and tablet -->
+              <div class="checkout_header">
+                <div class="brand_logo">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="../assets/images/logo.webp" />
+                    <source media="(max-width:767px)" srcset="https://www.fmeaddons.com/images/resp-logo.webp" />
+                    <img class="logo_image" src="../assets/images/logo.webp" alt="brand logo" />
+                  </picture>
+                </div>
+
+                <ul class="progress_indicator">
+                  <li class="progress_steps_item">
+                    <div class="step_circle step_circle_active">
+                      <span class="step_indicator"></span>
+                    </div>
+                    <span class="step_label">Choose Module</span>
+                  </li>
+                  <li class="progress_steps_item">
+                    <div class="step_circle step_circle_active">
+                      <span class="step_indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                          stroke="white" class="w-4 h-4">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <span class="step_label"> Cart / Checkout</span>
+                  </li>
+                  <li class="progress_steps_item">
+                    <div class="step_circle">
+                      <span class="step_indicator"></span>
+                    </div>
+                    <span class="step_label">Download</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- This block header just for mobile and tablet  -->
+              <div class="block_header">
+                <h1 class="block_title"> <img src="../assets/images/account.png" aria-hidden="true" class=""> <span>Order Details</span></h1>
+              </div>
+              <div class="cart_summary">
+                <!-- Products List -->
+                <div class="cart_products">
+                  <ul class="product_list">
+                    <li class="product_item">
+                      <div class="product-content">
+                        <div class="product_info">
+                          <div class="image_block">
+                            <img src="../assets/images/prod.png" alt="Product Image">
+                          </div>
+                          <div class="product_details">
+                            <h3>Prestashop Mobile App Builder Native for iOS, Andriod ..</h3>
+                            <div class="form_check product_installation_check full">
+                              <label>
+                                Installation <span>+ €35</span>
+                                <input type="checkbox" id="product_installation" name="product_installation"
+                                  class="form_input">
+                                <span class="check_mark"></span>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="product_quantity">
+                            <button class="quantity_btn decrease"><img src="../assets/images/dec icon.svg"
+                                alt="Decreament Product Size" /></button>
+                            <span class="quantity_value" aria-label="Your Prouct Quantity is 1">1</span>
+                            <button class="quantity_btn increase"><img src="../assets/images/inc icon.svg"
+                                alt="Increament Product Size" /></button>
+                          </div>
+                          <div class="prod_price">
+                            <p>€ <span class="price_value">149</span></p>
+                          </div>
+                          <div class="product_remove">
+                            <button class="btn_remove_product">
+                              <img src="../assets/images/delete icon.png" aria-label="Delete Product"
+                                alt="Delete Product">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+
+                <!-- Price Summary -->
+                <ul class="price_summary open">
+                  <!-- <li class="dropdown_trigger">Price Summary</li> -->
+                  <li class="dropdown_trigger">
+                    Subtotal <span class=" price_subtotal"> € 149.00</span>
+                  </li>
+                  <li>
+                    Tax <span class="price_tax"> € 00.00</span>
+                  </li>
+                  <li>
+                    Grand Total <span class="price_total"> € 149.00</span>
+                  </li>
+                </ul>
+
+
+                <!-- Coupon Section -->
+                <ul class="coupon_section">
+                  <li>
+                    Do you have a coupon code?
+                    <div class="coupon_input_wrapper">
+                      <input type="text" placeholder="Coupon Code">
+                      <button class="coupon_btn"> <img src="../assets/images/b_ri.png" alt="Submit Coupon"
+                          class="coupon_submit_icon"></button>
+
+                    </div>
+                  </li>
+                  <li>
+                    Our Exclusive Offers
+                    <div class="exclusive_offer">
+                      <span class="offer_code"><img src="../assets/images/b_copy_ic.png" alt="Copy Icon">
+                        FMMSS2023</span> - Snap Sale
+                    </div>
+
+                  </li>
+                </ul>
+
+                <!-- Terms and Complete Order Wrapper -->
+                <div class="terms_and_order">
+
+                  <!-- Terms and Conditions -->
+                  <div class="terms_conditions">
+                    <div class="form_check terms_and_conditions_check full">
+                      <label>
+                        I agree to the <a href="/">Term and Condition <img src="../assets/images/checkout_right.png"
+                            alt="Arrow Icon"></a>
+                        <input type="checkbox" id="terms_and_conditions" name="terms_and_conditions" class="form_input">
+                        <span class="check_mark"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Complete Order Button -->
+                  <div class="order_button">
+                    <button type="submit" class="secondary_cta btn_complete_order">Complete Order   <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M10.5693 19.0816L19.4317 10.2193M19.4317 10.2193L12.5633 9.9977M19.4317 10.2193L19.6532 17.0876"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </section>
+
+  <script>
+    const dropdownTrigger = document.querySelector('.dropdown_trigger');
+    const priceSummary = document.querySelector('.price_summary');
+
+    dropdownTrigger.addEventListener('click', () => {
+      // Toggle the "open" class on the parent ul element
+      priceSummary.classList.toggle('open');
+    });
+
+
+  </script>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery-1.11.0.min.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/pushbar.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

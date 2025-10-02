@@ -325,6 +325,155 @@
 
 
 
+<div class="account_manage_section">
+    <div class="main_container section_padding">
+        <div class="account_manage_section_inner">
+  <!-- Sidebar -->
+
+<aside class="account_manage_sidebar">
+  <div class="user_profile active" data-tab="profile">
+    <div class="user_icon"><img src="/assets/images/user.png" alt=""></div>
+    <h3 class="user_name">KASHIF MEHMOOD</h3>
+  </div>
+  <nav class="account_nav">
+    <ul>
+      <li data-tab="orders"><a href="#">My Orders</a></li>
+      <li data-tab="address"><a href="#">Address Book</a></li>
+      <li data-tab="account-info"><a href="#">Account Information</a></li>
+      <li data-tab="newsletter"><a href="#">Newsletter Subscriptions</a></li>
+      <li data-tab="reviews"><a href="#">My Product Review</a></li>
+      <li data-tab="logout"><a href="#">Logout</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<!-- Dropdown Navigation (for <=1024px) -->
+<div class="account_nav_dropdown">
+  <select id="accountDropdown">
+    <option value="profile">Shuaib Khan</option>
+    <option value="orders">My Orders</option>
+    <option value="address">Address Book</option>
+    <option value="account-info">Account Information</option>
+    <option value="newsletter">Newsletter Subscriptions</option>
+    <option value="reviews">My Product Review</option>
+    <option value="logout">Logout</option>
+  </select>
+</div>
+<!-- Main Content -->
+<main class="account_manage_content">
+  <!-- Profile Tab (Default Open) -->
+  <div class="tab_content active" id="profile">
+    <div class="col">
+    <div class="row">
+    <h2 class="title">Account Information</h2>
+     <div class="account_grid">
+      <div class="account_card">
+        <h3 class="card_title">Contact Information</h3>
+        <div class="info">
+          <p class="secondary_text">Kashif Mehmood</p>
+          <p class="secondary_text">kashif.mehmood@unitedsol.net</p>
+        </div>
+        <div class="card_actions">
+          <a href="#" class="link_btn tertiary_text">Edit</a>
+          <a href="#" class="link_btn tertiary_text">Change Password</a>
+        </div>
+      </div>
+      <div class="account_card">
+        <h3 class="card_title">Newsletter</h3>
+        <div class="info">
+          <p class="secondary_text">You Are Subscribed To 'General Subscriptions'</p>
+        </div>
+        <div class="card_actions">
+          <a href="#" class="link_btn tertiary_text">Edit</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+         <h2 class="title">Address Book</h2>
+    <div class="account_grid">
+      <div class="account_card">
+        <div class="card_header">
+          <h3 class="card_title">Default Billing Address</h3>
+        </div>
+        <p>No Default Billing Addresses</p>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Orders -->
+  <div class="tab_content" id="orders">
+    <h2 class="title">My Orders</h2>
+    <p>No orders available yet.</p>
+  </div>
+
+  <!-- Address Book -->
+  <div class="tab_content" id="address">
+    <h2 class="title">Address Book</h2>
+    <div class="account_grid">
+      <div class="account_card">
+        <div class="card_header">
+          <h3 class="card_title">Default Billing Address</h3>
+          <a href="#" class="link_btn">Manage Addresses</a>
+        </div>
+        <p>No Default Billing Addresses</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Account Info -->
+  <div class="tab_content" id="account-info">
+    <h2 class="title">Account Information</h2>
+    <div class="account_grid">
+      <div class="account_card">
+        <h3 class="card_title">Contact Information</h3>
+        <div class="info">
+          <p class="secondary_text">Kashif Mehmood</p>
+          <p class="secondary_text">kashif.mehmood@unitedsol.net</p>
+        </div>
+        <div class="card_actions">
+          <a href="#" class="link_btn tertiary_text">Edit</a>
+          <a href="#" class="link_btn tertiary_text">Change Password</a>
+        </div>
+      </div>
+      <div class="account_card">
+        <h3 class="card_title">Newsletter</h3>
+        <div class="info">
+          <p class="secondary_text">You Are Subscribed To 'General Subscriptions'</p>
+        </div>
+        <div class="card_actions">
+          <a href="#" class="link_btn tertiary_text">Edit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="tab_content" id="newsletter">
+    <h2 class="title">Newsletter Subscriptions</h2>
+    <p>No newsletter preferences set.</p>
+  </div>
+
+  <!-- Reviews -->
+  <div class="tab_content" id="reviews">
+    <h2 class="title">My Product Review</h2>
+    <p>No reviews submitted yet.</p>
+  </div>
+
+  <!-- Logout -->
+  <div class="tab_content" id="logout">
+    <h2 class="title">Logout</h2>
+    <p>You have been logged out successfully.</p>
+  </div>
+</main>
+</div>
+</div>
+</div>
+
+
+
 
 
     </main>
@@ -471,7 +620,40 @@
     <script src="/assets/js/pushbar.js"></script>
     <script src="/assets/js/main.js"></script>
 
+<script>
+// Tab switching
+function activateTab(target) {
+  // Remove active state
+  document.querySelectorAll(".account_nav li, .user_profile").forEach(el => el.classList.remove("active"));
 
+  // Hide all sections
+  document.querySelectorAll(".tab_content").forEach(section => {
+    section.classList.remove("active");
+  });
+
+  // Show clicked section
+  document.getElementById(target).classList.add("active");
+}
+
+// Sidebar items
+document.querySelectorAll(".account_nav li, .user_profile").forEach(tab => {
+  tab.addEventListener("click", function () {
+    const target = this.getAttribute("data-tab");
+    activateTab(target);
+    this.classList.add("active");
+  });
+});
+
+// By default open profile tab
+activateTab("profile");
+document.querySelector(".user_profile").classList.add("active");
+// Dropdown change event
+document.getElementById("accountDropdown").addEventListener("change", function () {
+  activateTab(this.value);
+});
+
+
+</script>
 
 </body>
 

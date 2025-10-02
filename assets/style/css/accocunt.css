@@ -71,6 +71,164 @@
 .account_page .support_types .type .content > p{
     margin-bottom: 23px;
 }
+.account_manage_section .account_manage_section_inner {
+  display: flex;
+  gap: 142px;
+}
+
+/* Sidebar */
+.account_manage_section  .account_manage_sidebar {
+  max-width: 280px;
+  width: 100%;
+}
+
+.account_manage_section  .account_manage_sidebar .user_profile {
+ display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 43px;
+}
+
+.account_manage_section  .account_manage_sidebar .user_profile .user_name {
+  font-size: 25px;
+  line-height: 33px;
+  font-weight: 600;
+}
+
+.account_manage_section  .account_manage_sidebar  .account_nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.account_manage_section  .account_manage_sidebar .account_nav li {
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.account_manage_section  .account_manage_sidebar .account_nav a {
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  transition: color 0.2s;
+}
+.account_manage_section  .account_manage_sidebar .account_nav li.active a,
+.account_manage_section  .account_manage_sidebar .account_nav a:hover {
+  color: #000;
+}
+
+/* Main Content */
+.account_manage_section .account_manage_content {
+  flex: 1;
+}
+    
+.account_manage_section .tab_content .col
+{
+display: flex;
+flex-direction: column;
+gap: 55px;
+}
+
+.account_manage_section .account_manage_content .title {
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.account_manage_section .account_manage_content .account_grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.account_manage_section .account_manage_content .account_grid .account_card {
+  background: #fff;
+  padding: 27px 30px;
+  border-radius: 10px;
+  border: 1px solid #F9F9F9;
+  box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
+  max-width: 497px;
+  min-height: 172px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.account_manage_section .account_manage_content .account_grid .account_card .card_title {
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.account_card .info {
+    flex: 1;
+}
+.account_manage_section .account_manage_content .account_grid .account_card .info p{
+  margin-bottom: 5px;
+}
+.account_manage_section .account_manage_content .account_grid .account_card .card_actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 48px;
+}
+.account_manage_section .account_manage_content .account_grid .account_card .card_actions .link_btn {
+color: #000;
+font-weight: 600;
+}
+.account_manage_section .account_manage_content .account_grid .account_card .card_actions .link_btn:hover {
+  text-decoration: underline;
+}
+
+.account_manage_section .account_manage_content .account_grid .account_card .card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs */
+.account_manage_section .tab_content {
+  display: none;
+}
+.account_manage_section .tab_content.active {
+  display: block;
+}
+
+/* Default: show sidebar, hide dropdown */
+.account_nav_dropdown {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.account_nav_dropdown select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* At 1024px or below */
+@media screen and (max-width: 1024px) {
+  .account_manage_section_inner {
+    flex-direction: column; /* stack layout */
+    gap: 20px;
+  }
+  .account_manage_section .account_manage_section_inner{
+    gap: 30px;
+  }
+
+  .account_manage_sidebar {
+    display: none; /* hide sidebar */
+  }
+
+  .account_nav_dropdown {
+    display: block; /* show dropdown */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .account_manage_section .account_manage_content .account_grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 
 /* Faq Section */
