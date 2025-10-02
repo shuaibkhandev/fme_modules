@@ -81,6 +81,11 @@ top: 3px;
     gap: 155px;
 }
 
+
+
+.partner_page .benefits_sectoin .benefits .image_section{
+  flex: 1;
+}
 .partner_page .benefits_sectoin .benefits .content_section{
   display: flex;
   flex-direction: column;
@@ -256,7 +261,9 @@ max-width: 508px;
 }
 
 @media screen and (max-width:1400px) {
-
+.partner_page .benefits_sectoin .benefits{
+  gap: 120px;
+}
 
 }
 @media screen and (max-width:1280px) {
@@ -297,6 +304,10 @@ max-width: 508px;
 .partner_page .partnership_section .partnership .content_section{
   gap: 30px;
 }
+
+.partner_page .benefits_sectoin .benefits{
+  gap: 90px;
+}
   
 }
 
@@ -319,6 +330,13 @@ max-width: 508px;
         font-size: 17px;
     line-height: 28px;
     }
+
+        .partner_page .benefits_sectoin .benefits {
+        gap: 60px;
+        }
+        .partner_page .benefits_sectoin .benefits .content_section .our_work {
+margin-bottom: 5px;
+        }
 
 
 }
@@ -349,6 +367,17 @@ max-width: 508px;
     }
     .partner_page .partnership_section .partnership .content_section{
       gap: 20px;
+    }
+
+    .partner_page .benefits_sectoin .benefits{
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+    .partner_page .benefits_sectoin .benefits .content_section{
+      gap: 15px;
+    }
+    .partner_page .benefits_sectoin .benefits .image_section{
+      margin: auto;
     }
 
 }
