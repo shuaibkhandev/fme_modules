@@ -1,0 +1,492 @@
+/* Banner Section */
+.service_details_page .banner{
+    min-height: 578px;
+    width: 100%;
+    background-image: linear-gradient(to right, #460034,#050009);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service_details_page .banner .banner_block{
+    max-width: 1130px;
+    margin-top: 50px;
+}
+.service_details_page .banner .content{
+    margin-top: 20px;
+}
+
+.service_details_page .banner .content .banner_title{
+        font-size: 54px;
+        line-height: 72px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.service_details_page .banner .content .banner_text{
+    text-align: center;
+    font-size: 20px;
+    line-height: 34px;
+    margin: auto;
+    margin-top: 14px;
+    margin-bottom: 31px;
+}
+
+.banner_cta{
+    margin: auto;
+}
+
+
+
+/* Excellence Section */
+.service_details_page .excellence_section .sec_top_row {
+  display: flex;
+  justify-content: center;
+}
+
+.service_details_page .excellence_section .sec_top_row .cnt {
+  text-align: center;
+}
+
+.service_details_page .excellence_section .excellence_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.service_details_page .excellence_section .excellence_list .excellence {
+  border-right: 1px solid rgba(106, 86, 80, 0.2);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  height: 120px;
+}
+
+.service_details_page .excellence_section .excellence_list .excellence:last-child {
+  border-right: 0;
+}
+
+.service_details_page .excellence_section .excellence_list .excellence .count {
+  text-align: center;
+  display: block;
+  font-size: 36px;
+  color: #000;
+  line-height: 45px;
+  font-weight: 600;
+}
+
+.service_details_page .excellence_section .excellence_list .excellence .text {
+  text-align: center;
+}
+
+
+
+/* Customer Needs */
+
+.customer_needs .top_part { display: flex; align-items: center; gap: 150px; padding-bottom: 100px;}
+.customer_needs .main_heading { flex: .5; }
+.customer_needs .sub_text { flex: .5; font-size: 20px; }
+.customer_needs .steps { display: grid; grid-template-columns: repeat(6, 1fr); grid-gap: 20px; }
+.customer_needs .step { border: 0.45px solid rgba(250, 249, 249, 0.5); position: relative; background-color: #ffffff; border-radius: 7px; max-width: 260px; }
+.customer_needs .icon, .customer_needs .text { padding: 30px 35px 0 35px; } 
+.customer_needs .text { padding: 30px 35px; font-size: 23px; font-weight: 500; line-height: 28px; color: #000; }
+.customer_needs .numbering { font-size: 18px; font-weight: 700; line-height: 21px; color: #8d8d8d; position: absolute; top: 16px; right: 25px; }
+
+
+/* What We Offer */
+.what_we_offer_section .what_we_offer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.what_we_offer_section .what_we_offer .card{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(197, 197, 197, 0.34);
+    box-shadow: 0px 1px 3px 0.75px rgba(0, 0, 0, 0.1);
+    padding: 44px 44px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+}
+
+.what_we_offer_section .what_we_offer .card .title{
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+.what_we_offer_section .what_we_offer .card .text{
+    text-align: center;
+}
+
+
+
+/* Miration Process */
+.migration_process_section .migration_process {
+    display: flex;
+    gap: 0px;
+    overflow-y: auto;
+     scrollbar-width: none;
+  -ms-overflow-style: none;  
+}
+.migration_process_section .migration_process .card{
+max-width: 426px;
+min-width: 426px;
+background-color: #F0F0F0;
+transition: all .2s ease-in-out;
+border: 1px solid #DEDBDB;
+padding: 55px 40px 44px 25px;
+display: flex;
+flex-direction: column;
+}
+
+.migration_process_section .migration_process .card:first-child{
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.migration_process_section .migration_process .card:last-child{
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.migration_process_section .migration_process .card:hover{
+    background-color: #000;
+}
+
+.migration_process_section .migration_process .card:hover .title{
+color: #fff;
+}
+.migration_process_section .migration_process .card:hover .text{
+    color:rgba(255, 255, 255, 0.7)
+}
+
+.migration_process_section .migration_process .card .numbering{
+    font-size: 130px;
+    font-weight: 400;
+    flex: 1;
+    margin-bottom: 126px;
+    text-transform: uppercase;
+    color: #8d8d8d;
+   
+}
+
+.migration_process_section .migration_process .card .title{
+ margin-bottom: 25px;
+}
+
+
+
+.service_details_page .services_block{
+    width: calc(100% - 450px);
+}
+
+.service_details_page .services_block .service{
+padding: 55px 40px;
+max-width: 514px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 25px;
+background-color: #fff;
+border-radius: 10px;
+border: 1px solid #FAF9F9;
+box-shadow: 0px 1px 3px 0.75px rgba(0, 0, 0, 0.1);
+}
+.service_details_page .services_block .service .title{
+    font-size: 22px;
+    color: #000;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 600;
+    max-width: 353px;
+}
+.service_details_page .services_block .service .text{
+    text-align: center;
+}
+.service_details_page .services_block  .swiper-button-next::after, .service_details_page .services_block  .swiper-button-prev::after {
+    content: "";
+    background-image: url(../../images/right-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+.service_details_page .services_block  .swiper-button-prev::after {
+    background-image: url(../../images/right-arrow.svg);
+    transform: rotate(180deg);
+}
+.service_details_page .services_block  .swiper-button-next, .service_details_page .services_block  .swiper-button-prev{
+    top: auto;
+    bottom: 0px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: 99;
+    border: 1px solid var(--primary-color);
+}
+.service_details_page .services_block .swiper-button-prev {
+    right: 70px !important;
+    left: auto;
+}
+.service_details_page .services_block .mySwiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 68px;
+}
+ .service_details_page .services_block .swiper {
+        width: 100%;
+            max-width: 1065px;
+        height: auto;
+    }
+.service_details_page .services_block .swiper-slide{
+    width: 514px!important;
+    margin-left: 5px;
+}
+@media screen and (max-width:1600px) {
+
+}
+
+@media screen and (max-width:1400px) {
+    /* Customer Needs */
+.customer_needs .steps {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* What We Offer */
+.what_we_offer_section .what_we_offer .card{
+    padding: 36px 36px;
+}
+}
+@media screen and (max-width:1280px) {
+    /* Banner */
+   .service_details_page  .banner{
+        min-height: 560px;
+    }
+   .service_details_page  .banner .content{
+        margin-top: 15px;
+    }
+   .service_details_page  .banner .content .banner_title{
+        font-size: 48px;
+        line-height: 60px;
+    }
+  .service_details_page   .banner .content .banner_text {
+        max-width: 560px;
+        margin-top: 10px;
+        font-size: 18px;
+    line-height: 30px;
+    }
+
+
+
+    /* *********** */
+      .service_details_page .excellence_section .excellence_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence {
+    height: auto;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence:last-child {
+    border-right: 0;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence:nth-last-child(2) {
+    border-right: 0;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence .count {
+    font-size: 34px;
+    line-height: 43px;
+}
+
+      /* Customer Needs */
+    .customer_needs .top_part { gap: 100px; padding-bottom: 65px; }
+    .customer_needs .sub_text { font-size: 18px; }
+    .customer_needs .steps { grid-template-columns: repeat(4, 1fr); grid-gap: 30px; }
+    .customer_needs .step { max-width: 100%; }
+    .customer_needs .icon, .customer_needs .text, .customer_needs .numbering { padding: 20px 25px; }
+    .customer_needs .text { font-size: 18px; line-height: 22px; }
+    .customer_needs .numbering { font-size: 18px; line-height: 21px; }
+
+    
+
+    /* What We Offer */
+.what_we_offer_section .what_we_offer .card{
+    padding: 22px 22px;
+    gap: 15px;
+}
+.what_we_offer_section .what_we_offer .card .title {
+    font-size: 20px;
+    line-height: 32px;
+}
+}
+
+@media screen and (max-width: 992px) {
+        /* Banner */
+  .service_details_page   .banner{
+        min-height: 540px;
+    }
+  .service_details_page   .banner .content{
+        margin-top: 12px;
+    }
+   .service_details_page  .banner .content .banner_title{
+        font-size: 38px;
+        line-height: 52px;
+    }
+   .service_details_page  .banner .content .banner_text {
+        max-width: 520px;
+        margin-top: 8px;
+        font-size: 17px;
+    line-height: 28px;
+    }
+
+   .what_we_offer_section .what_we_offer {
+    display: grid
+;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+}
+.what_we_offer_section .what_we_offer .card{
+    gap: 10px;
+}
+}
+
+
+@media screen and (max-width:1024px) {
+          /* Customer Needs */
+    .customer_needs .top_part { gap: 35px; padding-bottom: 50px; flex-direction: column; align-items: flex-start; }
+    .customer_needs .sub_text { font-size: 16px; }
+    .customer_needs .steps { grid-template-columns: repeat(3, 1fr); grid-gap: 25px; }
+    .customer_needs .icon, .customer_needs .text, .customer_needs .numbering { padding: 18px 24px 0 24px; }
+    .customer_needs .text { padding: 18px 24px; font-size: 16px; line-height: 20px; }
+    .customer_needs .numbering { font-size: 16px; padding: 18px 24px; line-height: 16px; }
+}
+@media screen and (max-width: 767px) {
+        /* Banner */
+   .service_details_page  .banner{
+        min-height: 520px;
+    }
+  .service_details_page   .banner .content{
+        margin-top: 10px;
+    }
+  .service_details_page   .banner .content .banner_title{
+        font-size: 28px;
+        line-height: 48px;
+    }
+   .service_details_page  .banner .content .banner_text {
+        max-width: 420px;
+        margin-top: 7px;
+        font-size: 15px;
+    line-height: 26px;
+    }
+
+
+
+    /* ************** */
+      .service_details_page .excellence_section .excellence_list {
+    row-gap: 20px;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence .count {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+       /* Customer Needs */
+    .customer_needs .top_part { flex-direction: column; gap: 30px; padding-bottom: 30px; text-align: center; }
+    .customer_needs .main_heading { flex: none; }
+    .customer_needs .sub_text { flex: none; font-size: 16px; }
+    .customer_needs .steps { grid-template-columns: repeat(2, 1fr); grid-gap: 10px; }
+    .customer_needs .step { max-width: 100%; }
+    .customer_needs .icon, .customer_needs .text, .customer_needs .numbering { padding: 15px 20px 0 20px; }
+    .customer_needs .text { padding: 15px 20px; font-size: 16px; line-height: 24px; }
+    .customer_needs .numbering { font-size: 15px; padding: 15px 20px; line-height: 15px; }
+
+
+    /* What we offer */
+    .what_we_offer_section .what_we_offer .card .title {
+        font-size: 18px;
+        line-height: 30px;
+    }
+  
+}
+
+@media screen and (max-width: 576px) {
+        /* Banner */
+  .service_details_page   .banner{
+        min-height: 340px;
+    }
+   .service_details_page  .banner .banner_block{
+        margin-top: 80px;
+    }
+   .service_details_page  .banner .content{
+        margin-top: 5px;
+    }
+  .service_details_page   .banner .content .banner_title{
+        font-size: 22px;
+        line-height: 34px;
+        margin-bottom: 15px;
+    }
+  .service_details_page   .banner .content .banner_text {
+        display: none;
+        max-width: 380px;
+        margin-top: 7px;
+        font-size: 16px;
+    line-height: 22px;
+    }
+
+
+
+    /* ****************** */
+
+
+    
+  .service_details_page .excellence_section .excellence_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence {
+    border-right: 0;
+    gap: 5px;
+    height: auto;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence:last-child {
+    border-right: 0;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence:nth-last-child(2) {
+    border-right: 0;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence:nth-child(2) {
+    border-right: 0;
+  }
+  .service_details_page .excellence_section .excellence_list .excellence .count {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+          /* Customer Needs */
+    .customer_needs .steps { grid-template-columns: repeat(1, 1fr); grid-gap: 20px; }
+
+
+    /* What we offer */
+       .what_we_offer_section .what_we_offer {
+    display: grid
+;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+}
+.what_we_offer_section .what_we_offer .card{
+    gap: 10px;
+}
+
+}
