@@ -1,0 +1,22 @@
+Home Page: https://fme-modules.vercel.app/
+Product Listing Page: https://fme-modules.vercel.app/pages/product_listing.html
+Search Results Page: http://127.0.0.1:5501/pages/search_results.html
+Product Details Page: https://fme-modules.vercel.app/pages/product_details.html
+Service Listing Page: https://fme-modules.vercel.app/pages/service_listing.html
+Service Details Page: Missing
+Blog Page: https://fme-modules.vercel.app/pages/blog.html
+Blog Details Page: https://fme-modules.vercel.app/pages/blog_details.html
+Testimonail Page: https://fme-modules.vercel.app/pages/testimonails.html
+Support Page: https://fme-modules.vercel.app/pages/support.html
+Faq Page: https://fme-modules.vercel.app/pages/faq.html
+Request a Quote Page: https://fme-modules.vercel.app/pages/req_quote.html
+Contact Us Page: https://fme-modules.vercel.app/pages/contact.html
+Sitemap Page: https://fme-modules.vercel.app/pages/sitemap.html
+SignIn Page: https://fme-modules.vercel.app/pages/signin.html
+SignUp Page: https://fme-modules.vercel.app/pages/signup.html
+Empty Card Page: https://fme-modules.vercel.app/pages/empty_card.html
+Account Page: https://fme-modules.vercel.app/pages/account.html
+Privacy Policy Page: https://fme-modules.vercel.app/pages/privacy.html
+Portfolio Page: https://fme-modules.vercel.app/pages/portfolio.html
+Become a Partner Page: https://fme-modules.vercel.app/pages/partner.html
+Checkout Page: https://fme-modules.vercel.app/pages/checkout.html
